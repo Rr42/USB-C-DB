@@ -1,0 +1,28 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7350 7515 0    59   ~ 0
+USB-C demo board for Micro-controllers
+Text Notes 10570 7635 0    59   ~ 0
+v1.0
+Text Notes 8105 7635 0    50   ~ 0
+03-09-2021
+Text Notes 7290 7235 0    50   ~ 0
+1
+Text Notes 7375 7255 0    50   ~ 0
+1
+Text Notes 6990 6755 0    59   ~ 0
+Demo board for testing and evaluating the USB-C interface for Micro-controllers with \nonboard battery charging.
+$EndSCHEMATC
