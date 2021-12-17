@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name USB-C-DB-rescue)(type Legacy)(uri ${KIPRJMOD}/USB-C-DB-rescue.lib)(options "")(descr ""))
+  (lib (name FT260S-U)(type Legacy)(uri ${KIPRJMOD}/FT260S-U.lib)(options "")(descr ""))
+)

@@ -1,6 +1,6 @@
 # USB-C demo board for Micro-controllers
 The goal of this demo board is to test and evaluate:
-* The USB-C interface for a Micro-controller such as ESP8266 or ATmega2560.
+* The USB-C interface for a Micro-controller (this design uses ESP-WROOM-02).
 * Implementation of an onboard battery to power the board when disconnected from power.
 * Onboard battery charging capability using USB-C.
 
