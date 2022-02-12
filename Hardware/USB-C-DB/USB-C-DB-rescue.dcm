@@ -1,3 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP FT260S-U
+D FTDI - FT260S-U - INTERFACE BRIDGE, USB TO I2C/UART, TSSOP
+F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT260.pdf
+$ENDCMP
+#
+$CMP NUF2221W1T2G
+D USB Upstream Terminator with ESD Protection
+F http://www.onsemi.com/pub/Collateral/NUF2221W1T2-D.PDF
+$ENDCMP
+#
 #End Doc Library
