@@ -5,9 +5,68 @@ D FTDI - FT260S-U - INTERFACE BRIDGE, USB TO I2C/UART, TSSOP
 F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT260.pdf
 $ENDCMP
 #
+$CMP ICM7555xB
+D CMOS General Purpose Timer, 555 compatible, SOIC-8
+K single timer 555
+F http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf
+$ENDCMP
+#
+$CMP LM555xM
+D Timer, 555 compatible, SOIC-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/lm555.pdf
+$ENDCMP
+#
+$CMP LMC555xM
+D CMOS Timer, 555 compatible, SOIC-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/lmc555.pdf
+$ENDCMP
+#
+$CMP MC1455B
+D Timer, 555 compatible, SOIC-8
+K single timer 555
+F https://www.onsemi.com/pub/Collateral/MC1455-D.PDF
+$ENDCMP
+#
+$CMP NA555D
+D Precision Timers, 555 compatible, SOIC-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP NE555D
+D Precision Timers, 555 compatible, SOIC-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
 $CMP NUF2221W1T2G
 D USB Upstream Terminator with ESD Protection
 F http://www.onsemi.com/pub/Collateral/NUF2221W1T2-D.PDF
+$ENDCMP
+#
+$CMP RV100F-30-4K1-B1M
+D Potentiometers 10mm Linear 1M PC Mount
+F https://componentsearchengine.com/Datasheets/1/RV100F-30-4K1-B1M.pdf
+$ENDCMP
+#
+$CMP SA555D
+D Precision Timers, 555 compatible, SOIC-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP SE555D
+D Precision Timers, 555 compatible, SOIC-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP TLC555xD
+D Single LinCMOS Timer, 555 compatible, SOIC-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/tlc555.pdf
 $ENDCMP
 #
 #End Doc Library

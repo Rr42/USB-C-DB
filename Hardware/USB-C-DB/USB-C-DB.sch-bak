@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7350 7515 0    59   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 10570 7635 0    59   ~ 0
-v0.2
+v0.3
 Text Notes 8105 7635 0    50   ~ 0
 18-12-2021
 Text Notes 7290 7235 0    50   ~ 0
@@ -1488,7 +1488,7 @@ Connection ~ 6100 4850
 Wire Wire Line
 	6100 4550 6100 4500
 Text Notes 7900 3300 0    50   ~ 0
-ToDo:\n1. Wire up functionality for USB interface's RESETN\n2. Wire up functionality for MCU's RESET and EN\n3. Wire up functionality for programming MCU in the fly\n4. Full up the display subsircuit
+ToDo:\n1. Wire up functionality for USB interface's RESETN\n2. Wire up functionality for MCU's RESET and EN\n3. Wire up functionality for programming MCU in the fly\n4. Fill up the display subsircuit
 Text Label 3850 4050 0    50   ~ 0
 DEBUGGER
 Wire Wire Line
@@ -1519,4 +1519,18 @@ Wire Wire Line
 Connection ~ 3000 6200
 Wire Wire Line
 	3000 6550 3000 6750
+Text Notes 7650 3750 0    50   ~ 0
+For 1, 2, 3 use MOSFETs to trigger RESET and enables on different IO domains
+$Comp
+L Device:C C?
+U 1 1 62161AC5
+P 5850 -1500
+F 0 "C?" H 5965 -1454 50  0000 L CNN
+F 1 "47p" H 5965 -1545 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5888 -1650 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 5850 -1500 50  0001 C CNN
+F 4 "C0402C470J5GAC" H 5850 -1500 50  0001 C CNN "MPN"
+	1    5850 -1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

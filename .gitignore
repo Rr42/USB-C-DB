@@ -1,3 +1,5 @@
 # Files and folders to ignore
 Hardware/Datasheets
 Hardware/Parts-selection
+*.log
+*.raw
