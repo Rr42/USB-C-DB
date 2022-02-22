@@ -23,8 +23,8 @@ Text Notes 7290 7235 0    50   ~ 0
 1
 Text Notes 7375 7255 0    50   ~ 0
 1
-Text Notes 6990 6755 0    59   ~ 0
-Demo board for testing and evaluating the USB-C interface for Micro-controllers with \nonboard battery charging.
+Text Notes 7000 6650 0    59   ~ 0
+Mini display board for testing and evaluating a USB Type-C interface for Micro-controllers.
 $Comp
 L USB-C-DB-rescue:USB_C_Receptacle-Connector J1
 U 1 1 61326B48
