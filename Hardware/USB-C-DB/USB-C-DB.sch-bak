@@ -16,9 +16,9 @@ $EndDescr
 Text Notes 7350 7515 0    59   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 10570 7635 0    59   ~ 0
-v0.3
+v0.4
 Text Notes 8105 7635 0    50   ~ 0
-18-12-2021
+23-02-2022
 Text Notes 7290 7235 0    50   ~ 0
 1
 Text Notes 7375 7255 0    50   ~ 0
@@ -139,6 +139,12 @@ F0 "Display-and-controller-61B0EECC" 50
 F1 "USB-C-DB-1-61B0EECC.sch" 0
 F2 "VCC" I L 8350 1200 50 
 F3 "GND" I L 8350 1350 50 
+F4 "DCLK" I R 9450 1200 50 
+F5 "DATA" I R 9450 1300 50 
+F6 "VSYNC" I R 9450 1400 50 
+F7 "EOUT" I R 9450 1500 50 
+F8 "RESET" I R 9450 1600 50 
+F9 "HSYNC" I R 9450 1700 50 
 $EndSheet
 $Comp
 L Device:R R?
@@ -591,30 +597,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 4200 3850 4200
 $Comp
-L Device:R R?
-U 1 1 61CA564F
-P 4150 4850
-F 0 "R?" V 4050 4750 50  0000 C CNN
-F 1 "10k" V 4050 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4080 4850 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 4150 4850 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 4150 4850 50  0001 C CNN "MPN"
-	1    4150 4850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61CA6BB4
-P 4150 4950
-F 0 "R?" V 4050 5050 50  0000 C CNN
-F 1 "10k" V 4050 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4080 4950 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 4150 4950 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 4150 4950 50  0001 C CNN "MPN"
-	1    4150 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 61CAE23D
 P 3900 5000
@@ -922,30 +904,6 @@ Wire Wire Line
 Text Notes 9900 4300 0    50   ~ 0
 Bypass caps for MCU
 $Comp
-L Device:R R?
-U 1 1 61DD1185
-P 9300 4800
-F 0 "R?" H 9400 4900 50  0000 C CNN
-F 1 "10k" H 9400 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9230 4800 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 9300 4800 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 9300 4800 50  0001 C CNN "MPN"
-	1    9300 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61DD18A0
-P 9600 4800
-F 0 "R?" H 9500 4700 50  0000 C CNN
-F 1 "10k" H 9500 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9530 4800 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 9600 4800 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 9600 4800 50  0001 C CNN "MPN"
-	1    9600 4800
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+3.3V #PWR?
 U 1 1 61DDECDD
 P 9450 4550
@@ -955,18 +913,6 @@ F 2 "" H 9450 4550 50  0001 C CNN
 F 3 "" H 9450 4550 50  0001 C CNN
 	1    9450 4550
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61DE862E
-P 9600 5900
-F 0 "R?" H 9500 5800 50  0000 C CNN
-F 1 "10k" H 9500 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9530 5900 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 9600 5900 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 9600 5900 50  0001 C CNN "MPN"
-	1    9600 5900
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -989,18 +935,6 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10788 5350 50 
 F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 10750 5500 50  0001 C CNN
 F 4 "C0805C104M5RAC" H 10750 5500 50  0001 C CNN "MPN"
 	1    10750 5500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61DF870E
-P 10350 5500
-F 0 "R?" V 10450 5550 50  0000 C CNN
-F 1 "10k" V 10450 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10280 5500 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 10350 5500 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 10350 5500 50  0001 C CNN "MPN"
-	1    10350 5500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1046,18 +980,6 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10788 5850 50 
 F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 10750 6000 50  0001 C CNN
 F 4 "C0805C104M5RAC" H 10750 6000 50  0001 C CNN "MPN"
 	1    10750 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61E30203
-P 10350 6000
-F 0 "R?" V 10450 6050 50  0000 C CNN
-F 1 "10k" V 10450 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10280 6000 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 10350 6000 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 10350 6000 50  0001 C CNN "MPN"
-	1    10350 6000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1468,18 +1390,6 @@ Text Label 6300 4850 0    50   ~ 0
 NOT_SUSPOUT
 Wire Wire Line
 	5950 4850 6100 4850
-$Comp
-L Device:R R?
-U 1 1 62310C8D
-P 6100 4700
-F 0 "R?" H 6000 4600 50  0000 C CNN
-F 1 "10k" H 6000 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6030 4700 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 6100 4700 50  0001 C CNN
-F 4 "CRG0603F10K/10" V 6100 4700 50  0001 C CNN "MPN"
-	1    6100 4700
-	-1   0    0    1   
-$EndComp
 Text Label 6100 4500 0    50   ~ 0
 VCCIO
 Wire Wire Line
@@ -1522,15 +1432,123 @@ Wire Wire Line
 Text Notes 7650 3750 0    50   ~ 0
 For 1, 2, 3 use MOSFETs to trigger RESET and enables on different IO domains
 $Comp
-L Device:C C?
-U 1 1 62161AC5
-P 5850 -1500
-F 0 "C?" H 5965 -1454 50  0000 L CNN
-F 1 "47p" H 5965 -1545 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5888 -1650 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 5850 -1500 50  0001 C CNN
-F 4 "C0402C470J5GAC" H 5850 -1500 50  0001 C CNN "MPN"
-	1    5850 -1500
+L Device:R R?
+U 1 1 61CA6BB4
+P 4150 4950
+F 0 "R?" V 4050 5050 50  0000 C CNN
+F 1 "10k" V 4050 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4080 4950 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 4150 4950 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 4150 4950 50  0001 C CNN "MPN"
+	1    4150 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61CA564F
+P 4150 4850
+F 0 "R?" V 4050 4750 50  0000 C CNN
+F 1 "10k" V 4050 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4080 4850 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 4150 4850 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 4150 4850 50  0001 C CNN "MPN"
+	1    4150 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62310C8D
+P 6100 4700
+F 0 "R?" H 6000 4600 50  0000 C CNN
+F 1 "10k" H 6000 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6030 4700 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 6100 4700 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 6100 4700 50  0001 C CNN "MPN"
+	1    6100 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DF870E
+P 10350 5500
+F 0 "R?" V 10450 5550 50  0000 C CNN
+F 1 "10k" V 10450 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10280 5500 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 10350 5500 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 10350 5500 50  0001 C CNN "MPN"
+	1    10350 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E30203
+P 10350 6000
+F 0 "R?" V 10450 6050 50  0000 C CNN
+F 1 "10k" V 10450 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10280 6000 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 10350 6000 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 10350 6000 50  0001 C CNN "MPN"
+	1    10350 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DE862E
+P 9600 5900
+F 0 "R?" H 9500 5800 50  0000 C CNN
+F 1 "10k" H 9500 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9530 5900 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 9600 5900 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 9600 5900 50  0001 C CNN "MPN"
+	1    9600 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DD1185
+P 9300 4800
+F 0 "R?" H 9400 4900 50  0000 C CNN
+F 1 "10k" H 9400 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9230 4800 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 9300 4800 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 9300 4800 50  0001 C CNN "MPN"
+	1    9300 4800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 61DD18A0
+P 9600 4800
+F 0 "R?" H 9500 4700 50  0000 C CNN
+F 1 "10k" H 9500 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9530 4800 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 9600 4800 50  0001 C CNN
+F 4 "CRG0603F10K/10" V 9600 4800 50  0001 C CNN "MPN"
+	1    9600 4800
+	-1   0    0    1   
+$EndComp
+Text Label 9750 1300 2    50   ~ 0
+DATA
+Text Label 9750 1200 2    50   ~ 0
+DCLK
+Text Label 9750 1500 2    50   ~ 0
+EOUT
+Text Label 9750 1600 2    50   ~ 0
+RESET
+Text Label 9750 1700 2    50   ~ 0
+HSYNC
+Text Label 9750 1400 2    50   ~ 0
+VSYNC
+Wire Wire Line
+	9450 1200 9750 1200
+Wire Wire Line
+	9450 1300 9750 1300
+Wire Wire Line
+	9450 1400 9750 1400
+Wire Wire Line
+	9450 1500 9750 1500
+Wire Wire Line
+	9450 1600 9750 1600
+Wire Wire Line
+	9450 1700 9750 1700
 $EndSCHEMATC
