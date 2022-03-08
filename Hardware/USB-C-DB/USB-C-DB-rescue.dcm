@@ -2,6 +2,12 @@ EESchema-DOCLIB  Version 2.0
 #
 $CMP 2N7002KDW_R1_00001
 D MOSFET /K27/TR/7"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///
+F https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf
+$ENDCMP
+#
+$CMP 2N7002KDW_R1_00001_seperate
+D MOSFET /K27/TR/7"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///
+F https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf
 $ENDCMP
 #
 $CMP 74AHC595
@@ -37,6 +43,12 @@ $ENDCMP
 $CMP DMN1250UFEL-7
 D MOSFET 8 N-Ch FET 4.5V 280mOhm 12Vdss
 F https://componentsearchengine.com/Datasheets/1/DMN1250UFEL-7.pdf
+$ENDCMP
+#
+$CMP ESP-WROOM-02
+D Wi-Fi Module, ESP8266EX SoC, 32-bit, 802.11b/g/n, WPA/WPA2, 2.7-3.6V, SMD
+K RF Radio ESP Espressif
+F https://www.espressif.com/sites/default/files/documentation/0c-esp-wroom-02_datasheet_en.pdf
 $ENDCMP
 #
 $CMP FT260S-U
