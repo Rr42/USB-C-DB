@@ -9,9 +9,9 @@ The goal of this demo board is to test and evaluate:
 
 ## Design overview
 ### Main page
-![Main schematic](./hardware/USB-C-DB/USB-C-DB.svg)
+![Main schematic](./Hardware/USB-C-DB/USB-C-DB.svg)
 ### Display controller hierarchy
-![Display controller hierarchy](./hardware/USB-C-DB/USB-C-DB-1-61B0EECC-Display-and-controller-61B0EECC.svg)
+![Display controller hierarchy](./Hardware/USB-C-DB/USB-C-DB-1-61B0EECC-Display-and-controller-61B0EECC.svg)
 
 ## License
 The Software and firmware of this project is licensed under the the MIT license and the hardware is under the [Open Source Hardware](https://www.oshwa.org/definition/) license.
