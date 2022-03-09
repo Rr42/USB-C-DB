@@ -13,331 +13,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Diode:1N4148W D?
-U 1 1 62151722
-P 13300 8050
-F 0 "D?" V 13350 8200 50  0000 R CNN
-F 1 "1N4148W" V 13200 8450 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 13300 7875 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/1057/1N4148W-1869619.pdf" H 13300 8050 50  0001 C CNN
-F 4 "1N4148W_R1_00001" H 13300 8050 50  0001 C CNN "MPN"
-	1    13300 8050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 6219E439
-P 14000 7400
-F 0 "#PWR?" H 14000 7250 50  0001 C CNN
-F 1 "+5V" H 14000 7550 50  0000 C CNN
-F 2 "" H 14000 7400 50  0001 C CNN
-F 3 "" H 14000 7400 50  0001 C CNN
-	1    14000 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L USB-C-DB-rescue:NA555D U?
-U 1 1 621A91F5
-P 14000 8200
-F 0 "U?" H 13700 8550 50  0000 C CNN
-F 1 "NA555D" H 14200 7850 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 14850 7800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 14850 7800 50  0001 C CNN
-	1    14000 8200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 621AA069
-P 14550 8500
-F 0 "C?" H 14665 8546 50  0000 L CNN
-F 1 "47p" H 14665 8455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 14588 8350 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 14550 8500 50  0001 C CNN
-F 4 "C0402C470J5GAC" H 14550 8500 50  0001 C CNN "MPN"
-	1    14550 8500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14550 8350 14500 8350
-Wire Wire Line
-	14500 8050 14550 8050
-Wire Wire Line
-	14550 8050 14550 7750
-Wire Wire Line
-	14000 7750 14000 7800
-Connection ~ 14000 7750
-Wire Wire Line
-	13500 8200 13450 8200
-Wire Wire Line
-	13450 8350 13500 8350
-$Comp
-L Device:C C?
-U 1 1 621B06C1
-P 13300 8450
-F 0 "C?" H 13415 8496 50  0000 L CNN
-F 1 "47p" H 13415 8405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 13338 8300 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 13300 8450 50  0001 C CNN
-F 4 "C0402C470J5GAC" H 13300 8450 50  0001 C CNN "MPN"
-	1    13300 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 621B0CEE
-P 12950 8450
-F 0 "C?" H 13065 8496 50  0000 L CNN
-F 1 "47p" H 13065 8405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 12988 8300 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 12950 8450 50  0001 C CNN
-F 4 "C0402C470J5GAC" H 12950 8450 50  0001 C CNN "MPN"
-	1    12950 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 621B1117
-P 12600 8450
-F 0 "C?" H 12715 8496 50  0000 L CNN
-F 1 "47p" H 12715 8405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 12638 8300 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 12600 8450 50  0001 C CNN
-F 4 "C0402C470J5GAC" H 12600 8450 50  0001 C CNN "MPN"
-	1    12600 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 621B1558
-P 12250 8450
-F 0 "C?" H 12365 8496 50  0000 L CNN
-F 1 "47p" H 12365 8405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 12288 8300 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 12250 8450 50  0001 C CNN
-F 4 "C0402C470J5GAC" H 12250 8450 50  0001 C CNN "MPN"
-	1    12250 8450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14000 8650 14000 8600
-Wire Wire Line
-	14000 8650 14000 8700
-Connection ~ 14000 8650
-Wire Wire Line
-	14550 8650 14000 8650
-$Comp
-L power:GND #PWR?
-U 1 1 6219E97B
-P 14000 8700
-F 0 "#PWR?" H 14000 8450 50  0001 C CNN
-F 1 "GND" H 14000 8550 50  0000 C CNN
-F 2 "" H 14000 8700 50  0001 C CNN
-F 3 "" H 14000 8700 50  0001 C CNN
-	1    14000 8700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12250 8650 12600 8650
-Wire Wire Line
-	12250 8250 12250 8300
-Wire Wire Line
-	12600 8300 12600 8250
-Wire Wire Line
-	12250 8600 12250 8650
-Wire Wire Line
-	12600 8650 12600 8600
-Connection ~ 12600 8650
-Wire Wire Line
-	12600 8650 12950 8650
-Wire Wire Line
-	12950 8600 12950 8650
-Connection ~ 12950 8650
-Wire Wire Line
-	12950 8650 13300 8650
-Wire Wire Line
-	13300 8600 13300 8650
-Connection ~ 13300 8650
-Wire Wire Line
-	13300 8650 14000 8650
-Wire Wire Line
-	13450 8200 13450 8250
-Connection ~ 12600 8250
-Connection ~ 13450 8250
-Wire Wire Line
-	13450 8250 13450 8350
-Wire Wire Line
-	13300 8200 13300 8250
-Connection ~ 13300 8250
-Wire Wire Line
-	13300 8250 13450 8250
-Wire Wire Line
-	13300 8250 13300 8300
-Wire Wire Line
-	12950 8300 12950 8250
-Connection ~ 12950 8250
-Wire Wire Line
-	12950 8250 13300 8250
-Wire Wire Line
-	13500 8050 13450 8050
-Wire Wire Line
-	13450 8050 13450 7850
-Wire Wire Line
-	13450 7850 13300 7850
-Wire Wire Line
-	13300 7850 13300 7900
-$Comp
-L Diode:1N4148W D?
-U 1 1 6219F63C
-P 11750 8050
-F 0 "D?" V 11700 7950 50  0000 C CNN
-F 1 "1N4148W" V 11850 7850 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 11750 7875 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/1057/1N4148W-1869619.pdf" H 11750 8050 50  0001 C CNN
-F 4 "1N4148W_R1_00001" H 11750 8050 50  0001 C CNN "MPN"
-	1    11750 8050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 621CF5ED
-P 11950 7350
-F 0 "#PWR?" H 11950 7200 50  0001 C CNN
-F 1 "+5V" H 11950 7500 50  0000 C CNN
-F 2 "" H 11950 7350 50  0001 C CNN
-F 3 "" H 11950 7350 50  0001 C CNN
-	1    11950 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12600 7400 12600 7450
-Wire Wire Line
-	12600 8250 12950 8250
-Wire Wire Line
-	12600 8250 12250 8250
-Wire Wire Line
-	14550 7750 14000 7750
-$Comp
-L USB-C-DB-rescue:RV100F-30-4K1-B1M VR?
-U 1 1 6214C8F2
-P 13050 7950
-F 0 "VR?" H 13700 7600 50  0000 C CNN
-F 1 "RV100F-30-4K1-B1M" H 13700 8100 50  0000 C CNN
-F 2 "RV100F304K1B1M" H 14000 8050 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/RV100F-30-4K1-B1M.pdf" H 14000 7950 50  0001 L CNN
-F 4 "Potentiometers 10mm Linear 1M PC Mount" H 14000 7850 50  0001 L CNN "Description"
-F 5 "3.4" H 14000 7750 50  0001 L CNN "Height"
-F 6 "312-1001F-1M" H 14000 7650 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Alpha-Taiwan/RV100F-30-4K1-B1M?qs=Y%252BBGkTaltXsB5KMzQF0w3g%3D%3D" H 14000 7550 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Alpha (Taiwan)" H 14000 7450 50  0001 L CNN "Manufacturer_Name"
-F 9 "RV100F-30-4K1-B1M" H 14000 7350 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "RV100F-30-4K1-B1M" H 13050 7950 50  0001 C CNN "MPN"
-	1    13050 7950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	13050 7850 13300 7850
-Connection ~ 13300 7850
-Wire Wire Line
-	12100 7850 12150 7850
-Wire Wire Line
-	11750 7900 11750 7850
-Wire Wire Line
-	11750 7850 11800 7850
-Wire Wire Line
-	11750 8200 11750 8250
-Wire Wire Line
-	11750 8250 12250 8250
-Connection ~ 12250 8250
-Wire Wire Line
-	12000 7400 11950 7400
-Text Notes 11400 7050 0    50   ~ 0
-PWM signal generator for brightness control
-Wire Notes Line
-	11350 6950 11350 9000
-Wire Wire Line
-	14600 8200 14500 8200
-Text Label 14600 8200 0    50   ~ 0
-PWM_BC
-Wire Notes Line
-	11350 9000 14950 9000
-Wire Notes Line
-	14950 9000 14950 6950
-Wire Notes Line
-	14950 6950 11350 6950
-Text Notes 12650 7600 0    50   ~ 0
-PWM switching frequency is about\n 6.6kHz for a 1MEG ohm pot and\n 4x47pF caps.
-Text Notes 11500 8950 0    50   ~ 0
-Using a 1MEG rotary thumbwheel potentiometer (VR) to control pulse width.
 Text Notes 12200 10900 0    50   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 12950 11050 0    50   ~ 0
 23-02-2022
 Text Notes 15450 11050 0    50   ~ 0
-v0.3
-$Comp
-L Device:C C?
-U 1 1 62172D9B
-P 14700 7650
-F 0 "C?" H 14800 7700 50  0000 L CNN
-F 1 "0.1u" H 14750 7550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 14738 7500 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 14700 7650 50  0001 C CNN
-F 4 "C0805C104M5RAC" H 14700 7650 50  0001 C CNN "MPN"
-	1    14700 7650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6217502C
-P 14700 7850
-F 0 "#PWR?" H 14700 7600 50  0001 C CNN
-F 1 "GND" H 14700 7700 50  0000 C CNN
-F 2 "" H 14700 7850 50  0001 C CNN
-F 3 "" H 14700 7850 50  0001 C CNN
-	1    14700 7850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 7850 14700 7800
-Wire Wire Line
-	14700 7500 14700 7450
-Wire Wire Line
-	14700 7450 14000 7450
-Wire Wire Line
-	14000 7450 14000 7400
-Wire Wire Line
-	14000 7450 14000 7750
-Connection ~ 14000 7450
-Wire Wire Line
-	12300 7400 12600 7400
-Wire Wire Line
-	11950 7400 11950 7350
-$Comp
-L Device:R R?
-U 1 1 621C34E0
-P 11950 7850
-F 0 "R?" V 11850 7850 50  0000 C CNN
-F 1 "10k" V 12050 7850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 11880 7850 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 11950 7850 50  0001 C CNN
-F 4 "CRG0603F10K/10" H 11950 7850 50  0001 C CNN "MPN"
-	1    11950 7850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 62183B08
-P 12150 7400
-F 0 "R?" V 12050 7400 50  0000 C CNN
-F 1 "10k" V 12250 7400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12080 7400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 12150 7400 50  0001 C CNN
-F 4 "CRG0603F10K/10" H 12150 7400 50  0001 C CNN "MPN"
-	1    12150 7400
-	0    1    1    0   
-$EndComp
+v0.4
 Wire Wire Line
 	10750 2650 10750 2900
 Wire Wire Line
@@ -428,8 +109,8 @@ F 4 "CLA1A-WKB-CWbYa153" H 10750 3400 50  0001 C CNN "MPN"
 	1    10750 3400
 	0    -1   -1   0   
 $EndComp
-Text Notes 10850 6000 0    50   ~ 0
-LED power:\nRed - 1.9V @ 10mA (309 ohm)\nGreen - 1.5V @ 6mA (583 ohm)\nBlue - 1.5V @ 6mA (583 ohm)\nWorst case current draw: (10mA+6mA+6mA)*10 = 220mA
+Text Notes 10450 4800 0    50   ~ 0
+LED power:\nRed - 1.9V @ 10mA (309 ohm @ 5V)\nGreen - 1.5V @ 6mA (583 ohm @ 5V)\nBlue - 1.5V @ 6mA (583 ohm @ 5V)\nWorst case current draw: (10mA+6mA+6mA)*10 = 220mA
 $Comp
 L Device:R R?
 U 1 1 714727EF
@@ -1621,7 +1302,7 @@ P 2600 4100
 F 0 "Q?" H 2850 4300 50  0000 C CNN
 F 1 "2N7002KDW_R1_00001" H 3050 3800 50  0000 C CNN
 F 2 "SOT65P210X110-6N" H 3350 4200 50  0001 L CNN
-F 3 "" H 3350 4100 50  0001 L CNN
+F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 4100 50  0001 L CNN
 F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 4000 50  0001 L CNN "Description"
 F 5 "1.1" H 3350 3900 50  0001 L CNN "Height"
 F 6 "241-2N7002KDWR100001" H 3350 3800 50  0001 L CNN "Mouser Part Number"
@@ -1632,8 +1313,6 @@ F 10 "2N7002KDW_R1_00001" H 2600 4100 50  0001 C CNN "MPN"
 	1    2600 4100
 	1    0    0    -1  
 $EndComp
-Text Label 3050 3700 0    50   ~ 0
-PWM_BC
 Wire Wire Line
 	3650 4200 3650 4550
 Wire Wire Line
@@ -1665,7 +1344,7 @@ P 2600 6000
 F 0 "Q?" H 2850 6200 50  0000 C CNN
 F 1 "2N7002KDW_R1_00001" H 3050 5700 50  0000 C CNN
 F 2 "SOT65P210X110-6N" H 3350 6100 50  0001 L CNN
-F 3 "" H 3350 6000 50  0001 L CNN
+F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 6000 50  0001 L CNN
 F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 5900 50  0001 L CNN "Description"
 F 5 "1.1" H 3350 5800 50  0001 L CNN "Height"
 F 6 "241-2N7002KDWR100001" H 3350 5700 50  0001 L CNN "Mouser Part Number"
@@ -1676,8 +1355,6 @@ F 10 "2N7002KDW_R1_00001" H 2600 6000 50  0001 C CNN "MPN"
 	1    2600 6000
 	1    0    0    -1  
 $EndComp
-Text Label 3050 5600 0    50   ~ 0
-PWM_BC
 Wire Wire Line
 	3000 5650 3050 5650
 Wire Wire Line
@@ -1713,7 +1390,7 @@ P 2600 7900
 F 0 "Q?" H 2850 8100 50  0000 C CNN
 F 1 "2N7002KDW_R1_00001" H 3050 7600 50  0000 C CNN
 F 2 "SOT65P210X110-6N" H 3350 8000 50  0001 L CNN
-F 3 "" H 3350 7900 50  0001 L CNN
+F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 7900 50  0001 L CNN
 F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 7800 50  0001 L CNN "Description"
 F 5 "1.1" H 3350 7700 50  0001 L CNN "Height"
 F 6 "241-2N7002KDWR100001" H 3350 7600 50  0001 L CNN "Mouser Part Number"
@@ -1724,8 +1401,6 @@ F 10 "2N7002KDW_R1_00001" H 2600 7900 50  0001 C CNN "MPN"
 	1    2600 7900
 	1    0    0    -1  
 $EndComp
-Text Label 3050 7500 0    50   ~ 0
-PWM_BC
 Wire Wire Line
 	3000 7550 3050 7550
 Wire Wire Line
@@ -1740,7 +1415,7 @@ P 2600 9800
 F 0 "Q?" H 2850 10000 50  0000 C CNN
 F 1 "2N7002KDW_R1_00001" H 3050 9500 50  0000 C CNN
 F 2 "SOT65P210X110-6N" H 3350 9900 50  0001 L CNN
-F 3 "" H 3350 9800 50  0001 L CNN
+F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 9800 50  0001 L CNN
 F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 9700 50  0001 L CNN "Description"
 F 5 "1.1" H 3350 9600 50  0001 L CNN "Height"
 F 6 "241-2N7002KDWR100001" H 3350 9500 50  0001 L CNN "Mouser Part Number"
@@ -1751,8 +1426,6 @@ F 10 "2N7002KDW_R1_00001" H 2600 9800 50  0001 C CNN "MPN"
 	1    2600 9800
 	1    0    0    -1  
 $EndComp
-Text Label 3050 9400 0    50   ~ 0
-PWM_BC
 Wire Wire Line
 	3000 9450 3050 9450
 Wire Wire Line
@@ -5888,4 +5561,50 @@ CB 9E C0 26 4F 10 89 50 E3 91 C1 88 98 05 39 CF 9D E4 24 C4 8E 00 88 54 C0 91 C3
 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Text Notes 1000 3150 0    50   ~ 0
+Power budget:\nUSB interface:  23.6mA @ 5V\nMCU:           170mA @ 3.3V\nRegulator:      175mA @ 5V to 170mA @ 3.3V\nShift registers: 400uA @ 5V\nTimer:          6mA @ 5V\nLED drive:      220mA @ 5V\n\nDraw from USB connector at worst case: 425mA @ 5V (2.125W)\n
+$Comp
+L power:+5V #PWR?
+U 1 1 6283AE3F
+P 3050 3700
+F 0 "#PWR?" H 3050 3550 50  0001 C CNN
+F 1 "+5V" H 3050 3850 50  0000 C CNN
+F 2 "" H 3050 3700 50  0001 C CNN
+F 3 "" H 3050 3700 50  0001 C CNN
+	1    3050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6283B637
+P 3050 5600
+F 0 "#PWR?" H 3050 5450 50  0001 C CNN
+F 1 "+5V" H 3050 5750 50  0000 C CNN
+F 2 "" H 3050 5600 50  0001 C CNN
+F 3 "" H 3050 5600 50  0001 C CNN
+	1    3050 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6283BE1B
+P 3050 7500
+F 0 "#PWR?" H 3050 7350 50  0001 C CNN
+F 1 "+5V" H 3050 7650 50  0000 C CNN
+F 2 "" H 3050 7500 50  0001 C CNN
+F 3 "" H 3050 7500 50  0001 C CNN
+	1    3050 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6283C2FE
+P 3050 9400
+F 0 "#PWR?" H 3050 9250 50  0001 C CNN
+F 1 "+5V" H 3050 9550 50  0000 C CNN
+F 2 "" H 3050 9400 50  0001 C CNN
+F 3 "" H 3050 9400 50  0001 C CNN
+	1    3050 9400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

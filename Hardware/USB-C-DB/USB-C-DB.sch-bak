@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7350 7515 0    59   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 10570 7635 0    59   ~ 0
-v0.5
+v0.6
 Text Notes 8105 7635 0    50   ~ 0
 09-03-2022
 Text Notes 7290 7235 0    50   ~ 0
@@ -118,7 +118,7 @@ Text Notes 1850 1000 0    50   ~ 0
 Battery connector
 Text Notes 1200 5700 0    50   ~ 0
 Total  power with 80 RGB LEDs comes out to be\n around 1W (821mW Typ, 1.5W Max). Use fixed\n termination for requesting USB power state\n rather than using controller.
-Text Notes 1950 2650 0    50   ~ 0
+Text Notes 1450 2600 0    50   ~ 0
 Current sence bead to detect\n USB power draw above 2.5W\n and throttle power to comply\n with the USB 2.0 spec.
 $Comp
 L Device:R R?
@@ -213,12 +213,12 @@ Connection ~ 1150 5600
 $Comp
 L power:VBUS #PWR?
 U 1 1 61B334E2
-P 1800 2400
-F 0 "#PWR?" H 1800 2250 50  0001 C CNN
-F 1 "VBUS" H 1800 2550 50  0000 C CNN
-F 2 "" H 1800 2400 50  0001 C CNN
-F 3 "" H 1800 2400 50  0001 C CNN
-	1    1800 2400
+P 3250 2450
+F 0 "#PWR?" H 3250 2300 50  0001 C CNN
+F 1 "VBUS" H 3250 2600 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "" H 3250 2450 50  0001 C CNN
+	1    3250 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -275,8 +275,6 @@ Wire Wire Line
 	2300 3550 2300 3500
 Wire Wire Line
 	1800 3500 2300 3500
-Wire Wire Line
-	1800 2950 1750 2950
 Text Notes 5150 3500 0    50   ~ 0
 Negotiate up current but stick to 5V bus
 Text Notes 3000 3300 0    50   ~ 0
@@ -592,25 +590,11 @@ F 3 "" H 9050 1100 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	8900 750  10850 750 
-$Comp
-L Device:R_Shunt R?
-U 1 1 61D53208
-P 1800 2650
-F 0 "R?" H 1750 2550 50  0000 R CNN
-F 1 "0.15" H 1750 2750 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1730 2650 50  0001 C CNN
-F 3 "https://product.tdk.com/system/files/dam/doc/product/emc/emc/beads/catalog/beads_automotive_power_kpz1608-hr_en.pdf" H 1800 2650 50  0001 C CNN
-F 4 "KPZ1608SHR601ATD25" H 1800 2650 50  0001 C CNN "MPN"
-	1    1800 2650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	1800 2850 1800 2950
-Wire Wire Line
-	1800 2400 1800 2450
-Text Label 1150 2750 0    50   ~ 0
+	3250 2450 3250 2500
+Text Label 2600 2800 0    50   ~ 0
 VBUS_ISEN+
-Text Label 1150 2550 0    50   ~ 0
+Text Label 2600 2600 0    50   ~ 0
 VBUS_ISEN-
 Text Label 6350 3750 2    50   ~ 0
 UART_RX_N
@@ -1116,9 +1100,9 @@ Wire Notes Line
 Wire Notes Line
 	7000 800  5350 800 
 Wire Wire Line
-	1150 2550 1650 2550
+	2600 2600 3100 2600
 Wire Wire Line
-	1650 2750 1150 2750
+	3100 2800 2600 2800
 Text Label 8200 1400 0    50   ~ 0
 DATA
 Text Label 8200 1500 0    50   ~ 0
@@ -3150,6 +3134,38 @@ F 3 "" H 8200 4600 50  0001 C CNN
 	1    8200 4600
 	1    0    0    -1  
 $EndComp
+Text Notes 7400 2150 0    50   ~ 0
+ToDo:\n1. Impliment battery charging?\n2. Impliment VBUS current sensing
+$Comp
+L Device:R_Shunt R?
+U 1 1 6285C594
+P 3250 2700
+F 0 "R?" H 3200 2600 50  0000 R CNN
+F 1 "0.001" H 3200 2800 50  0000 R CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 3180 2700 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/447/PYu_RC_Group_51_RoHS_L_10-1664068.pdf" H 3250 2700 50  0001 C CNN
+F 4 "RC0201DR-071ML" H 3250 2700 50  0001 C CNN "MPN"
+	1    3250 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 6285F074
+P 2600 2950
+F 0 "FB?" V 2550 2850 50  0000 C CNN
+F 1 "3u" V 2650 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2530 2950 50  0001 C CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/emc/emc/beads/catalog/beads_automotive_power_kpz1608-hr_en.pdf" H 2600 2950 50  0001 C CNN
+F 4 "KPZ1608SHR601ATD25" V 2600 2950 50  0001 C CNN "MPN"
+	1    2600 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 2950 2450 2950
+Wire Wire Line
+	2750 2950 3250 2950
+Wire Wire Line
+	3250 2950 3250 2900
 Wire Bus Line
 	8550 1100 8550 1700
 Wire Bus Line
