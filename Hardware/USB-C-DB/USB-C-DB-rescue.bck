@@ -379,9 +379,9 @@ F http://www.diodes.com/assets/Datasheets/VN10LF.pdf
 $ENDCMP
 #
 $CMP XP262N7002TR-G
-D MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23
+D 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23
 K N-Channel MOSFET
-F https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf
+F https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
 $ENDCMP
 #
 $CMP ZVN3306F

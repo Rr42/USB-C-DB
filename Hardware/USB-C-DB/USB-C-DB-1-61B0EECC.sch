@@ -16,9 +16,9 @@ $EndDescr
 Text Notes 12200 10900 0    50   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 12950 11050 0    50   ~ 0
-23-02-2022
+11-03-2022
 Text Notes 15450 11050 0    50   ~ 0
-v0.4
+v0.5
 Wire Wire Line
 	10750 2650 10750 2900
 Wire Wire Line
@@ -62,10 +62,10 @@ Wire Wire Line
 Wire Wire Line
 	10750 3600 10750 3550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0138
 U 1 1 757636CE
 P 10750 3600
-F 0 "#PWR?" H 10750 3350 50  0001 C CNN
+F 0 "#PWR0138" H 10750 3350 50  0001 C CNN
 F 1 "GND" H 10750 3450 50  0000 C CNN
 F 2 "" H 10750 3600 50  0001 C CNN
 F 3 "" H 10750 3600 50  0001 C CNN
@@ -73,10 +73,10 @@ F 3 "" H 10750 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0139
 U 1 1 7576332E
 P 11050 3600
-F 0 "#PWR?" H 11050 3350 50  0001 C CNN
+F 0 "#PWR0139" H 11050 3350 50  0001 C CNN
 F 1 "GND" H 11050 3450 50  0000 C CNN
 F 2 "" H 11050 3600 50  0001 C CNN
 F 3 "" H 11050 3600 50  0001 C CNN
@@ -675,10 +675,10 @@ Wire Wire Line
 Wire Wire Line
 	9000 2100 8950 2100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0140
 U 1 1 6539D48A
 P 9000 2150
-F 0 "#PWR?" H 9000 1900 50  0001 C CNN
+F 0 "#PWR0140" H 9000 1900 50  0001 C CNN
 F 1 "GND" H 9000 2000 50  0000 C CNN
 F 2 "" H 9000 2150 50  0001 C CNN
 F 3 "" H 9000 2150 50  0001 C CNN
@@ -692,10 +692,10 @@ Wire Wire Line
 Wire Wire Line
 	7600 2100 7600 2050
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0141
 U 1 1 6539D4B5
 P 7600 2050
-F 0 "#PWR?" H 7600 1900 50  0001 C CNN
+F 0 "#PWR0141" H 7600 1900 50  0001 C CNN
 F 1 "+5V" H 7600 2200 50  0000 C CNN
 F 2 "" H 7600 2050 50  0001 C CNN
 F 3 "" H 7600 2050 50  0001 C CNN
@@ -719,10 +719,10 @@ Wire Wire Line
 Wire Wire Line
 	9350 2100 9350 2050
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0142
 U 1 1 6545C024
 P 9350 2050
-F 0 "#PWR?" H 9350 1900 50  0001 C CNN
+F 0 "#PWR0142" H 9350 1900 50  0001 C CNN
 F 1 "+5V" H 9350 2200 50  0000 C CNN
 F 2 "" H 9350 2050 50  0001 C CNN
 F 3 "" H 9350 2050 50  0001 C CNN
@@ -736,10 +736,10 @@ Wire Wire Line
 Wire Wire Line
 	10750 2100 10700 2100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0143
 U 1 1 6545BFF9
 P 10750 2150
-F 0 "#PWR?" H 10750 1900 50  0001 C CNN
+F 0 "#PWR0143" H 10750 1900 50  0001 C CNN
 F 1 "GND" H 10750 2000 50  0000 C CNN
 F 2 "" H 10750 2150 50  0001 C CNN
 F 3 "" H 10750 2150 50  0001 C CNN
@@ -749,10 +749,10 @@ $EndComp
 Wire Wire Line
 	10750 2100 10750 2150
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0144
 U 1 1 66DDE893
 P 8650 950
-F 0 "#PWR?" H 8650 800 50  0001 C CNN
+F 0 "#PWR0144" H 8650 800 50  0001 C CNN
 F 1 "+5V" H 8650 1100 50  0000 C CNN
 F 2 "" H 8650 950 50  0001 C CNN
 F 3 "" H 8650 950 50  0001 C CNN
@@ -789,10 +789,10 @@ Connection ~ 8650 950
 Wire Wire Line
 	8650 950  8800 950 
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0145
 U 1 1 66DDE8AA
 P 8650 1250
-F 0 "#PWR?" H 8650 1000 50  0001 C CNN
+F 0 "#PWR0145" H 8650 1000 50  0001 C CNN
 F 1 "GND" H 8650 1100 50  0000 C CNN
 F 2 "" H 8650 1250 50  0001 C CNN
 F 3 "" H 8650 1250 50  0001 C CNN
@@ -805,10 +805,10 @@ Wire Wire Line
 	8650 1250 8800 1250
 Connection ~ 8650 1250
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0146
 U 1 1 66EA4E75
 P 10400 950
-F 0 "#PWR?" H 10400 800 50  0001 C CNN
+F 0 "#PWR0146" H 10400 800 50  0001 C CNN
 F 1 "+5V" H 10400 1100 50  0000 C CNN
 F 2 "" H 10400 950 50  0001 C CNN
 F 3 "" H 10400 950 50  0001 C CNN
@@ -845,10 +845,10 @@ Connection ~ 10400 950
 Wire Wire Line
 	10400 950  10550 950 
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0147
 U 1 1 66EA4E8C
 P 10400 1250
-F 0 "#PWR?" H 10400 1000 50  0001 C CNN
+F 0 "#PWR0147" H 10400 1000 50  0001 C CNN
 F 1 "GND" H 10400 1100 50  0000 C CNN
 F 2 "" H 10400 1250 50  0001 C CNN
 F 3 "" H 10400 1250 50  0001 C CNN
@@ -1115,20 +1115,6 @@ F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 3900 5500 50  0001 C CNN "MPN"
 $EndComp
 $Comp
 L Device:LED_ARGB D?
-U 1 1 621C1E98
-P 3900 6450
-AR Path="/621C1E98" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/621C1E98" Ref="D?"  Part="1" 
-F 0 "D?" H 3950 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 3900 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 3900 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 3900 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 3900 6450 50  0001 C CNN "MPN"
-	1    3900 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
 U 1 1 621C2FEF
 P 3900 7400
 AR Path="/621C2FEF" Ref="D?"  Part="1" 
@@ -1227,20 +1213,6 @@ F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 4550 5500 50  0001 C CNN "MPN"
 $EndComp
 $Comp
 L Device:LED_ARGB D?
-U 1 1 6223C9B5
-P 4550 6450
-AR Path="/6223C9B5" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/6223C9B5" Ref="D?"  Part="1" 
-F 0 "D?" H 4600 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 4550 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 4550 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 4550 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 4550 6450 50  0001 C CNN "MPN"
-	1    4550 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
 U 1 1 6223C9BC
 P 4550 7400
 AR Path="/6223C9BC" Ref="D?"  Part="1" 
@@ -1295,37 +1267,12 @@ F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 4550 10250 50  0001 C CNN "MPN"
 	1    4550 10250
 	-1   0    0    1   
 $EndComp
-$Comp
-L USB-C-DB-rescue:2N7002KDW_R1_00001 Q?
-U 1 1 621A1C20
-P 2600 4100
-F 0 "Q?" H 2850 4300 50  0000 C CNN
-F 1 "2N7002KDW_R1_00001" H 3050 3800 50  0000 C CNN
-F 2 "SOT65P210X110-6N" H 3350 4200 50  0001 L CNN
-F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 4100 50  0001 L CNN
-F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 4000 50  0001 L CNN "Description"
-F 5 "1.1" H 3350 3900 50  0001 L CNN "Height"
-F 6 "241-2N7002KDWR100001" H 3350 3800 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Panjit/2N7002KDW_R1_00001?qs=sPbYRqrBIVmMdyQuXiqRcw%3D%3D" H 3350 3700 50  0001 L CNN "Mouser Price/Stock"
-F 8 "PANJIT" H 3350 3600 50  0001 L CNN "Manufacturer_Name"
-F 9 "2N7002KDW_R1_00001" H 3350 3500 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "2N7002KDW_R1_00001" H 2600 4100 50  0001 C CNN "MPN"
-	1    2600 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 4200 3650 4550
 Wire Wire Line
 	3650 4100 3650 3600
 Wire Wire Line
 	3650 4100 4300 4100
-Wire Wire Line
-	3000 3750 3050 3750
-Wire Wire Line
-	3050 3750 3050 3700
-Connection ~ 3050 3750
-Wire Wire Line
-	3050 3750 3100 3750
 Wire Wire Line
 	3650 3600 3700 3600
 Wire Wire Line
@@ -1337,31 +1284,6 @@ Wire Wire Line
 Connection ~ 3650 4550
 Wire Wire Line
 	3650 4550 3650 5050
-$Comp
-L USB-C-DB-rescue:2N7002KDW_R1_00001 Q?
-U 1 1 625BE54E
-P 2600 6000
-F 0 "Q?" H 2850 6200 50  0000 C CNN
-F 1 "2N7002KDW_R1_00001" H 3050 5700 50  0000 C CNN
-F 2 "SOT65P210X110-6N" H 3350 6100 50  0001 L CNN
-F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 6000 50  0001 L CNN
-F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 5900 50  0001 L CNN "Description"
-F 5 "1.1" H 3350 5800 50  0001 L CNN "Height"
-F 6 "241-2N7002KDWR100001" H 3350 5700 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Panjit/2N7002KDW_R1_00001?qs=sPbYRqrBIVmMdyQuXiqRcw%3D%3D" H 3350 5600 50  0001 L CNN "Mouser Price/Stock"
-F 8 "PANJIT" H 3350 5500 50  0001 L CNN "Manufacturer_Name"
-F 9 "2N7002KDW_R1_00001" H 3350 5400 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "2N7002KDW_R1_00001" H 2600 6000 50  0001 C CNN "MPN"
-	1    2600 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 5650 3050 5650
-Wire Wire Line
-	3050 5650 3050 5600
-Connection ~ 3050 5650
-Wire Wire Line
-	3050 5650 3100 5650
 Wire Wire Line
 	3650 6000 3650 5500
 Wire Wire Line
@@ -1375,72 +1297,15 @@ Wire Wire Line
 Wire Wire Line
 	3650 6450 3700 6450
 Wire Wire Line
-	3650 6450 3650 6950
-Wire Wire Line
 	3650 6950 4300 6950
 Wire Wire Line
-	4300 6950 4300 6450
-Connection ~ 3650 6450
-Wire Wire Line
 	4300 6450 4350 6450
-$Comp
-L USB-C-DB-rescue:2N7002KDW_R1_00001 Q?
-U 1 1 625D60E7
-P 2600 7900
-F 0 "Q?" H 2850 8100 50  0000 C CNN
-F 1 "2N7002KDW_R1_00001" H 3050 7600 50  0000 C CNN
-F 2 "SOT65P210X110-6N" H 3350 8000 50  0001 L CNN
-F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 7900 50  0001 L CNN
-F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 7800 50  0001 L CNN "Description"
-F 5 "1.1" H 3350 7700 50  0001 L CNN "Height"
-F 6 "241-2N7002KDWR100001" H 3350 7600 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Panjit/2N7002KDW_R1_00001?qs=sPbYRqrBIVmMdyQuXiqRcw%3D%3D" H 3350 7500 50  0001 L CNN "Mouser Price/Stock"
-F 8 "PANJIT" H 3350 7400 50  0001 L CNN "Manufacturer_Name"
-F 9 "2N7002KDW_R1_00001" H 3350 7300 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "2N7002KDW_R1_00001" H 2600 7900 50  0001 C CNN "MPN"
-	1    2600 7900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 7550 3050 7550
-Wire Wire Line
-	3050 7550 3050 7500
-Connection ~ 3050 7550
-Wire Wire Line
-	3050 7550 3100 7550
-$Comp
-L USB-C-DB-rescue:2N7002KDW_R1_00001 Q?
-U 1 1 625E0326
-P 2600 9800
-F 0 "Q?" H 2850 10000 50  0000 C CNN
-F 1 "2N7002KDW_R1_00001" H 3050 9500 50  0000 C CNN
-F 2 "SOT65P210X110-6N" H 3350 9900 50  0001 L CNN
-F 3 "https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf" H 3350 9800 50  0001 L CNN
-F 4 "MOSFET /K27/TR/7\"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///" H 3350 9700 50  0001 L CNN "Description"
-F 5 "1.1" H 3350 9600 50  0001 L CNN "Height"
-F 6 "241-2N7002KDWR100001" H 3350 9500 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Panjit/2N7002KDW_R1_00001?qs=sPbYRqrBIVmMdyQuXiqRcw%3D%3D" H 3350 9400 50  0001 L CNN "Mouser Price/Stock"
-F 8 "PANJIT" H 3350 9300 50  0001 L CNN "Manufacturer_Name"
-F 9 "2N7002KDW_R1_00001" H 3350 9200 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "2N7002KDW_R1_00001" H 2600 9800 50  0001 C CNN "MPN"
-	1    2600 9800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 9450 3050 9450
-Wire Wire Line
-	3050 9450 3050 9400
-Connection ~ 3050 9450
-Wire Wire Line
-	3050 9450 3100 9450
 Wire Wire Line
 	3650 7900 3650 7400
 Wire Wire Line
 	3650 7400 3700 7400
 Wire Wire Line
 	3650 7900 4300 7900
-Wire Wire Line
-	4300 7900 4300 7400
 Wire Wire Line
 	4300 7400 4350 7400
 Wire Wire Line
@@ -1523,42 +1388,24 @@ Wire Wire Line
 	4100 5500 4200 5500
 Connection ~ 4200 5500
 Wire Wire Line
-	4200 5500 4200 6450
-Wire Wire Line
 	4100 5700 4250 5700
-Connection ~ 4250 5700
 Wire Wire Line
 	4250 5700 4250 4750
 Wire Wire Line
 	4100 6250 4150 6250
-Connection ~ 4150 6250
-Wire Wire Line
-	4150 6250 4150 7200
 Wire Wire Line
 	4100 6450 4200 6450
 Connection ~ 4200 6450
 Wire Wire Line
-	4200 6450 4200 7400
-Wire Wire Line
-	4100 6650 4250 6650
-Connection ~ 4250 6650
-Wire Wire Line
-	4250 6650 4250 5700
-Wire Wire Line
 	4100 7200 4150 7200
-Connection ~ 4150 7200
 Wire Wire Line
 	4150 7200 4150 8150
 Wire Wire Line
 	4100 7400 4200 7400
-Connection ~ 4200 7400
 Wire Wire Line
 	4200 7400 4200 8350
 Wire Wire Line
 	4100 7600 4250 7600
-Connection ~ 4250 7600
-Wire Wire Line
-	4250 7600 4250 6650
 Wire Wire Line
 	4100 8150 4150 8150
 Connection ~ 4150 8150
@@ -1589,28 +1436,9 @@ Wire Wire Line
 Connection ~ 4250 9500
 Wire Wire Line
 	4250 9500 4250 8550
-Wire Wire Line
-	3650 4100 3500 4100
-Connection ~ 3650 4100
-Wire Wire Line
-	3500 4200 3650 4200
-Wire Wire Line
-	3500 6000 3650 6000
 Connection ~ 3650 6000
-Wire Wire Line
-	3650 6100 3500 6100
-Wire Wire Line
-	3500 7900 3650 7900
 Connection ~ 3650 7900
-Wire Wire Line
-	3650 8000 3500 8000
-Wire Wire Line
-	3500 9800 3650 9800
 Connection ~ 3650 9800
-Wire Wire Line
-	3650 9900 3500 9900
-Wire Wire Line
-	4300 6000 4300 5500
 Wire Wire Line
 	4300 4100 4300 3600
 Connection ~ 4300 4100
@@ -1658,20 +1486,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 5200 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 5200 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 5200 5500 50  0001 C CNN "MPN"
 	1    5200 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 6285FCF2
-P 5200 6450
-AR Path="/6285FCF2" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/6285FCF2" Ref="D?"  Part="1" 
-F 0 "D?" H 5250 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 5200 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 5200 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 5200 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 5200 6450 50  0001 C CNN "MPN"
-	1    5200 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1741,13 +1555,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 5500 5000 5500
 Wire Wire Line
-	4950 6950 4950 6450
-Wire Wire Line
 	4950 6450 5000 6450
 Wire Wire Line
 	4300 7900 4950 7900
-Wire Wire Line
-	4950 7900 4950 7400
 Wire Wire Line
 	4950 7400 5000 7400
 Wire Wire Line
@@ -1810,40 +1620,24 @@ Wire Wire Line
 	4750 5500 4850 5500
 Connection ~ 4850 5500
 Wire Wire Line
-	4850 5500 4850 6450
-Wire Wire Line
 	4750 5700 4900 5700
-Connection ~ 4900 5700
 Wire Wire Line
 	4900 5700 4900 4750
 Wire Wire Line
 	4750 6250 4800 6250
-Connection ~ 4800 6250
-Wire Wire Line
-	4800 6250 4800 7200
 Wire Wire Line
 	4750 6450 4850 6450
 Connection ~ 4850 6450
 Wire Wire Line
-	4850 6450 4850 7400
-Wire Wire Line
-	4750 6650 4900 6650
-Connection ~ 4900 6650
-Wire Wire Line
-	4900 6650 4900 5700
-Wire Wire Line
 	4750 7200 4800 7200
-Connection ~ 4800 7200
 Wire Wire Line
 	4800 7200 4800 8150
 Wire Wire Line
 	4750 7400 4850 7400
-Connection ~ 4850 7400
 Wire Wire Line
 	4850 7400 4850 8350
 Wire Wire Line
 	4750 7600 4900 7600
-Connection ~ 4900 7600
 Wire Wire Line
 	4750 8150 4800 8150
 Connection ~ 4800 8150
@@ -1874,8 +1668,6 @@ Wire Wire Line
 Connection ~ 4900 9500
 Wire Wire Line
 	4900 9500 4900 8550
-Wire Wire Line
-	4950 6000 4950 5500
 Wire Wire Line
 	4950 4100 4950 3600
 $Comp
@@ -1918,20 +1710,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 5850 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 5850 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 5850 5500 50  0001 C CNN "MPN"
 	1    5850 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 62875A8B
-P 5850 6450
-AR Path="/62875A8B" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/62875A8B" Ref="D?"  Part="1" 
-F 0 "D?" H 5900 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 5850 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 5850 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 5850 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 5850 6450 50  0001 C CNN "MPN"
-	1    5850 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2003,13 +1781,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 6950 5600 6950
 Wire Wire Line
-	5600 6950 5600 6450
-Wire Wire Line
 	5600 6450 5650 6450
 Wire Wire Line
 	4950 7900 5600 7900
-Wire Wire Line
-	5600 7900 5600 7400
 Wire Wire Line
 	5600 7400 5650 7400
 Wire Wire Line
@@ -2072,42 +1846,24 @@ Wire Wire Line
 	5400 5500 5500 5500
 Connection ~ 5500 5500
 Wire Wire Line
-	5500 5500 5500 6450
-Wire Wire Line
 	5400 5700 5550 5700
-Connection ~ 5550 5700
 Wire Wire Line
 	5550 5700 5550 4750
 Wire Wire Line
 	5400 6250 5450 6250
-Connection ~ 5450 6250
-Wire Wire Line
-	5450 6250 5450 7200
 Wire Wire Line
 	5400 6450 5500 6450
 Connection ~ 5500 6450
 Wire Wire Line
-	5500 6450 5500 7400
-Wire Wire Line
-	5400 6650 5550 6650
-Connection ~ 5550 6650
-Wire Wire Line
-	5550 6650 5550 5700
-Wire Wire Line
 	5400 7200 5450 7200
-Connection ~ 5450 7200
 Wire Wire Line
 	5450 7200 5450 8150
 Wire Wire Line
 	5400 7400 5500 7400
-Connection ~ 5500 7400
 Wire Wire Line
 	5500 7400 5500 8350
 Wire Wire Line
 	5400 7600 5550 7600
-Connection ~ 5550 7600
-Wire Wire Line
-	5550 7600 5550 6650
 Wire Wire Line
 	5400 8150 5450 8150
 Connection ~ 5450 8150
@@ -2138,8 +1894,6 @@ Wire Wire Line
 Connection ~ 5550 9500
 Wire Wire Line
 	5550 9500 5550 8550
-Wire Wire Line
-	5600 6000 5600 5500
 Wire Wire Line
 	5600 4100 5600 3600
 $Comp
@@ -2182,20 +1936,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 6500 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 6500 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 6500 5500 50  0001 C CNN "MPN"
 	1    6500 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 6289CE33
-P 6500 6450
-AR Path="/6289CE33" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/6289CE33" Ref="D?"  Part="1" 
-F 0 "D?" H 6550 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 6500 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 6500 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 6500 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 6500 6450 50  0001 C CNN "MPN"
-	1    6500 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2267,13 +2007,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 6950 6250 6950
 Wire Wire Line
-	6250 6950 6250 6450
-Wire Wire Line
 	6250 6450 6300 6450
 Wire Wire Line
 	5600 7900 6250 7900
-Wire Wire Line
-	6250 7900 6250 7400
 Wire Wire Line
 	6250 7400 6300 7400
 Wire Wire Line
@@ -2330,42 +2066,24 @@ Wire Wire Line
 	6050 5500 6150 5500
 Connection ~ 6150 5500
 Wire Wire Line
-	6150 5500 6150 6450
-Wire Wire Line
 	6050 5700 6200 5700
-Connection ~ 6200 5700
 Wire Wire Line
 	6200 5700 6200 4750
 Wire Wire Line
 	6050 6250 6100 6250
-Connection ~ 6100 6250
-Wire Wire Line
-	6100 6250 6100 7200
 Wire Wire Line
 	6050 6450 6150 6450
 Connection ~ 6150 6450
 Wire Wire Line
-	6150 6450 6150 7400
-Wire Wire Line
-	6050 6650 6200 6650
-Connection ~ 6200 6650
-Wire Wire Line
-	6200 6650 6200 5700
-Wire Wire Line
 	6050 7200 6100 7200
-Connection ~ 6100 7200
 Wire Wire Line
 	6100 7200 6100 8150
 Wire Wire Line
 	6050 7400 6150 7400
-Connection ~ 6150 7400
 Wire Wire Line
 	6150 7400 6150 8350
 Wire Wire Line
 	6050 7600 6200 7600
-Connection ~ 6200 7600
-Wire Wire Line
-	6200 7600 6200 6650
 Wire Wire Line
 	6050 8150 6100 8150
 Connection ~ 6100 8150
@@ -2396,8 +2114,6 @@ Wire Wire Line
 Connection ~ 6200 9500
 Wire Wire Line
 	6200 9500 6200 8550
-Wire Wire Line
-	6250 6000 6250 5500
 Wire Wire Line
 	6250 4100 6250 3600
 $Comp
@@ -2440,20 +2156,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 7150 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 7150 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 7150 5500 50  0001 C CNN "MPN"
 	1    7150 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 628D479F
-P 7150 6450
-AR Path="/628D479F" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/628D479F" Ref="D?"  Part="1" 
-F 0 "D?" H 7200 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 7150 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 7150 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 7150 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 7150 6450 50  0001 C CNN "MPN"
-	1    7150 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2525,13 +2227,9 @@ Wire Wire Line
 Wire Wire Line
 	6250 6950 6900 6950
 Wire Wire Line
-	6900 6950 6900 6450
-Wire Wire Line
 	6900 6450 6950 6450
 Wire Wire Line
 	6250 7900 6900 7900
-Wire Wire Line
-	6900 7900 6900 7400
 Wire Wire Line
 	6900 7400 6950 7400
 Wire Wire Line
@@ -2594,40 +2292,22 @@ Wire Wire Line
 	6700 5500 6800 5500
 Connection ~ 6800 5500
 Wire Wire Line
-	6800 5500 6800 6450
-Wire Wire Line
 	6700 5700 6850 5700
-Connection ~ 6850 5700
 Wire Wire Line
 	6700 6250 6750 6250
-Connection ~ 6750 6250
-Wire Wire Line
-	6750 6250 6750 7200
 Wire Wire Line
 	6700 6450 6800 6450
 Connection ~ 6800 6450
 Wire Wire Line
-	6800 6450 6800 7400
-Wire Wire Line
-	6700 6650 6850 6650
-Connection ~ 6850 6650
-Wire Wire Line
-	6850 6650 6850 5700
-Wire Wire Line
 	6700 7200 6750 7200
-Connection ~ 6750 7200
 Wire Wire Line
 	6750 7200 6750 8150
 Wire Wire Line
 	6700 7400 6800 7400
-Connection ~ 6800 7400
 Wire Wire Line
 	6800 7400 6800 8350
 Wire Wire Line
 	6700 7600 6850 7600
-Connection ~ 6850 7600
-Wire Wire Line
-	6850 7600 6850 6650
 Wire Wire Line
 	6700 8150 6750 8150
 Connection ~ 6750 8150
@@ -2658,8 +2338,6 @@ Wire Wire Line
 Connection ~ 6850 9500
 Wire Wire Line
 	6850 9500 6850 8550
-Wire Wire Line
-	6900 6000 6900 5500
 Wire Wire Line
 	6900 4100 6900 3600
 $Comp
@@ -2702,20 +2380,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 7800 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 7800 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 7800 5500 50  0001 C CNN "MPN"
 	1    7800 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 6290FAC6
-P 7800 6450
-AR Path="/6290FAC6" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/6290FAC6" Ref="D?"  Part="1" 
-F 0 "D?" H 7850 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 7800 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 7800 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 7800 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 7800 6450 50  0001 C CNN "MPN"
-	1    7800 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2785,13 +2449,9 @@ Wire Wire Line
 Wire Wire Line
 	6900 6950 7550 6950
 Wire Wire Line
-	7550 6950 7550 6450
-Wire Wire Line
 	7550 6450 7600 6450
 Wire Wire Line
 	6900 7900 7550 7900
-Wire Wire Line
-	7550 7900 7550 7400
 Wire Wire Line
 	7550 7400 7600 7400
 Wire Wire Line
@@ -2850,42 +2510,24 @@ Wire Wire Line
 	7350 5500 7450 5500
 Connection ~ 7450 5500
 Wire Wire Line
-	7450 5500 7450 6450
-Wire Wire Line
 	7350 5700 7500 5700
-Connection ~ 7500 5700
 Wire Wire Line
 	7500 5700 7500 4750
 Wire Wire Line
 	7350 6250 7400 6250
-Connection ~ 7400 6250
-Wire Wire Line
-	7400 6250 7400 7200
 Wire Wire Line
 	7350 6450 7450 6450
 Connection ~ 7450 6450
 Wire Wire Line
-	7450 6450 7450 7400
-Wire Wire Line
-	7350 6650 7500 6650
-Connection ~ 7500 6650
-Wire Wire Line
-	7500 6650 7500 5700
-Wire Wire Line
 	7350 7200 7400 7200
-Connection ~ 7400 7200
 Wire Wire Line
 	7400 7200 7400 8150
 Wire Wire Line
 	7350 7400 7450 7400
-Connection ~ 7450 7400
 Wire Wire Line
 	7450 7400 7450 8350
 Wire Wire Line
 	7350 7600 7500 7600
-Connection ~ 7500 7600
-Wire Wire Line
-	7500 7600 7500 6650
 Wire Wire Line
 	7350 8150 7400 8150
 Connection ~ 7400 8150
@@ -2916,8 +2558,6 @@ Wire Wire Line
 Connection ~ 7500 9500
 Wire Wire Line
 	7500 9500 7500 8550
-Wire Wire Line
-	7550 6000 7550 5500
 Wire Wire Line
 	7550 4100 7550 3600
 $Comp
@@ -2960,20 +2600,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 8450 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 8450 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 8450 5500 50  0001 C CNN "MPN"
 	1    8450 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 6295D19A
-P 8450 6450
-AR Path="/6295D19A" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/6295D19A" Ref="D?"  Part="1" 
-F 0 "D?" H 8500 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 8450 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 8450 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 8450 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 8450 6450 50  0001 C CNN "MPN"
-	1    8450 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -3043,13 +2669,9 @@ Wire Wire Line
 Wire Wire Line
 	7550 6950 8200 6950
 Wire Wire Line
-	8200 6950 8200 6450
-Wire Wire Line
 	8200 6450 8250 6450
 Wire Wire Line
 	7550 7900 8200 7900
-Wire Wire Line
-	8200 7900 8200 7400
 Wire Wire Line
 	8200 7400 8250 7400
 Wire Wire Line
@@ -3112,42 +2734,24 @@ Wire Wire Line
 	8000 5500 8100 5500
 Connection ~ 8100 5500
 Wire Wire Line
-	8100 5500 8100 6450
-Wire Wire Line
 	8000 5700 8150 5700
-Connection ~ 8150 5700
 Wire Wire Line
 	8150 5700 8150 4750
 Wire Wire Line
 	8000 6250 8050 6250
-Connection ~ 8050 6250
-Wire Wire Line
-	8050 6250 8050 7200
 Wire Wire Line
 	8000 6450 8100 6450
 Connection ~ 8100 6450
 Wire Wire Line
-	8100 6450 8100 7400
-Wire Wire Line
-	8000 6650 8150 6650
-Connection ~ 8150 6650
-Wire Wire Line
-	8150 6650 8150 5700
-Wire Wire Line
 	8000 7200 8050 7200
-Connection ~ 8050 7200
 Wire Wire Line
 	8050 7200 8050 8150
 Wire Wire Line
 	8000 7400 8100 7400
-Connection ~ 8100 7400
 Wire Wire Line
 	8100 7400 8100 8350
 Wire Wire Line
 	8000 7600 8150 7600
-Connection ~ 8150 7600
-Wire Wire Line
-	8150 7600 8150 6650
 Wire Wire Line
 	8000 8150 8050 8150
 Connection ~ 8050 8150
@@ -3178,8 +2782,6 @@ Wire Wire Line
 Connection ~ 8150 9500
 Wire Wire Line
 	8150 9500 8150 8550
-Wire Wire Line
-	8200 6000 8200 5500
 Wire Wire Line
 	8200 4100 8200 3600
 $Comp
@@ -3222,20 +2824,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 9100 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 9100 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 9100 5500 50  0001 C CNN "MPN"
 	1    9100 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 629C1E41
-P 9100 6450
-AR Path="/629C1E41" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/629C1E41" Ref="D?"  Part="1" 
-F 0 "D?" H 9150 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 9100 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 9100 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 9100 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 9100 6450 50  0001 C CNN "MPN"
-	1    9100 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -3307,13 +2895,9 @@ Wire Wire Line
 Wire Wire Line
 	8200 6950 8850 6950
 Wire Wire Line
-	8850 6950 8850 6450
-Wire Wire Line
 	8850 6450 8900 6450
 Wire Wire Line
 	8200 7900 8850 7900
-Wire Wire Line
-	8850 7900 8850 7400
 Wire Wire Line
 	8850 7400 8900 7400
 Wire Wire Line
@@ -3374,42 +2958,24 @@ Wire Wire Line
 	8650 5500 8750 5500
 Connection ~ 8750 5500
 Wire Wire Line
-	8750 5500 8750 6450
-Wire Wire Line
 	8650 5700 8800 5700
-Connection ~ 8800 5700
 Wire Wire Line
 	8800 5700 8800 4750
 Wire Wire Line
 	8650 6250 8700 6250
-Connection ~ 8700 6250
-Wire Wire Line
-	8700 6250 8700 7200
 Wire Wire Line
 	8650 6450 8750 6450
 Connection ~ 8750 6450
 Wire Wire Line
-	8750 6450 8750 7400
-Wire Wire Line
-	8650 6650 8800 6650
-Connection ~ 8800 6650
-Wire Wire Line
-	8800 6650 8800 5700
-Wire Wire Line
 	8650 7200 8700 7200
-Connection ~ 8700 7200
 Wire Wire Line
 	8700 7200 8700 8150
 Wire Wire Line
 	8650 7400 8750 7400
-Connection ~ 8750 7400
 Wire Wire Line
 	8750 7400 8750 8350
 Wire Wire Line
 	8650 7600 8800 7600
-Connection ~ 8800 7600
-Wire Wire Line
-	8800 7600 8800 6650
 Wire Wire Line
 	8650 8150 8700 8150
 Connection ~ 8700 8150
@@ -3440,8 +3006,6 @@ Wire Wire Line
 Connection ~ 8800 9500
 Wire Wire Line
 	8800 9500 8800 8550
-Wire Wire Line
-	8850 6000 8850 5500
 Wire Wire Line
 	8850 4100 8850 3600
 $Comp
@@ -3484,20 +3048,6 @@ F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 9750 5450 50  0001 C CNN
 F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 9750 5450 50  0001 C CNN
 F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 9750 5500 50  0001 C CNN "MPN"
 	1    9750 5500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_ARGB D?
-U 1 1 62A3313C
-P 9750 6450
-AR Path="/62A3313C" Ref="D?"  Part="1" 
-AR Path="/61B0EECD/62A3313C" Ref="D?"  Part="1" 
-F 0 "D?" H 9800 6100 50  0000 C CNN
-F 1 "LED_ARGB" H 9750 6850 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 9750 6400 50  0001 C CNN
-F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 9750 6400 50  0001 C CNN
-F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 9750 6450 50  0001 C CNN "MPN"
-	1    9750 6450
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -3569,13 +3119,9 @@ Wire Wire Line
 Wire Wire Line
 	8850 6950 9500 6950
 Wire Wire Line
-	9500 6950 9500 6450
-Wire Wire Line
 	9500 6450 9550 6450
 Wire Wire Line
 	8850 7900 9500 7900
-Wire Wire Line
-	9500 7900 9500 7400
 Wire Wire Line
 	9500 7400 9550 7400
 Wire Wire Line
@@ -3638,42 +3184,24 @@ Wire Wire Line
 	9300 5500 9400 5500
 Connection ~ 9400 5500
 Wire Wire Line
-	9400 5500 9400 6450
-Wire Wire Line
 	9300 5700 9450 5700
-Connection ~ 9450 5700
 Wire Wire Line
 	9450 5700 9450 4750
 Wire Wire Line
 	9300 6250 9350 6250
-Connection ~ 9350 6250
-Wire Wire Line
-	9350 6250 9350 7200
 Wire Wire Line
 	9300 6450 9400 6450
 Connection ~ 9400 6450
 Wire Wire Line
-	9400 6450 9400 7400
-Wire Wire Line
-	9300 6650 9450 6650
-Connection ~ 9450 6650
-Wire Wire Line
-	9450 6650 9450 5700
-Wire Wire Line
 	9300 7200 9350 7200
-Connection ~ 9350 7200
 Wire Wire Line
 	9350 7200 9350 8150
 Wire Wire Line
 	9300 7400 9400 7400
-Connection ~ 9400 7400
 Wire Wire Line
 	9400 7400 9400 8350
 Wire Wire Line
 	9300 7600 9450 7600
-Connection ~ 9450 7600
-Wire Wire Line
-	9450 7600 9450 6650
 Wire Wire Line
 	9300 8150 9350 8150
 Connection ~ 9350 8150
@@ -3704,8 +3232,6 @@ Wire Wire Line
 Connection ~ 9450 9500
 Wire Wire Line
 	9450 9500 9450 8550
-Wire Wire Line
-	9500 6000 9500 5500
 Wire Wire Line
 	9500 4100 9500 3600
 Wire Wire Line
@@ -3750,42 +3276,24 @@ Wire Wire Line
 	9950 5500 10050 5500
 Connection ~ 10050 5500
 Wire Wire Line
-	10050 5500 10050 6450
-Wire Wire Line
 	9950 5700 10100 5700
-Connection ~ 10100 5700
 Wire Wire Line
 	10100 5700 10100 4750
 Wire Wire Line
 	9950 6250 10000 6250
-Connection ~ 10000 6250
-Wire Wire Line
-	10000 6250 10000 7200
 Wire Wire Line
 	9950 6450 10050 6450
 Connection ~ 10050 6450
 Wire Wire Line
-	10050 6450 10050 7400
-Wire Wire Line
-	9950 6650 10100 6650
-Connection ~ 10100 6650
-Wire Wire Line
-	10100 6650 10100 5700
-Wire Wire Line
 	9950 7200 10000 7200
-Connection ~ 10000 7200
 Wire Wire Line
 	10000 7200 10000 8150
 Wire Wire Line
 	9950 7400 10050 7400
-Connection ~ 10050 7400
 Wire Wire Line
 	10050 7400 10050 8350
 Wire Wire Line
 	9950 7600 10100 7600
-Connection ~ 10100 7600
-Wire Wire Line
-	10100 7600 10100 6650
 Wire Wire Line
 	9950 8150 10000 8150
 Connection ~ 10000 8150
@@ -3858,8 +3366,6 @@ Connection ~ 6250 7900
 Connection ~ 6250 6950
 Connection ~ 5600 6950
 Wire Wire Line
-	4900 7600 4900 6650
-Wire Wire Line
 	4300 6950 4950 6950
 Connection ~ 4950 6950
 Connection ~ 4950 7900
@@ -3884,10 +3390,10 @@ Connection ~ 8850 7900
 Wire Wire Line
 	1750 6300 1750 6350
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0148
 U 1 1 630F4E5C
 P 1750 6300
-F 0 "#PWR?" H 1750 6150 50  0001 C CNN
+F 0 "#PWR0148" H 1750 6150 50  0001 C CNN
 F 1 "+5V" H 1750 6450 50  0000 C CNN
 F 2 "" H 1750 6300 50  0001 C CNN
 F 3 "" H 1750 6300 50  0001 C CNN
@@ -3897,10 +3403,10 @@ $EndComp
 Wire Wire Line
 	1750 7700 1750 7650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0149
 U 1 1 630F4E63
 P 1750 7700
-F 0 "#PWR?" H 1750 7450 50  0001 C CNN
+F 0 "#PWR0149" H 1750 7450 50  0001 C CNN
 F 1 "GND" H 1750 7550 50  0000 C CNN
 F 2 "" H 1750 7700 50  0001 C CNN
 F 3 "" H 1750 7700 50  0001 C CNN
@@ -3910,52 +3416,22 @@ $EndComp
 Wire Wire Line
 	2150 6550 2300 6550
 Wire Wire Line
-	2300 6550 2300 4100
-Wire Wire Line
-	2150 6650 2350 6650
-Wire Wire Line
-	2350 6650 2350 4200
-Wire Wire Line
 	2150 6750 2400 6750
-Wire Wire Line
-	2400 6750 2400 6000
 Wire Wire Line
 	2150 6850 2450 6850
 Wire Wire Line
-	2450 6850 2450 6100
-Wire Wire Line
 	2150 6950 2450 6950
-Wire Wire Line
-	2450 6950 2450 7900
 Wire Wire Line
 	2150 7050 2400 7050
 Wire Wire Line
-	2400 7050 2400 8000
-Wire Wire Line
 	2150 7150 2350 7150
 Wire Wire Line
-	2350 7150 2350 9800
-Wire Wire Line
-	2300 9900 2300 7250
-Wire Wire Line
 	2300 7250 2150 7250
-Wire Wire Line
-	2600 9900 2300 9900
-Wire Wire Line
-	2350 9800 2600 9800
-Wire Wire Line
-	2400 8000 2600 8000
-Wire Wire Line
-	2600 7900 2450 7900
-Wire Wire Line
-	2600 4200 2350 4200
-Wire Wire Line
-	2300 4100 2600 4100
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0150
 U 1 1 68DA175A
 P 1200 5800
-F 0 "#PWR?" H 1200 5650 50  0001 C CNN
+F 0 "#PWR0150" H 1200 5650 50  0001 C CNN
 F 1 "+5V" H 1200 5950 50  0000 C CNN
 F 2 "" H 1200 5800 50  0001 C CNN
 F 3 "" H 1200 5800 50  0001 C CNN
@@ -3992,10 +3468,10 @@ Connection ~ 1200 5800
 Wire Wire Line
 	1200 5800 1350 5800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0151
 U 1 1 68DA1771
 P 1200 6100
-F 0 "#PWR?" H 1200 5850 50  0001 C CNN
+F 0 "#PWR0151" H 1200 5850 50  0001 C CNN
 F 1 "GND" H 1200 5950 50  0000 C CNN
 F 2 "" H 1200 6100 50  0001 C CNN
 F 3 "" H 1200 6100 50  0001 C CNN
@@ -4045,10 +3521,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 6550 1350 6550
 NoConn ~ 2150 7450
-Wire Wire Line
-	2400 6000 2600 6000
-Wire Wire Line
-	2600 6100 2450 6100
 $Comp
 L Device:R R?
 U 1 1 62275C20
@@ -4117,10 +3589,10 @@ Wire Wire Line
 Wire Wire Line
 	5300 3150 5300 3200
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0152
 U 1 1 61C068D0
 P 5300 950
-F 0 "#PWR?" H 5300 800 50  0001 C CNN
+F 0 "#PWR0152" H 5300 800 50  0001 C CNN
 F 1 "+5V" H 5300 1100 50  0000 C CNN
 F 2 "" H 5300 950 50  0001 C CNN
 F 3 "" H 5300 950 50  0001 C CNN
@@ -4130,10 +3602,10 @@ $EndComp
 Wire Wire Line
 	5550 2100 5500 2100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0153
 U 1 1 61C05C6B
 P 5550 2150
-F 0 "#PWR?" H 5550 1900 50  0001 C CNN
+F 0 "#PWR0153" H 5550 1900 50  0001 C CNN
 F 1 "GND" H 5550 2000 50  0000 C CNN
 F 2 "" H 5550 2150 50  0001 C CNN
 F 3 "" H 5550 2150 50  0001 C CNN
@@ -4183,10 +3655,10 @@ Wire Wire Line
 Wire Wire Line
 	4150 2100 4150 2050
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0154
 U 1 1 650AD8DC
 P 4150 2050
-F 0 "#PWR?" H 4150 1900 50  0001 C CNN
+F 0 "#PWR0154" H 4150 1900 50  0001 C CNN
 F 1 "+5V" H 4150 2200 50  0000 C CNN
 F 2 "" H 4150 2050 50  0001 C CNN
 F 3 "" H 4150 2050 50  0001 C CNN
@@ -4199,10 +3671,10 @@ Connection ~ 5300 950
 Wire Wire Line
 	5300 950  5450 950 
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0155
 U 1 1 621891CF
 P 5300 1250
-F 0 "#PWR?" H 5300 1000 50  0001 C CNN
+F 0 "#PWR0155" H 5300 1000 50  0001 C CNN
 F 1 "GND" H 5300 1100 50  0000 C CNN
 F 2 "" H 5300 1250 50  0001 C CNN
 F 3 "" H 5300 1250 50  0001 C CNN
@@ -4222,10 +3694,10 @@ Wire Wire Line
 Wire Wire Line
 	6650 1250 6800 1250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0156
 U 1 1 66D1A331
 P 6800 1250
-F 0 "#PWR?" H 6800 1000 50  0001 C CNN
+F 0 "#PWR0156" H 6800 1000 50  0001 C CNN
 F 1 "GND" H 6800 1100 50  0000 C CNN
 F 2 "" H 6800 1250 50  0001 C CNN
 F 3 "" H 6800 1250 50  0001 C CNN
@@ -4262,10 +3734,10 @@ F 4 "CL21B105KBFNNNG" H 6650 1100 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0157
 U 1 1 66D1A31A
 P 6800 950
-F 0 "#PWR?" H 6800 800 50  0001 C CNN
+F 0 "#PWR0157" H 6800 800 50  0001 C CNN
 F 1 "+5V" H 6800 1100 50  0000 C CNN
 F 2 "" H 6800 950 50  0001 C CNN
 F 3 "" H 6800 950 50  0001 C CNN
@@ -4279,10 +3751,10 @@ Wire Wire Line
 Wire Wire Line
 	7150 2100 7100 2100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0158
 U 1 1 65169635
 P 7150 2150
-F 0 "#PWR?" H 7150 1900 50  0001 C CNN
+F 0 "#PWR0158" H 7150 1900 50  0001 C CNN
 F 1 "GND" H 7150 2000 50  0000 C CNN
 F 2 "" H 7150 2150 50  0001 C CNN
 F 3 "" H 7150 2150 50  0001 C CNN
@@ -4308,10 +3780,10 @@ Wire Wire Line
 Wire Wire Line
 	5750 2100 5750 2050
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0159
 U 1 1 65169660
 P 5750 2050
-F 0 "#PWR?" H 5750 1900 50  0001 C CNN
+F 0 "#PWR0159" H 5750 1900 50  0001 C CNN
 F 1 "+5V" H 5750 2200 50  0000 C CNN
 F 2 "" H 5750 2050 50  0001 C CNN
 F 3 "" H 5750 2050 50  0001 C CNN
@@ -4395,10 +3867,10 @@ VCC
 Text HLabel 13950 3450 2    50   Input ~ 0
 GND
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0160
 U 1 1 61C07260
 P 13850 2400
-F 0 "#PWR?" H 13850 2250 50  0001 C CNN
+F 0 "#PWR0160" H 13850 2250 50  0001 C CNN
 F 1 "+5V" H 13850 2550 50  0000 C CNN
 F 2 "" H 13850 2400 50  0001 C CNN
 F 3 "" H 13850 2400 50  0001 C CNN
@@ -4406,10 +3878,10 @@ F 3 "" H 13850 2400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0161
 U 1 1 61C07618
 P 13850 3450
-F 0 "#PWR?" H 13850 3200 50  0001 C CNN
+F 0 "#PWR0161" H 13850 3200 50  0001 C CNN
 F 1 "GND" H 13850 3300 50  0000 C CNN
 F 2 "" H 13850 3450 50  0001 C CNN
 F 3 "" H 13850 3450 50  0001 C CNN
@@ -5561,50 +5033,1043 @@ CB 9E C0 26 4F 10 89 50 E3 91 C1 88 98 05 39 CF 9D E4 24 C4 8E 00 88 54 C0 91 C3
 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 1000 3150 0    50   ~ 0
-Power budget:\nUSB interface:  23.6mA @ 5V\nMCU:           170mA @ 3.3V\nRegulator:      175mA @ 5V to 170mA @ 3.3V\nShift registers: 400uA @ 5V\nTimer:          6mA @ 5V\nLED drive:      220mA @ 5V\n\nDraw from USB connector at worst case: 425mA @ 5V (2.125W)\n
+Text Notes 700  3050 0    50   ~ 0
+Power budget (worst case):\nUSB interface:  23.6mA @ 5V\nMCU:           170mA @ 3.3V (15mA during Modem-sleep)\nRegulator:      175mA @ 5V to 170mA @ 3.3V\nShift registers: 400uA @ 5V\nTimer:          6mA\nLED drive:      220mA @ 5V\n\nDraw from USB connector at worst case: 425mA @ 5V (2.125W)\nDraw from USB connector during MCU modem-sleep: 270mA @ 5V (1.35W)\n
+Text Notes 600  3650 0    50   ~ 0
+Using MOSFETS cause the shift register cannot\n source/sink the currents needed by the LED array.
+Connection ~ 10100 7600
+Connection ~ 10050 7400
+Connection ~ 10000 7200
+Connection ~ 10000 6250
+Connection ~ 10100 5700
+Connection ~ 9450 7600
+Connection ~ 9400 7400
+Connection ~ 9350 7200
+Connection ~ 9350 6250
+Connection ~ 9450 5700
+Connection ~ 8800 7600
+Connection ~ 8750 7400
+Connection ~ 8700 7200
+Connection ~ 8700 6250
+Connection ~ 8800 5700
+Connection ~ 8150 7600
+Connection ~ 8100 7400
+Connection ~ 8050 7200
+Connection ~ 8050 6250
+Connection ~ 8150 5700
+Connection ~ 7500 7600
+Connection ~ 7450 7400
+Connection ~ 7400 7200
+Connection ~ 7400 6250
+Connection ~ 7500 5700
+Connection ~ 6850 7600
+Connection ~ 6800 7400
+Connection ~ 6750 7200
+Connection ~ 6750 6250
+Connection ~ 6850 5700
+Connection ~ 6200 7600
+Connection ~ 6150 7400
+Connection ~ 6100 7200
+Connection ~ 6100 6250
+Connection ~ 6200 5700
+Connection ~ 5550 7600
+Connection ~ 5500 7400
+Connection ~ 5450 7200
+Connection ~ 5450 6250
+Connection ~ 5550 5700
+Connection ~ 4900 7600
+Connection ~ 4850 7400
+Connection ~ 4800 7200
+Connection ~ 4800 6250
+Connection ~ 4900 5700
+Connection ~ 4250 7600
+Connection ~ 4200 7400
+Connection ~ 4150 7200
+Connection ~ 4150 6250
+Connection ~ 4250 5700
+Connection ~ 3650 6450
+Wire Wire Line
+	10050 5500 10050 6450
+Wire Wire Line
+	9500 7900 9500 7400
+Wire Wire Line
+	9500 6000 9500 5500
+Wire Wire Line
+	9400 5500 9400 6450
+Wire Wire Line
+	8850 7900 8850 7400
+Wire Wire Line
+	8850 6000 8850 5500
+Wire Wire Line
+	8750 5500 8750 6450
+Wire Wire Line
+	8200 7900 8200 7400
+Wire Wire Line
+	8200 6000 8200 5500
+Wire Wire Line
+	8100 5500 8100 6450
+Wire Wire Line
+	7550 7900 7550 7400
+Wire Wire Line
+	7550 6000 7550 5500
+Wire Wire Line
+	7450 5500 7450 6450
+Wire Wire Line
+	6900 7900 6900 7400
+Wire Wire Line
+	6900 6000 6900 5500
+Wire Wire Line
+	6800 5500 6800 6450
+Wire Wire Line
+	6250 7900 6250 7400
+Wire Wire Line
+	6250 6000 6250 5500
+Wire Wire Line
+	6150 5500 6150 6450
+Wire Wire Line
+	5600 7900 5600 7400
+Wire Wire Line
+	5600 6000 5600 5500
+Wire Wire Line
+	5500 5500 5500 6450
+Wire Wire Line
+	4950 7900 4950 7400
+Wire Wire Line
+	4950 6000 4950 5500
+Wire Wire Line
+	4850 5500 4850 6450
+Wire Wire Line
+	4300 7900 4300 7400
+Wire Wire Line
+	4300 6000 4300 5500
+Wire Wire Line
+	4200 5500 4200 6450
+Wire Wire Line
+	4900 7600 4900 6650
+Wire Wire Line
+	10100 7600 10100 6650
+Wire Wire Line
+	10100 6650 10100 5700
+Connection ~ 10100 6650
+Wire Wire Line
+	9950 6650 10100 6650
+Wire Wire Line
+	10050 6450 10050 7400
+Wire Wire Line
+	10000 6250 10000 7200
+Wire Wire Line
+	9450 7600 9450 6650
+Wire Wire Line
+	9450 6650 9450 5700
+Connection ~ 9450 6650
+Wire Wire Line
+	9300 6650 9450 6650
+Wire Wire Line
+	9400 6450 9400 7400
+Wire Wire Line
+	9350 6250 9350 7200
+Wire Wire Line
+	9500 6950 9500 6450
 $Comp
-L power:+5V #PWR?
-U 1 1 6283AE3F
-P 3050 3700
-F 0 "#PWR?" H 3050 3550 50  0001 C CNN
-F 1 "+5V" H 3050 3850 50  0000 C CNN
-F 2 "" H 3050 3700 50  0001 C CNN
-F 3 "" H 3050 3700 50  0001 C CNN
-	1    3050 3700
+L Device:LED_ARGB D?
+U 1 1 62A3313C
+P 9750 6450
+AR Path="/62A3313C" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/62A3313C" Ref="D?"  Part="1" 
+F 0 "D?" H 9800 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 9750 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 9750 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 9750 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 9750 6450 50  0001 C CNN "MPN"
+	1    9750 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8800 7600 8800 6650
+Wire Wire Line
+	8800 6650 8800 5700
+Connection ~ 8800 6650
+Wire Wire Line
+	8650 6650 8800 6650
+Wire Wire Line
+	8750 6450 8750 7400
+Wire Wire Line
+	8700 6250 8700 7200
+Wire Wire Line
+	8850 6950 8850 6450
+$Comp
+L Device:LED_ARGB D?
+U 1 1 629C1E41
+P 9100 6450
+AR Path="/629C1E41" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/629C1E41" Ref="D?"  Part="1" 
+F 0 "D?" H 9150 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 9100 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 9100 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 9100 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 9100 6450 50  0001 C CNN "MPN"
+	1    9100 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 7600 8150 6650
+Wire Wire Line
+	8150 6650 8150 5700
+Connection ~ 8150 6650
+Wire Wire Line
+	8000 6650 8150 6650
+Wire Wire Line
+	8100 6450 8100 7400
+Wire Wire Line
+	8050 6250 8050 7200
+Wire Wire Line
+	8200 6950 8200 6450
+$Comp
+L Device:LED_ARGB D?
+U 1 1 6295D19A
+P 8450 6450
+AR Path="/6295D19A" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/6295D19A" Ref="D?"  Part="1" 
+F 0 "D?" H 8500 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 8450 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 8450 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 8450 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 8450 6450 50  0001 C CNN "MPN"
+	1    8450 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 7600 7500 6650
+Wire Wire Line
+	7500 6650 7500 5700
+Connection ~ 7500 6650
+Wire Wire Line
+	7350 6650 7500 6650
+Wire Wire Line
+	7450 6450 7450 7400
+Wire Wire Line
+	7400 6250 7400 7200
+Wire Wire Line
+	7550 6950 7550 6450
+$Comp
+L Device:LED_ARGB D?
+U 1 1 6290FAC6
+P 7800 6450
+AR Path="/6290FAC6" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/6290FAC6" Ref="D?"  Part="1" 
+F 0 "D?" H 7850 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 7800 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 7800 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 7800 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 7800 6450 50  0001 C CNN "MPN"
+	1    7800 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 7600 6850 6650
+Wire Wire Line
+	6850 6650 6850 5700
+Connection ~ 6850 6650
+Wire Wire Line
+	6700 6650 6850 6650
+Wire Wire Line
+	6800 6450 6800 7400
+Wire Wire Line
+	6750 6250 6750 7200
+Wire Wire Line
+	6900 6950 6900 6450
+$Comp
+L Device:LED_ARGB D?
+U 1 1 628D479F
+P 7150 6450
+AR Path="/628D479F" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/628D479F" Ref="D?"  Part="1" 
+F 0 "D?" H 7200 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 7150 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 7150 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 7150 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 7150 6450 50  0001 C CNN "MPN"
+	1    7150 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 7600 6200 6650
+Wire Wire Line
+	6200 6650 6200 5700
+Connection ~ 6200 6650
+Wire Wire Line
+	6050 6650 6200 6650
+Wire Wire Line
+	6150 6450 6150 7400
+Wire Wire Line
+	6100 6250 6100 7200
+Wire Wire Line
+	6250 6950 6250 6450
+$Comp
+L Device:LED_ARGB D?
+U 1 1 6289CE33
+P 6500 6450
+AR Path="/6289CE33" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/6289CE33" Ref="D?"  Part="1" 
+F 0 "D?" H 6550 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 6500 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 6500 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 6500 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 6500 6450 50  0001 C CNN "MPN"
+	1    6500 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 7600 5550 6650
+Wire Wire Line
+	5550 6650 5550 5700
+Connection ~ 5550 6650
+Wire Wire Line
+	5400 6650 5550 6650
+Wire Wire Line
+	5500 6450 5500 7400
+Wire Wire Line
+	5450 6250 5450 7200
+Wire Wire Line
+	5600 6950 5600 6450
+$Comp
+L Device:LED_ARGB D?
+U 1 1 62875A8B
+P 5850 6450
+AR Path="/62875A8B" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/62875A8B" Ref="D?"  Part="1" 
+F 0 "D?" H 5900 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 5850 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 5850 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 5850 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 5850 6450 50  0001 C CNN "MPN"
+	1    5850 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 6650 4900 5700
+Connection ~ 4900 6650
+Wire Wire Line
+	4750 6650 4900 6650
+Wire Wire Line
+	4850 6450 4850 7400
+Wire Wire Line
+	4800 6250 4800 7200
+Wire Wire Line
+	4950 6950 4950 6450
+$Comp
+L Device:LED_ARGB D?
+U 1 1 6285FCF2
+P 5200 6450
+AR Path="/6285FCF2" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/6285FCF2" Ref="D?"  Part="1" 
+F 0 "D?" H 5250 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 5200 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 5200 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 5200 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 5200 6450 50  0001 C CNN "MPN"
+	1    5200 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 7600 4250 6650
+Wire Wire Line
+	4250 6650 4250 5700
+Connection ~ 4250 6650
+Wire Wire Line
+	4100 6650 4250 6650
+Wire Wire Line
+	4200 6450 4200 7400
+Wire Wire Line
+	4150 6250 4150 7200
+Wire Wire Line
+	4300 6950 4300 6450
+Wire Wire Line
+	3650 6450 3650 6950
+$Comp
+L Device:LED_ARGB D?
+U 1 1 6223C9B5
+P 4550 6450
+AR Path="/6223C9B5" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/6223C9B5" Ref="D?"  Part="1" 
+F 0 "D?" H 4600 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 4550 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 4550 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 4550 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 4550 6450 50  0001 C CNN "MPN"
+	1    4550 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ARGB D?
+U 1 1 621C1E98
+P 3900 6450
+AR Path="/621C1E98" Ref="D?"  Part="1" 
+AR Path="/61B0EECD/621C1E98" Ref="D?"  Part="1" 
+F 0 "D?" H 3950 6100 50  0000 C CNN
+F 1 "LED_ARGB" H 3900 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 3900 6400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf" H 3900 6400 50  0001 C CNN
+F 4 "CLV1L-FKB-CJ1N1E1BB7B3B3" H 3900 6450 50  0001 C CNN "MPN"
+	1    3900 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62183B08
+P 12600 7500
+F 0 "R?" V 12500 7500 50  0000 C CNN
+F 1 "10k" V 12700 7500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12530 7500 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 12600 7500 50  0001 C CNN
+F 4 "CRG0603F10K/10" H 12600 7500 50  0001 C CNN "MPN"
+	1    12600 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 621C34E0
+P 12400 7950
+F 0 "R?" V 12300 7950 50  0000 C CNN
+F 1 "10k" V 12500 7950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12330 7950 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf" H 12400 7950 50  0001 C CNN
+F 4 "CRG0603F10K/10" H 12400 7950 50  0001 C CNN "MPN"
+	1    12400 7950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 7500 12400 7450
+Wire Wire Line
+	12750 7500 13050 7500
+Wire Wire Line
+	14450 7550 14450 7850
+Wire Wire Line
+	14450 7550 14450 7500
+Connection ~ 14450 7550
+Wire Wire Line
+	15150 7550 14450 7550
+Wire Wire Line
+	15150 7600 15150 7550
+Wire Wire Line
+	15150 7950 15150 7900
+$Comp
+L power:GND #PWR0162
+U 1 1 6217502C
+P 15150 7950
+F 0 "#PWR0162" H 15150 7700 50  0001 C CNN
+F 1 "GND" H 15150 7800 50  0000 C CNN
+F 2 "" H 15150 7950 50  0001 C CNN
+F 3 "" H 15150 7950 50  0001 C CNN
+	1    15150 7950
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 6283B637
-P 3050 5600
-F 0 "#PWR?" H 3050 5450 50  0001 C CNN
-F 1 "+5V" H 3050 5750 50  0000 C CNN
-F 2 "" H 3050 5600 50  0001 C CNN
-F 3 "" H 3050 5600 50  0001 C CNN
-	1    3050 5600
+L Device:C C?
+U 1 1 62172D9B
+P 15150 7750
+F 0 "C?" H 15250 7800 50  0000 L CNN
+F 1 "0.1u" H 15200 7650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 15188 7600 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 15150 7750 50  0001 C CNN
+F 4 "C0805C104M5RAC" H 15150 7750 50  0001 C CNN "MPN"
+	1    15150 7750
+	1    0    0    -1  
+$EndComp
+Text Notes 11950 9050 0    50   ~ 0
+Using a 1MEG rotary thumbwheel potentiometer (VR) to control pulse width.
+Text Notes 13100 7700 0    50   ~ 0
+PWM switching frequency is about\n 6.6kHz for a 1MEG ohm pot and\n 4x47pF caps.
+Wire Notes Line
+	15400 7050 11800 7050
+Wire Notes Line
+	15400 9100 15400 7050
+Wire Notes Line
+	11800 9100 15400 9100
+Text Label 15050 8300 0    50   ~ 0
+PWM_BC
+Wire Wire Line
+	15050 8300 14950 8300
+Wire Notes Line
+	11800 7050 11800 9100
+Text Notes 11850 7150 0    50   ~ 0
+PWM signal generator for brightness control
+Wire Wire Line
+	12450 7500 12400 7500
+Wire Wire Line
+	12200 8300 12200 8350
+Wire Wire Line
+	12200 7950 12250 7950
+Wire Wire Line
+	12200 8000 12200 7950
+Wire Wire Line
+	12550 7950 12600 7950
+Wire Wire Line
+	13500 7950 13750 7950
+$Comp
+L USB-C-DB-rescue:RV100F-30-4K1-B1M VR?
+U 1 1 6214C8F2
+P 13500 8050
+F 0 "VR?" H 14150 7700 50  0000 C CNN
+F 1 "RV100F-30-4K1-B1M" H 14150 8200 50  0000 C CNN
+F 2 "RV100F304K1B1M" H 14450 8150 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/RV100F-30-4K1-B1M.pdf" H 14450 8050 50  0001 L CNN
+F 4 "Potentiometers 10mm Linear 1M PC Mount" H 14450 7950 50  0001 L CNN "Description"
+F 5 "3.4" H 14450 7850 50  0001 L CNN "Height"
+F 6 "312-1001F-1M" H 14450 7750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Alpha-Taiwan/RV100F-30-4K1-B1M?qs=Y%252BBGkTaltXsB5KMzQF0w3g%3D%3D" H 14450 7650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Alpha (Taiwan)" H 14450 7550 50  0001 L CNN "Manufacturer_Name"
+F 9 "RV100F-30-4K1-B1M" H 14450 7450 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "RV100F-30-4K1-B1M" H 13500 8050 50  0001 C CNN "MPN"
+	1    13500 8050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15000 7850 14450 7850
+Wire Wire Line
+	13050 7500 13050 7550
+$Comp
+L power:+5V #PWR0163
+U 1 1 621CF5ED
+P 12400 7450
+F 0 "#PWR0163" H 12400 7300 50  0001 C CNN
+F 1 "+5V" H 12400 7600 50  0000 C CNN
+F 2 "" H 12400 7450 50  0001 C CNN
+F 3 "" H 12400 7450 50  0001 C CNN
+	1    12400 7450
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 6283BE1B
-P 3050 7500
-F 0 "#PWR?" H 3050 7350 50  0001 C CNN
-F 1 "+5V" H 3050 7650 50  0000 C CNN
-F 2 "" H 3050 7500 50  0001 C CNN
-F 3 "" H 3050 7500 50  0001 C CNN
-	1    3050 7500
+L Diode:1N4148W D?
+U 1 1 6219F63C
+P 12200 8150
+F 0 "D?" V 12150 8050 50  0000 C CNN
+F 1 "1N4148W" V 12300 7950 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 12200 7975 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/1057/1N4148W-1869619.pdf" H 12200 8150 50  0001 C CNN
+F 4 "1N4148W_R1_00001" H 12200 8150 50  0001 C CNN "MPN"
+	1    12200 8150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13750 7950 13750 8000
+Connection ~ 13750 7950
+Wire Wire Line
+	13900 7950 13750 7950
+Wire Wire Line
+	13900 8150 13900 7950
+Wire Wire Line
+	13950 8150 13900 8150
+Connection ~ 13400 8350
+Wire Wire Line
+	13400 8400 13400 8350
+Wire Wire Line
+	13750 8350 13750 8400
+Wire Wire Line
+	13400 8350 13750 8350
+Wire Wire Line
+	13750 8350 13900 8350
+Connection ~ 13750 8350
+Wire Wire Line
+	13750 8300 13750 8350
+Wire Wire Line
+	13900 8350 13900 8450
+Connection ~ 13900 8350
+Wire Wire Line
+	13900 8300 13900 8350
+Wire Wire Line
+	13750 8700 13750 8750
+Connection ~ 13750 8750
+Wire Wire Line
+	13400 8750 13750 8750
+Wire Wire Line
+	13400 8700 13400 8750
+Connection ~ 13400 8750
+Wire Wire Line
+	13050 8750 13400 8750
+Wire Wire Line
+	13050 8750 13050 8700
+Wire Wire Line
+	12700 8700 12700 8750
+Wire Wire Line
+	13050 8350 13400 8350
+Connection ~ 13050 8350
+Wire Wire Line
+	13050 8400 13050 8350
+Wire Wire Line
+	12200 8350 12700 8350
+Wire Wire Line
+	13050 8350 12700 8350
+Connection ~ 12700 8350
+Wire Wire Line
+	12700 8350 12700 8400
+Connection ~ 13050 8750
+Wire Wire Line
+	12700 8750 13050 8750
+$Comp
+L power:GND #PWR0164
+U 1 1 6219E97B
+P 14450 8800
+F 0 "#PWR0164" H 14450 8550 50  0001 C CNN
+F 1 "GND" H 14450 8650 50  0000 C CNN
+F 2 "" H 14450 8800 50  0001 C CNN
+F 3 "" H 14450 8800 50  0001 C CNN
+	1    14450 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 8750 14450 8750
+Wire Wire Line
+	15000 8750 14450 8750
+Connection ~ 14450 8750
+Wire Wire Line
+	14450 8750 14450 8800
+Wire Wire Line
+	14450 8750 14450 8700
+$Comp
+L Device:C C?
+U 1 1 621B1558
+P 12700 8550
+F 0 "C?" H 12815 8596 50  0000 L CNN
+F 1 "47p" H 12815 8505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 12738 8400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 12700 8550 50  0001 C CNN
+F 4 "C0402C470J5GAC" H 12700 8550 50  0001 C CNN "MPN"
+	1    12700 8550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 6283C2FE
-P 3050 9400
-F 0 "#PWR?" H 3050 9250 50  0001 C CNN
-F 1 "+5V" H 3050 9550 50  0000 C CNN
-F 2 "" H 3050 9400 50  0001 C CNN
-F 3 "" H 3050 9400 50  0001 C CNN
-	1    3050 9400
+L Device:C C?
+U 1 1 621B1117
+P 13050 8550
+F 0 "C?" H 13165 8596 50  0000 L CNN
+F 1 "47p" H 13165 8505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 13088 8400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 13050 8550 50  0001 C CNN
+F 4 "C0402C470J5GAC" H 13050 8550 50  0001 C CNN "MPN"
+	1    13050 8550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 621B0CEE
+P 13400 8550
+F 0 "C?" H 13515 8596 50  0000 L CNN
+F 1 "47p" H 13515 8505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 13438 8400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 13400 8550 50  0001 C CNN
+F 4 "C0402C470J5GAC" H 13400 8550 50  0001 C CNN "MPN"
+	1    13400 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 621B06C1
+P 13750 8550
+F 0 "C?" H 13865 8596 50  0000 L CNN
+F 1 "47p" H 13865 8505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 13788 8400 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 13750 8550 50  0001 C CNN
+F 4 "C0402C470J5GAC" H 13750 8550 50  0001 C CNN "MPN"
+	1    13750 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 8450 13950 8450
+Wire Wire Line
+	13950 8300 13900 8300
+Connection ~ 14450 7850
+Wire Wire Line
+	14450 7850 14450 7900
+Wire Wire Line
+	15000 8150 15000 7850
+Wire Wire Line
+	14950 8150 15000 8150
+Wire Wire Line
+	15000 8450 14950 8450
+$Comp
+L Device:C C?
+U 1 1 621AA069
+P 15000 8600
+F 0 "C?" H 15115 8646 50  0000 L CNN
+F 1 "47p" H 15115 8555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 15038 8450 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf" H 15000 8600 50  0001 C CNN
+F 4 "C0402C470J5GAC" H 15000 8600 50  0001 C CNN "MPN"
+	1    15000 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0165
+U 1 1 6219E439
+P 14450 7500
+F 0 "#PWR0165" H 14450 7350 50  0001 C CNN
+F 1 "+5V" H 14450 7650 50  0000 C CNN
+F 2 "" H 14450 7500 50  0001 C CNN
+F 3 "" H 14450 7500 50  0001 C CNN
+	1    14450 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 62151722
+P 13750 8150
+F 0 "D?" V 13800 8300 50  0000 R CNN
+F 1 "1N4148W" V 13650 8550 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 13750 7975 50  0001 C CNN
+F 3 "https://www.mouser.in/datasheet/2/1057/1N4148W-1869619.pdf" H 13750 8150 50  0001 C CNN
+F 4 "1N4148W_R1_00001" H 13750 8150 50  0001 C CNN "MPN"
+	1    13750 8150
+	0    -1   -1   0   
+$EndComp
+Text Label 2500 4150 0    50   ~ 0
+PWM_BC
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 62672B80
+P 13800 5900
+AR Path="/62672B80" Ref="J?"  Part="1" 
+AR Path="/61B0EECD/62672B80" Ref="J?"  Part="1" 
+F 0 "J?" H 13800 5800 50  0000 L CNN
+F 1 "GND" H 13850 5900 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D4.0mm" H 13800 5900 50  0001 C CNN
+F 3 "~" H 13800 5900 50  0001 C CNN
+	1    13800 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 6278D3BD
+P 13800 5650
+AR Path="/6278D3BD" Ref="J?"  Part="1" 
+AR Path="/61B0EECD/6278D3BD" Ref="J?"  Part="1" 
+F 0 "J?" H 13800 5550 50  0000 L CNN
+F 1 "PWM_BC" H 13850 5650 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D4.0mm" H 13800 5650 50  0001 C CNN
+F 3 "~" H 13800 5650 50  0001 C CNN
+	1    13800 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14000 5650 14100 5650
+Text Label 14100 5650 0    50   ~ 0
+PWM_BC
+$Comp
+L power:GND #PWR0166
+U 1 1 629DB23F
+P 14200 5950
+F 0 "#PWR0166" H 14200 5700 50  0001 C CNN
+F 1 "GND" H 14200 5800 50  0000 C CNN
+F 2 "" H 14200 5950 50  0001 C CNN
+F 3 "" H 14200 5950 50  0001 C CNN
+	1    14200 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 5900 14200 5950
+Wire Wire Line
+	14000 5900 14200 5900
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 62AF774C
+P 13800 5400
+AR Path="/62AF774C" Ref="J?"  Part="1" 
+AR Path="/61B0EECD/62AF774C" Ref="J?"  Part="1" 
+F 0 "J?" H 13800 5300 50  0000 L CNN
+F 1 "+5V" H 13850 5400 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D4.0mm" H 13800 5400 50  0001 C CNN
+F 3 "~" H 13800 5400 50  0001 C CNN
+	1    13800 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0167
+U 1 1 62AF7A6B
+P 14100 5350
+F 0 "#PWR0167" H 14100 5200 50  0001 C CNN
+F 1 "+5V" H 14100 5500 50  0000 C CNN
+F 2 "" H 14100 5350 50  0001 C CNN
+F 3 "" H 14100 5350 50  0001 C CNN
+	1    14100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 5400 14100 5400
+Wire Wire Line
+	14100 5400 14100 5350
+Text Notes 13450 5100 0    50   ~ 0
+Test points (bottom side)
+Wire Notes Line
+	13400 5000 13400 6150
+Wire Notes Line
+	13400 6150 14450 6150
+Wire Notes Line
+	14450 6150 14450 5000
+Wire Notes Line
+	14450 5000 13400 5000
+$Comp
+L USB-C-DB-rescue:NA555D U?
+U 1 1 623E89B4
+P 14450 8300
+F 0 "U?" H 14150 8650 50  0000 C CNN
+F 1 "NA555D" H 14650 7950 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 15300 7900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 15300 7900 50  0001 C CNN
+F 4 "NA555DR" H 14450 8300 50  0001 C CNN "MPN"
+	1    14450 8300
+	1    0    0    -1  
+$EndComp
+Text Notes 7650 1350 0    50   ~ 0
+60mA max output load
+Text Notes 5800 1350 0    50   ~ 0
+60mA max output load
+Text Notes 4200 1350 0    50   ~ 0
+56mA max output load
+Text Notes 9350 1350 0    50   ~ 0
+56mA max output load
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 62669361
+P 3100 3950
+F 0 "Q?" V 3050 4050 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3305 3905 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 3875 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3100 3950 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3650 3800 50  0001 C CNN "MPN"
+	1    3100 3950
+	0    -1   1    0   
+$EndComp
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 627E6424
+P 3100 4350
+F 0 "Q?" V 3050 4450 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3305 4305 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 4275 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3100 4350 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3650 4200 50  0001 C CNN "MPN"
+	1    3100 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 4550 3100 4500
+Wire Wire Line
+	3100 3750 3100 3800
+Wire Wire Line
+	2300 3750 2300 6550
+Wire Wire Line
+	2900 4050 2850 4050
+Wire Wire Line
+	2850 4050 2850 4150
+Wire Wire Line
+	2850 4250 2900 4250
+Wire Wire Line
+	2500 4150 2850 4150
+Connection ~ 2850 4150
+Wire Wire Line
+	2850 4150 2850 4250
+Wire Wire Line
+	3300 4050 3350 4050
+Wire Wire Line
+	3350 4050 3350 4100
+Wire Wire Line
+	3350 4200 3350 4250
+Wire Wire Line
+	3350 4250 3300 4250
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 635943F1
+P 3100 5850
+F 0 "Q?" V 3050 5950 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3305 5805 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 5775 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3100 5850 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3650 5700 50  0001 C CNN "MPN"
+	1    3100 5850
+	0    -1   1    0   
+$EndComp
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 635943F8
+P 3100 6250
+F 0 "Q?" V 3050 6350 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3305 6205 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 6175 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3100 6250 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3650 6100 50  0001 C CNN "MPN"
+	1    3100 6250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 5950 2850 5950
+Wire Wire Line
+	2850 5950 2850 6050
+Wire Wire Line
+	2850 6150 2900 6150
+Wire Wire Line
+	2500 6050 2850 6050
+Connection ~ 2850 6050
+Wire Wire Line
+	2850 6050 2850 6150
+Wire Wire Line
+	3300 5950 3350 5950
+Wire Wire Line
+	3350 6150 3300 6150
+Text Label 2500 6050 0    50   ~ 0
+PWM_BC
+Wire Wire Line
+	2350 4550 3100 4550
+Wire Wire Line
+	2300 3750 3100 3750
+Wire Wire Line
+	3350 4100 3650 4100
+Connection ~ 3650 4100
+Wire Wire Line
+	3650 4200 3350 4200
+Wire Wire Line
+	3350 5950 3350 6000
+Wire Wire Line
+	3350 6000 3650 6000
+Wire Wire Line
+	3350 6100 3350 6150
+Wire Wire Line
+	3350 6100 3650 6100
+Wire Wire Line
+	2400 5650 3100 5650
+Wire Wire Line
+	3100 5650 3100 5700
+Wire Wire Line
+	2400 5650 2400 6750
+Wire Wire Line
+	2150 6650 2350 6650
+Wire Wire Line
+	2350 6650 2350 4550
+Wire Wire Line
+	2450 6850 2450 6450
+Wire Wire Line
+	2450 6450 3100 6450
+Wire Wire Line
+	3100 6450 3100 6400
+Text Label 2500 7950 0    50   ~ 0
+PWM_BC
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 645C3AB6
+P 3100 7750
+F 0 "Q?" V 3050 7850 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3305 7705 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 7675 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3100 7750 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3650 7600 50  0001 C CNN "MPN"
+	1    3100 7750
+	0    -1   1    0   
+$EndComp
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 645C3ABD
+P 3100 8150
+F 0 "Q?" V 3050 8250 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3305 8105 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 8075 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3100 8150 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3650 8000 50  0001 C CNN "MPN"
+	1    3100 8150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 8350 3100 8300
+Wire Wire Line
+	3100 7550 3100 7600
+Wire Wire Line
+	2900 7850 2850 7850
+Wire Wire Line
+	2850 7850 2850 7950
+Wire Wire Line
+	2850 8050 2900 8050
+Wire Wire Line
+	2500 7950 2850 7950
+Connection ~ 2850 7950
+Wire Wire Line
+	2850 7950 2850 8050
+Wire Wire Line
+	3300 7850 3350 7850
+Wire Wire Line
+	3350 7850 3350 7900
+Wire Wire Line
+	3350 8000 3350 8050
+Wire Wire Line
+	3350 8050 3300 8050
+Text Label 2450 9850 0    50   ~ 0
+PWM_BC
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 64828C71
+P 3050 9650
+F 0 "Q?" V 3000 9750 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3255 9605 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3250 9575 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3050 9650 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3600 9500 50  0001 C CNN "MPN"
+	1    3050 9650
+	0    -1   1    0   
+$EndComp
+$Comp
+L USB-C-DB-rescue:XP262N7002TR-G Q?
+U 1 1 64828C78
+P 3050 10050
+F 0 "Q?" V 3000 10150 50  0000 L CNN
+F 1 "XP262N7002TR-G" H 3255 10005 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3250 9975 50  0001 L CIN
+F 3 "https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf" H 3050 10050 50  0001 L CNN
+F 4 "XP262N7002TR-G" H 3600 9900 50  0001 C CNN "MPN"
+	1    3050 10050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 10250 3050 10200
+Wire Wire Line
+	3050 9450 3050 9500
+Wire Wire Line
+	2850 9750 2800 9750
+Wire Wire Line
+	2800 9750 2800 9850
+Wire Wire Line
+	2800 9950 2850 9950
+Wire Wire Line
+	2450 9850 2800 9850
+Connection ~ 2800 9850
+Wire Wire Line
+	2800 9850 2800 9950
+Wire Wire Line
+	3250 9750 3300 9750
+Wire Wire Line
+	3300 9750 3300 9800
+Wire Wire Line
+	3300 9900 3300 9950
+Wire Wire Line
+	3300 9950 3250 9950
+Wire Wire Line
+	2450 7550 3100 7550
+Wire Wire Line
+	2450 6950 2450 7550
+Wire Wire Line
+	2400 8350 3100 8350
+Wire Wire Line
+	2400 7050 2400 8350
+Wire Wire Line
+	2350 7150 2350 9450
+Wire Wire Line
+	2350 9450 3050 9450
+Wire Wire Line
+	2300 10250 3050 10250
+Wire Wire Line
+	2300 7250 2300 10250
+Wire Wire Line
+	3300 9900 3650 9900
+Wire Wire Line
+	3300 9800 3650 9800
+Wire Wire Line
+	3350 8000 3650 8000
+Wire Wire Line
+	3350 7900 3650 7900
 $EndSCHEMATC
