@@ -1,4 +1,36 @@
-Cmp-Mod V01 Created by PcbNew   date = 03/17/22 01:56:11
+Cmp-Mod V01 Created by PcbNew   date = 03/17/22 17:50:55
+
+BeginCmp
+TimeStamp = 6237FF2F
+Path = 
+Reference = G1;
+ValeurCmp = LOGO;
+IdModule  = USB-C-DB:oshw-spfb;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230BF7B
+Path = /61B0EECD/6284EDAA
+Reference = VR1;
+ValeurCmp = 3352T-1-105LF;
+IdModule  = Mouser-imports:3352T1103LF;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230DC98
+Path = /624D727F
+Reference = R7;
+ValeurCmp = 1;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230CBC7
+Path = /62333FBA
+Reference = C4;
+ValeurCmp = 10u;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
+EndCmp
 
 BeginCmp
 TimeStamp = 6230CAA4
@@ -198,30 +230,6 @@ Path = /61B0EECD/6223C9D1
 Reference = D16;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
-EndCmp
-
-BeginCmp
-TimeStamp = 62331020
-Path = 
-Reference = REF**;
-ValeurCmp = OSHW-Logo2_7.3x6mm_SilkScreen;
-IdModule  = Symbol:OSHW-Logo2_7.3x6mm_SilkScreen;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230BD3C
-Path = /624D727F
-Reference = R7;
-ValeurCmp = 1;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230BF7B
-Path = /61B0EECD/6214C8F2
-Reference = VR1;
-ValeurCmp = RV100F-30-4K1-B1M;
-IdModule  = Mouser-imports:RV100F304K1B1M;
 EndCmp
 
 BeginCmp
@@ -669,14 +677,6 @@ TimeStamp = 6230DD58
 Path = /6208B250
 Reference = R8;
 ValeurCmp = 10k;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230DC98
-Path = /6285C594
-Reference = R7;
-ValeurCmp = 1;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
 
@@ -1709,14 +1709,6 @@ TimeStamp = 6230CB07
 Path = /61C432D7
 Reference = C5;
 ValeurCmp = 4.7u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CBC7
-Path = /61BFD87D
-Reference = C4;
-ValeurCmp = 0.1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
 

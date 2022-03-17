@@ -5530,26 +5530,6 @@ Wire Wire Line
 	12550 7950 12600 7950
 Wire Wire Line
 	13500 7950 13750 7950
-$Comp
-L USB-C-DB-rescue:RV100F-30-4K1-B1M VR1
-U 1 1 6214C8F2
-P 13500 8050
-F 0 "VR1" H 14150 7700 50  0000 C CNN
-F 1 "RV100F-30-4K1-B1M" H 14150 8200 50  0000 C CNN
-F 2 "Mouser-imports:RV100F304K1B1M" H 14450 8150 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/RV100F-30-4K1-B1M.pdf" H 14450 8050 50  0001 L CNN
-F 4 "Potentiometers 10mm Linear 1M PC Mount" H 14450 7950 50  0001 L CNN "Description"
-F 5 "3.4" H 14450 7850 50  0001 L CNN "Height"
-F 6 "312-1001F-1M" H 14450 7750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Alpha-Taiwan/RV100F-30-4K1-B1M?qs=Y%252BBGkTaltXsB5KMzQF0w3g%3D%3D" H 14450 7650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Alpha (Taiwan)" H 14450 7550 50  0001 L CNN "Manufacturer_Name"
-F 9 "RV100F-30-4K1-B1M" H 14450 7450 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "RV100F-30-4K1-B1M" H 13500 8050 50  0001 C CNN "MPN"
-F 11 "" H 13500 8050 50  0001 C CNN "Supplier 1"
-F 12 "3352W-1-105LF" H 13500 8050 50  0001 C CNN "MPN1"
-	1    13500 8050
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	15000 7850 14450 7850
 Wire Wire Line
@@ -6108,4 +6088,21 @@ Wire Wire Line
 	3350 8000 3650 8000
 Wire Wire Line
 	3350 7900 3650 7900
+$Comp
+L USB-C-DB-rescue:3352T-1-105LF VR1
+U 1 1 6284EDAA
+P 12600 7950
+F 0 "VR1" H 12900 8200 50  0000 C CNN
+F 1 "3352T-1-105LF" H 13050 7700 50  0000 C CNN
+F 2 "Mouser-imports:3352T1103LF" H 13450 8050 50  0001 L CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/3352.pdf" H 13450 7950 50  0001 L CNN
+F 4 "Trimmer Resistors - Through Hole" H 13450 7850 50  0001 L CNN "Description"
+F 5 "5.33" H 13450 7750 50  0001 L CNN "Height"
+F 6 "652-3352T-1-105LF" H 13450 7650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/3352T-1-105LF?qs=EYTJzGwugUoW6t2SAeQ12A%3D%3D" H 13450 7550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bourns" H 13450 7450 50  0001 L CNN "Manufacturer_Name"
+F 9 "3352T-1-105LF" H 13450 7350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    12600 7950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

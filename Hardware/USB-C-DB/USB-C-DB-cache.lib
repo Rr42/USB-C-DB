@@ -242,6 +242,27 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# USB-C-DB-rescue_3352T-1-105LF
+#
+DEF USB-C-DB-rescue_3352T-1-105LF VR 0 30 Y Y 1 F N
+F0 "VR" 850 300 50 H V L CNN
+F1 "USB-C-DB-rescue_3352T-1-105LF" 850 200 50 H V L CNN
+F2 "3352T1105LF" 850 100 50 H I L CNN
+F3 "https://www.mouser.in/datasheet/2/54/3352-776447.pdf" 850 0 50 H I L CNN
+F4 "Trimmer Resistors - Through Hole" 850 -100 50 H I L CNN "Description"
+F5 "5.33" 850 -200 50 H I L CNN "Height"
+F6 "652-3352T-1-105LF" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Bourns/3352T-1-105LF?qs=EYTJzGwugUoW6t2SAeQ12A%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Bourns" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "3352T-1-105LF" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+S 200 -200 700 200 1 1 6 f
+X CCW 1 0 0 200 R 50 50 0 0 P
+X WIPER 2 900 0 200 L 50 50 0 0 P
+X CW 3 450 400 200 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # USB-C-DB-rescue_74HC595_mod
 #
 DEF USB-C-DB-rescue_74HC595_mod U 0 20 Y Y 1 F N
@@ -405,29 +426,6 @@ X D2(I) 3 -450 0 200 R 50 50 0 0 P
 X D2(C) 4 450 -100 200 L 50 50 0 0 P
 X VBUS 5 450 150 200 L 50 50 0 0 P
 X D1(C) 6 450 0 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# USB-C-DB-rescue_RV100F-30-4K1-B1M
-#
-DEF USB-C-DB-rescue_RV100F-30-4K1-B1M VR 0 30 Y Y 1 F N
-F0 "VR" 950 300 50 H V L CNN
-F1 "USB-C-DB-rescue_RV100F-30-4K1-B1M" 950 200 50 H V L CNN
-F2 "RV100F304K1B1M" 950 100 50 H I L CNN
-F3 "" 950 0 50 H I L CNN
-F4 "Potentiometers 10mm Linear 1M PC Mount" 950 -100 50 H I L CNN "Description"
-F5 "3.4" 950 -200 50 H I L CNN "Height"
-F6 "312-1001F-1M" 950 -300 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.co.uk/ProductDetail/Alpha-Taiwan/RV100F-30-4K1-B1M?qs=Y%252BBGkTaltXsB5KMzQF0w3g%3D%3D" 950 -400 50 H I L CNN "Mouser Price/Stock"
-F8 "Alpha (Taiwan)" 950 -500 50 H I L CNN "Manufacturer_Name"
-F9 "RV100F-30-4K1-B1M" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-S 200 -300 700 100 0 1 6 f
-X CCW 1 900 -100 200 L 50 50 0 0 P
-X WIPER 2 0 -100 200 R 50 50 0 0 P
-X CW 3 450 -500 200 U 50 50 0 0 P
-X MH1 MH1 0 -200 200 R 50 50 0 0 N NX
-X MH2 MH2 0 0 200 R 50 50 0 0 N NX
 ENDDRAW
 ENDDEF
 #

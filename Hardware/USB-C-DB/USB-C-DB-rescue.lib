@@ -76,6 +76,27 @@ X G2 5 200 250 100 D 50 50 2 0 P
 ENDDRAW
 ENDDEF
 #
+# 3352T-1-105LF
+#
+DEF 3352T-1-105LF VR 0 30 Y Y 1 F N
+F0 "VR" 850 300 50 H V L CNN
+F1 "3352T-1-105LF" 850 200 50 H V L CNN
+F2 "3352T1105LF" 850 100 50 H I L CNN
+F3 "https://www.mouser.in/datasheet/2/54/3352-776447.pdf" 850 0 50 H I L CNN
+F4 "Trimmer Resistors - Through Hole" 850 -100 50 H I L CNN "Description"
+F5 "5.33" 850 -200 50 H I L CNN "Height"
+F6 "652-3352T-1-105LF" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Bourns/3352T-1-105LF?qs=EYTJzGwugUoW6t2SAeQ12A%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Bourns" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "3352T-1-105LF" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+S 200 -200 700 200 1 1 6 f
+X CCW 1 0 0 200 R 50 50 0 0 P
+X WIPER 2 900 0 200 L 50 50 0 0 P
+X CW 3 450 400 200 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # 74HC595_mod
 #
 DEF 74HC595_mod U 0 20 Y Y 1 F N
