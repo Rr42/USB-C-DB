@@ -62,28 +62,12 @@ F 3 "~" H 2310 1530 50  0001 C CNN
 	1    2310 1530
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 61326DA4
-P 2310 1310
-F 0 "J5" H 2390 1302 50  0000 L CNN
-F 1 "Battery con" H 2390 1211 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 2310 1310 50  0001 C CNN
-F 3 "~" H 2310 1310 50  0001 C CNN
-F 4 "" H 2310 1310 50  0001 C CNN "MPN"
-	1    2310 1310
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2110 1170 2020 1170
 Wire Wire Line
 	2020 1170 2020 1240
 Wire Wire Line
-	2020 1310 2110 1310
-Wire Wire Line
 	2020 1530 2110 1530
-Wire Wire Line
-	2020 1410 2110 1410
 $Comp
 L power:-BATT #PWR05
 U 1 1 6132D582
@@ -107,15 +91,9 @@ F 3 "" H 1960 1240 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2020 1410 2020 1470
-Wire Wire Line
 	1960 1240 2020 1240
-Connection ~ 2020 1240
-Wire Wire Line
-	2020 1240 2020 1310
 Wire Wire Line
 	1960 1470 2020 1470
-Connection ~ 2020 1470
 Wire Wire Line
 	2020 1470 2020 1530
 Text Notes 1850 1000 0    50   ~ 0
@@ -628,9 +606,9 @@ Wire Notes Line
 Text Label 3450 2500 2    50   ~ 0
 VBUS_ISEN-
 Text Label 6350 3750 2    50   ~ 0
-UART_RX_N
+UART_TRX_N
 Text Label 6350 3650 2    50   ~ 0
-UART_TX_P
+UART_TRX_P
 Wire Wire Line
 	6350 3750 5950 3750
 Wire Wire Line
@@ -3122,9 +3100,9 @@ Wire Wire Line
 Wire Wire Line
 	7250 5350 7700 5350
 Text Label 7250 5350 0    50   ~ 0
-UART_TX_P
+UART_TRX_P
 Text Label 7250 5450 0    50   ~ 0
-UART_RX_N
+UART_TRX_N
 Wire Wire Line
 	8200 4650 8200 4600
 $Comp
