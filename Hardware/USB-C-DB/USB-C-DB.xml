@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>E:\Dev\USB-C-DB\hardware\USB-C-DB\USB-C-DB.sch</source>
-    <date>03/17/22 17:58:51</date>
+    <date>03/22/22 12:08:08</date>
     <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -38,6 +38,7 @@
       <datasheet>https://gct.co/files/drawings/usb4105.pdf?v=109d7ce0-f2e0-439a-b81c-2ef6b9dd19d2</datasheet>
       <fields>
         <field name="MPN">USB4105-GF-A-120</field>
+        <field name="MPN prod">USB4105-GF-A</field>
         <field name="MPN1">USB4105-GF-A</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="USB_C_Receptacle-Connector" description=""/>
@@ -60,20 +61,13 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>613284CF</tstamp>
     </comp>
-    <comp ref="J5">
-      <value>Battery con</value>
-      <footprint>Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>61326DA4</tstamp>
-    </comp>
     <comp ref="R4">
       <value>5.1k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://www.mouser.in/datasheet/2/447/yagos02312_1-2286750.pdf</datasheet>
       <fields>
         <field name="MPN">TR0805KR-075K1L</field>
+        <field name="MPN prod">RC0805JR-075K1L</field>
         <field name="MPN1">RC0805JR-075K1L</field>
         <field name="MPN2">CRCW08055K10JNEB</field>
       </fields>
@@ -87,6 +81,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/yagos02312_1-2286750.pdf</datasheet>
       <fields>
         <field name="MPN">TR0805KR-075K1L</field>
+        <field name="MPN prod">RC0805JR-075K1L</field>
         <field name="MPN1">RC0805JR-075K1L</field>
         <field name="MPN2">CRCW08055K10JNEB</field>
       </fields>
@@ -100,6 +95,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/yagos02312_1-2286750.pdf</datasheet>
       <fields>
         <field name="MPN">TR0805KR-075K1L</field>
+        <field name="MPN prod">RC0805JR-075K1L</field>
         <field name="MPN1">RC0805JR-075K1L</field>
         <field name="MPN2">CRCW08055K10JNEB</field>
       </fields>
@@ -113,6 +109,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf</datasheet>
       <fields>
         <field name="MPN">C0402C470J5GAC</field>
+        <field name="MPN prod">C0402C470J5GACTU</field>
         <field name="MPN1">C0402C470J5GACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -125,6 +122,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf</datasheet>
       <fields>
         <field name="MPN">C0402C470J5GAC</field>
+        <field name="MPN prod">C0402C470J5GACTU</field>
         <field name="MPN1">C0402C470J5GACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -137,6 +135,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A475KAQNNNF</field>
+        <field name="MPN prod">CL21A475KAQNNNF</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -148,6 +147,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -161,6 +161,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A475KAQNNNF</field>
+        <field name="MPN prod">CL21A475KAQNNNF</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -172,6 +173,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -185,6 +187,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A475KAQNNNF</field>
+        <field name="MPN prod">CL21A475KAQNNNF</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -196,6 +199,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -209,6 +213,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -220,6 +225,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0805FR-074K7P</field>
+        <field name="MPN prod">RC0805FR-074K7P</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -231,6 +237,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A475KAQNNNF</field>
+        <field name="MPN prod">CL21A475KAQNNNF</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -242,6 +249,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -253,6 +261,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0805FR-0713KL</field>
+        <field name="MPN prod">RC0805FR-0713KL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -280,6 +289,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
       <fields>
         <field name="MPN">CRCW040211R0FKEDC</field>
+        <field name="MPN prod">CRCW040211R0FKEDC</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -293,6 +303,7 @@
         <field name="Description">FTDI - FT260S-U - INTERFACE BRIDGE, USB TO I2C/UART, TSSOP</field>
         <field name="Height">1.2</field>
         <field name="MPN">FT260S-U</field>
+        <field name="MPN prod">FT260S-U</field>
         <field name="Manufacturer_Name">FTDI Chip</field>
         <field name="Manufacturer_Part_Number">FT260S-U</field>
         <field name="Supplier Part Number 1">768-1282-5-ND</field>
@@ -310,6 +321,7 @@
         <field name="Description">USB Upstream Terminator with ESD Protection</field>
         <field name="Height">1.1</field>
         <field name="MPN">NUF2221W1T2G</field>
+        <field name="MPN prod">NUF2221W1T2G</field>
         <field name="Manufacturer_Name">ON Semiconductor</field>
         <field name="Manufacturer_Part_Number">NUF2221W1T2G</field>
         <field name="Mouser Part Number">863-NUF2221W1T2G</field>
@@ -325,6 +337,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
       <fields>
         <field name="MPN">CRCW040211R0FKEDC</field>
+        <field name="MPN prod">CRCW040211R0FKEDC</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -336,6 +349,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -347,6 +361,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -358,6 +373,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -369,6 +385,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -380,6 +397,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A106KOQNNNE</field>
+        <field name="MPN prod">CL21A106KOQNNNE</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -391,6 +409,7 @@
       <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</datasheet>
       <fields>
         <field name="MPN">LD1117S33CTR</field>
+        <field name="MPN prod">NCP1117LPST33T3G</field>
         <field name="MPN1">NCP1117LPST33T3G</field>
       </fields>
       <libsource lib="Regulator_Linear" part="LD1117S33TR_SOT223" description="800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"/>
@@ -459,6 +478,7 @@
       <datasheet>https://www.espressif.com/sites/default/files/documentation/0c-esp-wroom-02_datasheet_en.pdf</datasheet>
       <fields>
         <field name="MPN">ESP-WROOM-02D-N2</field>
+        <field name="MPN prod">ESP-WROOM-02D-N2</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="ESP-WROOM-02" description="Wi-Fi Module, ESP8266EX SoC, 32-bit, 802.11b/g/n, WPA/WPA2, 2.7-3.6V, SMD"/>
       <sheetpath names="/" tstamps="/"/>
@@ -534,6 +554,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -553,6 +574,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -564,6 +586,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -575,6 +598,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -586,6 +610,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -597,6 +622,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -610,6 +636,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -623,6 +650,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A475KAQNNNF</field>
+        <field name="MPN prod">CL21A475KAQNNNF</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -634,6 +662,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A106KOQNNNE</field>
+        <field name="MPN prod">CL21A106KOQNNNE</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -645,6 +674,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A106KOQNNNE</field>
+        <field name="MPN prod">CL21A106KOQNNNE</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -656,6 +686,7 @@
       <datasheet>https://product.tdk.com/system/files/dam/doc/product/emc/emc/beads/catalog/beads_automotive_power_kpz1608-hr_en.pdf</datasheet>
       <fields>
         <field name="MPN">KPZ1608SHR601ATD25</field>
+        <field name="MPN prod">FBMH1608HM471-T</field>
         <field name="MPN1">FBMH1608HM471-T</field>
       </fields>
       <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
@@ -668,6 +699,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
@@ -679,6 +711,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
@@ -690,6 +723,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE071RL</field>
+        <field name="MPN prod">RT0603FRE071RL</field>
         <field name="MPN1">RT0603FRE071RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -702,6 +736,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21A106KOQNNNE</field>
+        <field name="MPN prod">CL21A106KOQNNNE</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -713,6 +748,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -724,6 +760,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -735,6 +772,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLA1AWKB-2528996.pdf</datasheet>
       <fields>
         <field name="MPN">CLA1A-WKB-CWbYa153</field>
+        <field name="MPN prod">CLA1A-WKB-CWbYa153</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -746,6 +784,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -757,6 +796,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -768,6 +808,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -779,6 +820,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -790,6 +832,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -801,6 +844,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -812,6 +856,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -823,6 +868,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -834,6 +880,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -845,6 +892,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -856,6 +904,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -867,6 +916,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -878,6 +928,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -889,6 +940,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -900,6 +952,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -911,6 +964,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -922,6 +976,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -933,6 +988,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -944,6 +1000,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -955,6 +1012,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -966,6 +1024,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -977,6 +1036,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -988,6 +1048,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -999,6 +1060,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1010,6 +1072,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1021,6 +1084,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1032,6 +1096,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1043,6 +1108,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1054,6 +1120,7 @@
       <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
       <fields>
         <field name="MPN">MC74HC595ADTG</field>
+        <field name="MPN prod">MC74HC595ADTG</field>
       </fields>
       <libsource lib="74xx" part="74HC595" description="8-bit serial in/out Shift Register 3-State Outputs"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1065,6 +1132,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21B105KBFNNNG</field>
+        <field name="MPN prod">CL21B105KBFNNNG</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1076,6 +1144,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -1089,6 +1158,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21B105KBFNNNG</field>
+        <field name="MPN prod">CL21B105KBFNNNG</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1100,6 +1170,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -1113,6 +1184,7 @@
       <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
       <fields>
         <field name="MPN">MC74HC595ADTG</field>
+        <field name="MPN prod">MC74HC595ADTG</field>
       </fields>
       <libsource lib="74xx" part="74HC595" description="8-bit serial in/out Shift Register 3-State Outputs"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1124,6 +1196,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1135,6 +1208,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1146,6 +1220,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1157,6 +1232,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1168,6 +1244,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1179,6 +1256,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1190,6 +1268,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1201,6 +1280,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1212,6 +1292,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1223,6 +1304,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1234,6 +1316,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1245,6 +1328,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1256,6 +1340,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1267,6 +1352,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1278,6 +1364,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1289,6 +1376,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1300,6 +1388,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1311,6 +1400,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1322,6 +1412,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1333,6 +1424,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1344,6 +1436,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1355,6 +1448,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1366,6 +1460,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1377,6 +1472,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1388,6 +1484,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1399,6 +1496,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1410,6 +1508,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1421,6 +1520,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1432,6 +1532,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1443,6 +1544,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1454,6 +1556,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1465,6 +1568,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1476,6 +1580,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1487,6 +1592,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1498,6 +1604,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1509,6 +1616,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1520,6 +1628,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1531,6 +1640,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1542,6 +1652,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1553,6 +1664,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1564,6 +1676,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1575,6 +1688,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1586,6 +1700,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1597,6 +1712,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1608,6 +1724,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1619,6 +1736,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1630,6 +1748,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1641,6 +1760,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1652,6 +1772,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1663,6 +1784,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1674,6 +1796,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1685,6 +1808,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1696,6 +1820,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1707,6 +1832,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1718,6 +1844,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1729,6 +1856,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1740,6 +1868,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1751,6 +1880,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1762,6 +1892,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1773,6 +1904,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1784,6 +1916,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1795,6 +1928,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1806,6 +1940,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1817,6 +1952,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1828,6 +1964,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1839,6 +1976,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1850,6 +1988,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1861,6 +2000,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1872,6 +2012,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1883,6 +2024,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1894,6 +2036,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21B105KBFNNNG</field>
+        <field name="MPN prod">CL21B105KBFNNNG</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1905,6 +2048,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -1918,6 +2062,7 @@
       <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
       <fields>
         <field name="MPN">MC74HC595ADTG</field>
+        <field name="MPN prod">MC74HC595ADTG</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="74HC595_mod" description="8-bit serial in/out Shift Register 3-State Outputs"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1929,6 +2074,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf</datasheet>
       <fields>
         <field name="MPN">RC0603FR-07309RL</field>
+        <field name="MPN prod">RC0603FR-07309RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1940,6 +2086,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/447/PYu_RT_1_to_0_01_RoHS_L_11-1669912.pdf</datasheet>
       <fields>
         <field name="MPN">RT0603DRE07583RL</field>
+        <field name="MPN prod">RT0603DRE07583RL</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1951,6 +2098,7 @@
       <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
       <fields>
         <field name="MPN">MC74HC595ADTG</field>
+        <field name="MPN prod">MC74HC595ADTG</field>
       </fields>
       <libsource lib="74xx" part="74HC595" description="8-bit serial in/out Shift Register 3-State Outputs"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1962,6 +2110,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21B105KBFNNNG</field>
+        <field name="MPN prod">CL21B105KBFNNNG</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -1973,6 +2122,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -1986,6 +2136,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -1999,6 +2150,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/585/MLCC-1837944.pdf</datasheet>
       <fields>
         <field name="MPN">CL21B105KBFNNNG</field>
+        <field name="MPN prod">CL21B105KBFNNNG</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2010,6 +2162,7 @@
       <datasheet>http://www.ti.com/lit/ds/symlink/sn74hc595.pdf</datasheet>
       <fields>
         <field name="MPN">MC74HC595ADTG</field>
+        <field name="MPN prod">MC74HC595ADTG</field>
       </fields>
       <libsource lib="74xx" part="74HC595" description="8-bit serial in/out Shift Register 3-State Outputs"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2021,6 +2174,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLA1AWKB-2528996.pdf</datasheet>
       <fields>
         <field name="MPN">CLA1A-WKB-CWbYa153</field>
+        <field name="MPN prod">CLA1A-WKB-CWbYa153</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2032,6 +2186,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2043,6 +2198,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2054,6 +2210,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2065,6 +2222,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2076,6 +2234,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2087,6 +2246,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2098,6 +2258,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2109,6 +2270,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2120,6 +2282,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2131,6 +2294,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/723/CLV1L_FKB_1238-2583652.pdf</datasheet>
       <fields>
         <field name="MPN">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
+        <field name="MPN prod">CLV1L-FKB-CJ1N1E1BB7B3B3</field>
       </fields>
       <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2142,6 +2306,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2153,6 +2318,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/418/NG_CD_1622829_BA-677553.pdf</datasheet>
       <fields>
         <field name="MPN">CRG0603F10K/10</field>
+        <field name="MPN prod">CRG0603F10K/10</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2164,6 +2330,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf</datasheet>
       <fields>
         <field name="MPN">C0805C104M5RAC</field>
+        <field name="MPN prod">C0805C104M5RACTU</field>
         <field name="MPN1">C0805C104M5RAC7800</field>
         <field name="MPN2">C0805C104M5RACTU</field>
       </fields>
@@ -2177,6 +2344,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/1057/1N4148W-1869619.pdf</datasheet>
       <fields>
         <field name="MPN">1N4148W_R1_00001</field>
+        <field name="MPN prod">1N4148W_R1_00001</field>
       </fields>
       <libsource lib="Diode" part="1N4148W" description="75V 0.15A Fast Switching Diode, SOD-123"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2188,6 +2356,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf</datasheet>
       <fields>
         <field name="MPN">C0402C470J5GAC</field>
+        <field name="MPN prod">C0402C470J5GACTU</field>
         <field name="MPN1">C0402C470J5GACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2200,6 +2369,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf</datasheet>
       <fields>
         <field name="MPN">C0402C470J5GAC</field>
+        <field name="MPN prod">C0402C470J5GACTU</field>
         <field name="MPN1">C0402C470J5GACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2212,6 +2382,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf</datasheet>
       <fields>
         <field name="MPN">C0402C470J5GAC</field>
+        <field name="MPN prod">C0402C470J5GACTU</field>
         <field name="MPN1">C0402C470J5GACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2224,6 +2395,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf</datasheet>
       <fields>
         <field name="MPN">C0402C470J5GAC</field>
+        <field name="MPN prod">C0402C470J5GACTU</field>
         <field name="MPN1">C0402C470J5GACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2236,6 +2408,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/212/KEM_C1003_C0G_SMD-1101588.pdf</datasheet>
       <fields>
         <field name="MPN">C0402C470J5GAC</field>
+        <field name="MPN prod">C0402C470J5GACTU</field>
         <field name="MPN1">C0402C470J5GACTU</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -2248,6 +2421,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/1057/1N4148W-1869619.pdf</datasheet>
       <fields>
         <field name="MPN">1N4148W_R1_00001</field>
+        <field name="MPN prod">1N4148W_R1_00001</field>
       </fields>
       <libsource lib="Diode" part="1N4148W" description="75V 0.15A Fast Switching Diode, SOD-123"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2283,6 +2457,7 @@
       <datasheet>http://www.ti.com/lit/ds/symlink/ne555.pdf</datasheet>
       <fields>
         <field name="MPN">NA555DR</field>
+        <field name="MPN prod">NA555DR</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="NA555D" description="Precision Timers, 555 compatible, SOIC-8"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2294,6 +2469,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2305,6 +2481,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2316,6 +2493,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2327,6 +2505,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2338,6 +2517,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2349,6 +2529,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2360,6 +2541,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2371,6 +2553,7 @@
       <datasheet>https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf</datasheet>
       <fields>
         <field name="MPN">XP262N7002TR-G</field>
+        <field name="MPN prod">XP262N7002TR-G</field>
       </fields>
       <libsource lib="USB-C-DB-rescue" part="XP262N7002TR-G" description="MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23"/>
       <sheetpath names="/Display-and-controller-61B0EECC/" tstamps="/61B0EECD/"/>
@@ -2383,6 +2566,9 @@
       <fields>
         <field name="Description">Trimmer Resistors - Through Hole</field>
         <field name="Height">5.33</field>
+        <field name="MPN">3352T-1-105LF</field>
+        <field name="MPN prod">3352T-1-105LF</field>
+        <field name="MPN1">RV100F-30-4K1-B1M</field>
         <field name="Manufacturer_Name">Bourns</field>
         <field name="Manufacturer_Part_Number">3352T-1-105LF</field>
         <field name="Mouser Part Number">652-3352T-1-105LF</field>
@@ -2445,21 +2631,6 @@
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x02">
-      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Connector*:*_1x??_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_01x02</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="C">
@@ -2937,364 +3108,362 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/MCU_IO0">
+    <net code="1" name="/NOT_SUSP">
+      <node ref="R14" pin="1"/>
+      <node ref="J18" pin="1"/>
+      <node ref="U3" pin="18"/>
+    </net>
+    <net code="2" name="/VBUS_ISEN+">
+      <node ref="FB1" pin="1"/>
+      <node ref="J19" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="3" name="/MCU_IO0">
       <node ref="U4" pin="8"/>
       <node ref="Q2" pin="3"/>
       <node ref="J14" pin="1"/>
       <node ref="R16" pin="2"/>
     </net>
-    <net code="2" name="/VBUS_ISEN+">
-      <node ref="J19" pin="1"/>
-      <node ref="FB1" pin="1"/>
-      <node ref="R7" pin="1"/>
-    </net>
-    <net code="3" name="/RESETN">
-      <node ref="J21" pin="1"/>
-      <node ref="C2" pin="1"/>
+    <net code="4" name="/RESETN">
       <node ref="U3" pin="7"/>
       <node ref="R5" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="J21" pin="1"/>
     </net>
-    <net code="4" name="/NOT_SUSP">
-      <node ref="R14" pin="1"/>
-      <node ref="U3" pin="18"/>
-      <node ref="J18" pin="1"/>
+    <net code="5" name="/DEBUGGER">
+      <node ref="R6" pin="1"/>
+      <node ref="J22" pin="1"/>
+      <node ref="U3" pin="5"/>
     </net>
-    <net code="5" name="+3V3">
-      <node ref="J7" pin="1"/>
-      <node ref="R16" pin="1"/>
-      <node ref="R17" pin="2"/>
-      <node ref="C12" pin="1"/>
-      <node ref="C13" pin="1"/>
-      <node ref="C16" pin="1"/>
-      <node ref="R18" pin="1"/>
-      <node ref="R19" pin="1"/>
-      <node ref="U2" pin="2"/>
-      <node ref="C8" pin="1"/>
-      <node ref="U4" pin="1"/>
-    </net>
-    <net code="6" name="GND">
-      <node ref="D81" pin="1"/>
-      <node ref="U8" pin="8"/>
-      <node ref="C4" pin="2"/>
-      <node ref="U2" pin="1"/>
-      <node ref="J1" pin="A1"/>
-      <node ref="J10" pin="1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="U6" pin="8"/>
-      <node ref="C19" pin="2"/>
-      <node ref="C20" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C23" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C24" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="R2" pin="1"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U9" pin="8"/>
-      <node ref="C25" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C26" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="J1" pin="A12"/>
-      <node ref="R15" pin="2"/>
-      <node ref="U1" pin="2"/>
-      <node ref="J25" pin="1"/>
-      <node ref="U10" pin="1"/>
-      <node ref="D82" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="C21" pin="2"/>
-      <node ref="C22" pin="2"/>
-      <node ref="U4" pin="13"/>
-      <node ref="C32" pin="2"/>
-      <node ref="J1" pin="S1"/>
-      <node ref="U4" pin="18"/>
-      <node ref="U4" pin="19"/>
-      <node ref="R3" pin="1"/>
-      <node ref="J1" pin="B12"/>
-      <node ref="C27" pin="2"/>
-      <node ref="J1" pin="B1"/>
-      <node ref="C28" pin="2"/>
-      <node ref="C29" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="C31" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="U5" pin="8"/>
-      <node ref="U7" pin="8"/>
-      <node ref="C17" pin="2"/>
-      <node ref="U4" pin="9"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C18" pin="2"/>
-      <node ref="U3" pin="23"/>
-      <node ref="U3" pin="28"/>
-      <node ref="R12" pin="1"/>
-      <node ref="C30" pin="2"/>
-    </net>
-    <net code="7" name="+5V">
-      <node ref="J2" pin="1"/>
+    <net code="6" name="+5V">
       <node ref="U1" pin="5"/>
-      <node ref="R13" pin="1"/>
-      <node ref="U3" pin="27"/>
-      <node ref="J23" pin="1"/>
       <node ref="C21" pin="1"/>
+      <node ref="R13" pin="1"/>
       <node ref="C22" pin="1"/>
       <node ref="C18" pin="1"/>
-      <node ref="U5" pin="16"/>
+      <node ref="R7" pin="2"/>
+      <node ref="C4" pin="1"/>
       <node ref="C32" pin="1"/>
-      <node ref="R53" pin="2"/>
-      <node ref="U10" pin="4"/>
+      <node ref="J23" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C5" pin="1"/>
       <node ref="U10" pin="8"/>
-      <node ref="C25" pin="1"/>
+      <node ref="U10" pin="4"/>
+      <node ref="R53" pin="2"/>
+      <node ref="J8" pin="1"/>
       <node ref="U9" pin="16"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U8" pin="16"/>
+      <node ref="U6" pin="16"/>
       <node ref="C26" pin="1"/>
+      <node ref="C25" pin="1"/>
       <node ref="C24" pin="1"/>
       <node ref="C23" pin="1"/>
       <node ref="C17" pin="1"/>
-      <node ref="U7" pin="16"/>
-      <node ref="C19" pin="1"/>
-      <node ref="C20" pin="1"/>
-      <node ref="U6" pin="16"/>
-      <node ref="U8" pin="16"/>
-      <node ref="R7" pin="2"/>
-      <node ref="C4" pin="1"/>
-      <node ref="J8" pin="1"/>
-      <node ref="C6" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="J20" pin="1"/>
       <node ref="U2" pin="3"/>
+      <node ref="U3" pin="27"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="J20" pin="1"/>
+      <node ref="U5" pin="16"/>
+      <node ref="U7" pin="16"/>
     </net>
-    <net code="8" name="/DEBUGGER">
-      <node ref="R6" pin="1"/>
-      <node ref="U3" pin="5"/>
-      <node ref="J22" pin="1"/>
+    <net code="7" name="Net-(R17-Pad1)">
+      <node ref="R17" pin="1"/>
+      <node ref="U4" pin="7"/>
     </net>
     <net code="9" name="Net-(R15-Pad1)">
       <node ref="R15" pin="1"/>
       <node ref="U4" pin="6"/>
     </net>
-    <net code="11" name="/UART_TX_P">
-      <node ref="U3" pin="15"/>
-      <node ref="U4" pin="11"/>
-    </net>
-    <net code="12" name="/UART_RX_N">
-      <node ref="U3" pin="14"/>
-      <node ref="U4" pin="12"/>
-    </net>
-    <net code="13" name="/MCU_EN">
-      <node ref="R19" pin="2"/>
-      <node ref="U4" pin="2"/>
-      <node ref="C15" pin="1"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="J12" pin="1"/>
-    </net>
-    <net code="15" name="/MCU_IO5">
-      <node ref="U9" pin="12"/>
-      <node ref="U8" pin="12"/>
-      <node ref="U7" pin="12"/>
-      <node ref="U6" pin="12"/>
-      <node ref="U4" pin="14"/>
-    </net>
-    <net code="16" name="/DATA">
-      <node ref="U6" pin="14"/>
-      <node ref="U4" pin="10"/>
-      <node ref="U5" pin="14"/>
-    </net>
-    <net code="17" name="/MCU_TOUT">
+    <net code="10" name="/MCU_TOUT">
       <node ref="U4" pin="16"/>
       <node ref="J13" pin="1"/>
     </net>
-    <net code="18" name="/EOUT">
+    <net code="11" name="/EFUSE_PROG">
+      <node ref="U3" pin="1"/>
+      <node ref="J15" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="12" name="/UART_TRX_P">
+      <node ref="U3" pin="15"/>
+      <node ref="U4" pin="11"/>
+    </net>
+    <net code="13" name="/UART_TRX_N">
+      <node ref="U4" pin="12"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="14" name="/MCU_EN">
+      <node ref="C15" pin="1"/>
+      <node ref="R19" pin="2"/>
+      <node ref="J12" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="16" name="+3V3">
+      <node ref="U2" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="R17" pin="2"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="17" name="GND">
+      <node ref="C30" pin="2"/>
+      <node ref="U5" pin="8"/>
+      <node ref="U3" pin="28"/>
+      <node ref="C27" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U3" pin="23"/>
+      <node ref="U9" pin="8"/>
+      <node ref="U4" pin="13"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="J10" pin="1"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U6" pin="8"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="U7" pin="8"/>
+      <node ref="U8" pin="8"/>
+      <node ref="D81" pin="1"/>
+      <node ref="U4" pin="19"/>
+      <node ref="U4" pin="18"/>
+      <node ref="J1" pin="A12"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="U10" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="D82" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="J25" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="J1" pin="B12"/>
+      <node ref="J1" pin="B1"/>
+      <node ref="U4" pin="9"/>
+      <node ref="J1" pin="A1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="J1" pin="S1"/>
+      <node ref="C15" pin="2"/>
+    </net>
+    <net code="18" name="/HSYNC">
+      <node ref="U4" pin="3"/>
+      <node ref="U5" pin="12"/>
+      <node ref="U5" pin="11"/>
+    </net>
+    <net code="19" name="/DATA">
+      <node ref="U4" pin="10"/>
+      <node ref="U6" pin="14"/>
+      <node ref="U5" pin="14"/>
+    </net>
+    <net code="20" name="/MCU_IO5">
+      <node ref="U9" pin="12"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U8" pin="12"/>
+      <node ref="U6" pin="12"/>
+      <node ref="U7" pin="12"/>
+    </net>
+    <net code="21" name="/EOUT">
       <node ref="U5" pin="13"/>
+      <node ref="U9" pin="13"/>
       <node ref="U4" pin="4"/>
       <node ref="U6" pin="13"/>
-      <node ref="U9" pin="13"/>
-      <node ref="U7" pin="13"/>
       <node ref="U8" pin="13"/>
+      <node ref="U7" pin="13"/>
     </net>
-    <net code="19" name="/MCU_IO13">
+    <net code="22" name="/MCU_IO13">
       <node ref="U7" pin="10"/>
       <node ref="U5" pin="10"/>
       <node ref="U4" pin="5"/>
+      <node ref="U6" pin="10"/>
       <node ref="U9" pin="10"/>
       <node ref="U8" pin="10"/>
-      <node ref="U6" pin="10"/>
     </net>
-    <net code="20" name="/HSYNC">
-      <node ref="U5" pin="12"/>
-      <node ref="U5" pin="11"/>
-      <node ref="U4" pin="3"/>
-    </net>
-    <net code="21" name="/DCLK">
-      <node ref="U9" pin="11"/>
-      <node ref="U4" pin="17"/>
-      <node ref="U8" pin="11"/>
-      <node ref="U7" pin="11"/>
-      <node ref="U6" pin="11"/>
-    </net>
-    <net code="22" name="Net-(FB1-Pad2)">
-      <node ref="J1" pin="B4"/>
-      <node ref="J1" pin="A9"/>
-      <node ref="J1" pin="A4"/>
-      <node ref="FB1" pin="2"/>
-      <node ref="J1" pin="B9"/>
-    </net>
-    <net code="23" name="Net-(R17-Pad1)">
-      <node ref="U4" pin="7"/>
-      <node ref="R17" pin="1"/>
-    </net>
-    <net code="24" name="/EFUSE_PROG">
-      <node ref="R1" pin="1"/>
-      <node ref="R2" pin="2"/>
-      <node ref="U3" pin="1"/>
-      <node ref="J15" pin="1"/>
-    </net>
-    <net code="25" name="/UART_DTRN">
-      <node ref="U3" pin="20"/>
+    <net code="23" name="/UART_DTRN">
       <node ref="Q1" pin="1"/>
       <node ref="Q2" pin="2"/>
+      <node ref="U3" pin="20"/>
       <node ref="J16" pin="1"/>
     </net>
+    <net code="24" name="/DCLK">
+      <node ref="U6" pin="11"/>
+      <node ref="U8" pin="11"/>
+      <node ref="U7" pin="11"/>
+      <node ref="U4" pin="17"/>
+      <node ref="U9" pin="11"/>
+    </net>
+    <net code="25" name="Net-(FB1-Pad2)">
+      <node ref="J1" pin="B9"/>
+      <node ref="J1" pin="A9"/>
+      <node ref="FB1" pin="2"/>
+      <node ref="J1" pin="A4"/>
+      <node ref="J1" pin="B4"/>
+    </net>
     <net code="26" name="/UART_RTSN">
+      <node ref="Q2" pin="1"/>
       <node ref="J17" pin="1"/>
       <node ref="U3" pin="12"/>
       <node ref="Q1" pin="2"/>
-      <node ref="Q2" pin="1"/>
     </net>
     <net code="27" name="/MCU_RESET">
-      <node ref="R18" pin="2"/>
-      <node ref="U4" pin="15"/>
       <node ref="J11" pin="1"/>
+      <node ref="U4" pin="15"/>
       <node ref="C14" pin="1"/>
+      <node ref="R18" pin="2"/>
     </net>
     <net code="28" name="Net-(R13-Pad2)">
       <node ref="U3" pin="2"/>
       <node ref="R13" pin="2"/>
     </net>
-    <net code="29" name="Net-(R11-Pad1)">
-      <node ref="R11" pin="1"/>
-      <node ref="U3" pin="9"/>
-    </net>
-    <net code="30" name="Net-(R12-Pad2)">
-      <node ref="U3" pin="8"/>
-      <node ref="R12" pin="2"/>
-    </net>
-    <net code="31" name="/VCCIO">
-      <node ref="R11" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="U3" pin="26"/>
-      <node ref="C7" pin="1"/>
-      <node ref="C11" pin="1"/>
-      <node ref="J9" pin="1"/>
-      <node ref="C10" pin="1"/>
-      <node ref="R8" pin="2"/>
+    <net code="29" name="/VCCIO">
       <node ref="R5" pin="2"/>
-      <node ref="C9" pin="1"/>
-      <node ref="U3" pin="10"/>
       <node ref="R14" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U3" pin="26"/>
+      <node ref="R11" pin="2"/>
+      <node ref="J9" pin="1"/>
+      <node ref="U3" pin="10"/>
     </net>
-    <net code="32" name="/STEST_RSTN">
+    <net code="30" name="/STEST_RSTN">
       <node ref="R8" pin="1"/>
       <node ref="U3" pin="6"/>
     </net>
+    <net code="31" name="Net-(R11-Pad1)">
+      <node ref="U3" pin="9"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="32" name="Net-(R12-Pad2)">
+      <node ref="U3" pin="8"/>
+      <node ref="R12" pin="2"/>
+    </net>
     <net code="33" name="-BATT">
       <node ref="J6" pin="1"/>
-      <node ref="J5" pin="2"/>
     </net>
     <net code="34" name="+BATT">
       <node ref="J4" pin="1"/>
-      <node ref="J5" pin="1"/>
     </net>
-    <net code="35" name="/UART_CTSN">
-      <node ref="U3" pin="13"/>
-    </net>
-    <net code="36" name="Net-(J1-PadA8)">
-      <node ref="J1" pin="A8"/>
-    </net>
-    <net code="37" name="Net-(J1-PadB5)">
+    <net code="35" name="Net-(J1-PadB5)">
       <node ref="J1" pin="B5"/>
       <node ref="R4" pin="2"/>
+    </net>
+    <net code="36" name="Net-(J1-PadA5)">
+      <node ref="J1" pin="A5"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="37" name="Net-(J1-PadA8)">
+      <node ref="J1" pin="A8"/>
     </net>
     <net code="38" name="Net-(J1-PadB8)">
       <node ref="J1" pin="B8"/>
     </net>
-    <net code="39" name="Net-(J1-PadA5)">
-      <node ref="J1" pin="A5"/>
-      <node ref="R3" pin="2"/>
-    </net>
-    <net code="40" name="/USB2_N">
-      <node ref="R9" pin="2"/>
-      <node ref="J1" pin="A7"/>
+    <net code="39" name="/USB2_N">
       <node ref="J1" pin="B7"/>
+      <node ref="J1" pin="A7"/>
+      <node ref="R9" pin="2"/>
       <node ref="C3" pin="1"/>
     </net>
-    <net code="41" name="Net-(U1-Pad6)">
+    <net code="40" name="Net-(U1-Pad6)">
       <node ref="U1" pin="6"/>
       <node ref="U3" pin="24"/>
     </net>
-    <net code="42" name="Net-(U1-Pad4)">
-      <node ref="U1" pin="4"/>
-      <node ref="U3" pin="25"/>
-    </net>
-    <net code="43" name="Net-(R10-Pad1)">
-      <node ref="R10" pin="1"/>
+    <net code="41" name="Net-(R10-Pad1)">
       <node ref="U1" pin="3"/>
+      <node ref="R10" pin="1"/>
     </net>
-    <net code="44" name="/USB2_P">
-      <node ref="C1" pin="1"/>
-      <node ref="R10" pin="2"/>
+    <net code="42" name="/USB2_P">
       <node ref="J1" pin="A6"/>
+      <node ref="C1" pin="1"/>
       <node ref="J1" pin="B6"/>
+      <node ref="R10" pin="2"/>
     </net>
-    <net code="45" name="Net-(R9-Pad1)">
+    <net code="43" name="Net-(U1-Pad4)">
+      <node ref="U3" pin="25"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="44" name="Net-(R9-Pad1)">
       <node ref="U1" pin="1"/>
       <node ref="R9" pin="1"/>
     </net>
-    <net code="46" name="Net-(U3-Pad19)">
-      <node ref="U3" pin="19"/>
-    </net>
-    <net code="47" name="Net-(U3-Pad21)">
-      <node ref="U3" pin="21"/>
-    </net>
-    <net code="48" name="Net-(U3-Pad22)">
+    <net code="45" name="Net-(U3-Pad22)">
       <node ref="U3" pin="22"/>
     </net>
-    <net code="49" name="Net-(U3-Pad3)">
+    <net code="46" name="Net-(U3-Pad3)">
       <node ref="U3" pin="3"/>
     </net>
-    <net code="50" name="Net-(U3-Pad4)">
+    <net code="47" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
     </net>
-    <net code="51" name="Net-(U3-Pad16)">
-      <node ref="U3" pin="16"/>
-    </net>
-    <net code="52" name="Net-(U3-Pad11)">
+    <net code="48" name="Net-(U3-Pad11)">
       <node ref="U3" pin="11"/>
     </net>
-    <net code="53" name="Net-(U3-Pad17)">
+    <net code="49" name="/UART_CTSN">
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="50" name="Net-(U3-Pad21)">
+      <node ref="U3" pin="21"/>
+    </net>
+    <net code="51" name="Net-(U3-Pad17)">
       <node ref="U3" pin="17"/>
+    </net>
+    <net code="52" name="Net-(U3-Pad16)">
+      <node ref="U3" pin="16"/>
+    </net>
+    <net code="53" name="Net-(U3-Pad19)">
+      <node ref="U3" pin="19"/>
     </net>
     <net code="54" name="Net-(J3-Pad1)">
       <node ref="J3" pin="1"/>
       <node ref="R1" pin="2"/>
     </net>
     <net code="55" name="Net-(D73-Pad3)">
-      <node ref="D80" pin="3"/>
-      <node ref="D77" pin="3"/>
-      <node ref="D76" pin="3"/>
-      <node ref="R48" pin="1"/>
-      <node ref="D79" pin="3"/>
       <node ref="D73" pin="3"/>
-      <node ref="D74" pin="3"/>
-      <node ref="D75" pin="3"/>
+      <node ref="D80" pin="3"/>
+      <node ref="D79" pin="3"/>
+      <node ref="R48" pin="1"/>
       <node ref="D78" pin="3"/>
+      <node ref="D76" pin="3"/>
+      <node ref="D74" pin="3"/>
+      <node ref="D77" pin="3"/>
+      <node ref="D75" pin="3"/>
     </net>
     <net code="56" name="Net-(R21-Pad2)">
-      <node ref="U6" pin="1"/>
       <node ref="R21" pin="2"/>
+      <node ref="U6" pin="1"/>
     </net>
     <net code="57" name="Net-(R22-Pad2)">
       <node ref="U6" pin="2"/>
@@ -3304,92 +3473,92 @@
       <node ref="U5" pin="9"/>
     </net>
     <net code="59" name="Net-(Q4-Pad1)">
-      <node ref="U5" pin="7"/>
       <node ref="Q4" pin="1"/>
+      <node ref="U5" pin="7"/>
     </net>
     <net code="60" name="Net-(Q10-Pad1)">
-      <node ref="U5" pin="5"/>
       <node ref="Q10" pin="1"/>
+      <node ref="U5" pin="5"/>
     </net>
     <net code="61" name="Net-(Q9-Pad1)">
-      <node ref="Q9" pin="1"/>
       <node ref="U5" pin="4"/>
+      <node ref="Q9" pin="1"/>
     </net>
     <net code="62" name="Net-(D49-Pad3)">
-      <node ref="D52" pin="3"/>
-      <node ref="D51" pin="3"/>
-      <node ref="D50" pin="3"/>
-      <node ref="R39" pin="1"/>
-      <node ref="D55" pin="3"/>
       <node ref="D53" pin="3"/>
-      <node ref="D49" pin="3"/>
       <node ref="D56" pin="3"/>
+      <node ref="D52" pin="3"/>
+      <node ref="D55" pin="3"/>
       <node ref="D54" pin="3"/>
+      <node ref="D51" pin="3"/>
+      <node ref="R39" pin="1"/>
+      <node ref="D49" pin="3"/>
+      <node ref="D50" pin="3"/>
     </net>
     <net code="63" name="Net-(D65-Pad3)">
-      <node ref="D71" pin="3"/>
-      <node ref="D70" pin="3"/>
-      <node ref="D68" pin="3"/>
-      <node ref="D72" pin="3"/>
       <node ref="D67" pin="3"/>
-      <node ref="D65" pin="3"/>
-      <node ref="D66" pin="3"/>
-      <node ref="R45" pin="1"/>
       <node ref="D69" pin="3"/>
+      <node ref="D70" pin="3"/>
+      <node ref="D71" pin="3"/>
+      <node ref="D72" pin="3"/>
+      <node ref="D68" pin="3"/>
+      <node ref="R45" pin="1"/>
+      <node ref="D66" pin="3"/>
+      <node ref="D65" pin="3"/>
     </net>
     <net code="64" name="Net-(R53-Pad1)">
-      <node ref="R53" pin="1"/>
       <node ref="VR1" pin="3"/>
+      <node ref="R53" pin="1"/>
     </net>
     <net code="65" name="Net-(D57-Pad3)">
-      <node ref="D61" pin="3"/>
-      <node ref="D64" pin="3"/>
-      <node ref="D63" pin="3"/>
-      <node ref="D57" pin="3"/>
-      <node ref="D62" pin="3"/>
-      <node ref="D58" pin="3"/>
-      <node ref="D59" pin="3"/>
       <node ref="R42" pin="1"/>
       <node ref="D60" pin="3"/>
+      <node ref="D57" pin="3"/>
+      <node ref="D58" pin="3"/>
+      <node ref="D59" pin="3"/>
+      <node ref="D62" pin="3"/>
+      <node ref="D63" pin="3"/>
+      <node ref="D64" pin="3"/>
+      <node ref="D61" pin="3"/>
     </net>
     <net code="66" name="Net-(D84-Pad2)">
       <node ref="D84" pin="2"/>
-      <node ref="VR1" pin="2"/>
       <node ref="U10" pin="7"/>
+      <node ref="VR1" pin="2"/>
     </net>
     <net code="67" name="Net-(D83-Pad1)">
       <node ref="R52" pin="2"/>
       <node ref="D83" pin="1"/>
     </net>
     <net code="68" name="Net-(C31-Pad1)">
-      <node ref="C31" pin="1"/>
       <node ref="U10" pin="5"/>
+      <node ref="C31" pin="1"/>
     </net>
     <net code="69" name="Net-(C27-Pad1)">
-      <node ref="C30" pin="1"/>
-      <node ref="D84" pin="1"/>
-      <node ref="D83" pin="2"/>
-      <node ref="C29" pin="1"/>
-      <node ref="C27" pin="1"/>
       <node ref="U10" pin="2"/>
+      <node ref="D84" pin="1"/>
+      <node ref="C30" pin="1"/>
+      <node ref="C29" pin="1"/>
       <node ref="C28" pin="1"/>
+      <node ref="C27" pin="1"/>
       <node ref="U10" pin="6"/>
+      <node ref="D83" pin="2"/>
     </net>
     <net code="70" name="Net-(R52-Pad1)">
       <node ref="R52" pin="1"/>
       <node ref="VR1" pin="1"/>
     </net>
     <net code="71" name="/Display-and-controller-61B0EECC/PWM_BC">
-      <node ref="J24" pin="1"/>
       <node ref="Q6" pin="3"/>
-      <node ref="Q8" pin="3"/>
-      <node ref="Q7" pin="3"/>
-      <node ref="Q5" pin="3"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="Q4" pin="3"/>
       <node ref="Q9" pin="3"/>
       <node ref="Q10" pin="3"/>
+      <node ref="Q7" pin="3"/>
+      <node ref="Q8" pin="3"/>
+      <node ref="Q5" pin="3"/>
       <node ref="U10" pin="3"/>
-      <node ref="Q4" pin="3"/>
-      <node ref="Q3" pin="3"/>
+      <node ref="J24" pin="1"/>
     </net>
     <net code="72" name="Net-(Q8-Pad1)">
       <node ref="Q8" pin="1"/>
@@ -3404,8 +3573,8 @@
       <node ref="Q3" pin="1"/>
     </net>
     <net code="75" name="Net-(Q6-Pad1)">
-      <node ref="U5" pin="1"/>
       <node ref="Q6" pin="1"/>
+      <node ref="U5" pin="1"/>
     </net>
     <net code="76" name="Net-(Q5-Pad1)">
       <node ref="Q5" pin="1"/>
@@ -3414,82 +3583,82 @@
     <net code="77" name="Net-(D12-Pad1)">
       <node ref="D12" pin="1"/>
       <node ref="D4" pin="1"/>
-      <node ref="Q8" pin="2"/>
-      <node ref="D52" pin="1"/>
       <node ref="D60" pin="1"/>
       <node ref="D68" pin="1"/>
       <node ref="D76" pin="1"/>
       <node ref="D44" pin="1"/>
-      <node ref="D20" pin="1"/>
       <node ref="D36" pin="1"/>
+      <node ref="Q8" pin="2"/>
       <node ref="D28" pin="1"/>
+      <node ref="D52" pin="1"/>
+      <node ref="D20" pin="1"/>
     </net>
     <net code="78" name="Net-(D82-Pad2)">
-      <node ref="R51" pin="2"/>
       <node ref="D82" pin="2"/>
+      <node ref="R51" pin="2"/>
     </net>
     <net code="79" name="Net-(U6-Pad9)">
       <node ref="U6" pin="9"/>
       <node ref="U7" pin="14"/>
     </net>
     <net code="80" name="Net-(U7-Pad9)">
-      <node ref="U7" pin="9"/>
       <node ref="U8" pin="14"/>
+      <node ref="U7" pin="9"/>
     </net>
     <net code="81" name="Net-(D33-Pad2)">
-      <node ref="D36" pin="2"/>
-      <node ref="D40" pin="2"/>
-      <node ref="D39" pin="2"/>
       <node ref="D38" pin="2"/>
+      <node ref="D39" pin="2"/>
+      <node ref="D40" pin="2"/>
+      <node ref="D36" pin="2"/>
       <node ref="D37" pin="2"/>
-      <node ref="D35" pin="2"/>
-      <node ref="D34" pin="2"/>
       <node ref="D33" pin="2"/>
+      <node ref="D34" pin="2"/>
+      <node ref="D35" pin="2"/>
       <node ref="R34" pin="1"/>
     </net>
     <net code="82" name="Net-(D49-Pad4)">
-      <node ref="D52" pin="4"/>
-      <node ref="R38" pin="1"/>
-      <node ref="D56" pin="4"/>
       <node ref="D55" pin="4"/>
       <node ref="D54" pin="4"/>
       <node ref="D53" pin="4"/>
+      <node ref="D52" pin="4"/>
       <node ref="D51" pin="4"/>
       <node ref="D50" pin="4"/>
       <node ref="D49" pin="4"/>
+      <node ref="R38" pin="1"/>
+      <node ref="D56" pin="4"/>
     </net>
     <net code="83" name="Net-(D49-Pad2)">
-      <node ref="R40" pin="1"/>
-      <node ref="D49" pin="2"/>
-      <node ref="D56" pin="2"/>
-      <node ref="D55" pin="2"/>
       <node ref="D50" pin="2"/>
-      <node ref="D54" pin="2"/>
-      <node ref="D51" pin="2"/>
       <node ref="D53" pin="2"/>
+      <node ref="D56" pin="2"/>
+      <node ref="D51" pin="2"/>
+      <node ref="D49" pin="2"/>
       <node ref="D52" pin="2"/>
+      <node ref="R40" pin="1"/>
+      <node ref="D55" pin="2"/>
+      <node ref="D54" pin="2"/>
     </net>
     <net code="84" name="Net-(D57-Pad4)">
-      <node ref="D57" pin="4"/>
-      <node ref="R41" pin="1"/>
-      <node ref="D64" pin="4"/>
-      <node ref="D59" pin="4"/>
-      <node ref="D63" pin="4"/>
-      <node ref="D60" pin="4"/>
-      <node ref="D62" pin="4"/>
       <node ref="D58" pin="4"/>
+      <node ref="D60" pin="4"/>
+      <node ref="D63" pin="4"/>
+      <node ref="D59" pin="4"/>
+      <node ref="D57" pin="4"/>
+      <node ref="D64" pin="4"/>
+      <node ref="R41" pin="1"/>
+      <node ref="D62" pin="4"/>
       <node ref="D61" pin="4"/>
     </net>
     <net code="85" name="Net-(D57-Pad2)">
       <node ref="D60" pin="2"/>
       <node ref="R43" pin="1"/>
       <node ref="D63" pin="2"/>
-      <node ref="D61" pin="2"/>
-      <node ref="D57" pin="2"/>
-      <node ref="D62" pin="2"/>
-      <node ref="D59" pin="2"/>
-      <node ref="D64" pin="2"/>
       <node ref="D58" pin="2"/>
+      <node ref="D57" pin="2"/>
+      <node ref="D59" pin="2"/>
+      <node ref="D61" pin="2"/>
+      <node ref="D64" pin="2"/>
+      <node ref="D62" pin="2"/>
     </net>
     <net code="86" name="Net-(R25-Pad2)">
       <node ref="U6" pin="5"/>
@@ -3512,16 +3681,16 @@
       <node ref="U6" pin="6"/>
     </net>
     <net code="91" name="Net-(R27-Pad2)">
-      <node ref="U6" pin="7"/>
       <node ref="R27" pin="2"/>
+      <node ref="U6" pin="7"/>
     </net>
     <net code="92" name="Net-(R35-Pad2)">
       <node ref="U7" pin="7"/>
       <node ref="R35" pin="2"/>
     </net>
     <net code="93" name="Net-(R31-Pad2)">
-      <node ref="U7" pin="3"/>
       <node ref="R31" pin="2"/>
+      <node ref="U7" pin="3"/>
     </net>
     <net code="94" name="Net-(R30-Pad2)">
       <node ref="U7" pin="2"/>
@@ -3540,8 +3709,8 @@
       <node ref="U7" pin="4"/>
     </net>
     <net code="98" name="Net-(R33-Pad2)">
-      <node ref="U7" pin="5"/>
       <node ref="R33" pin="2"/>
+      <node ref="U7" pin="5"/>
     </net>
     <net code="99" name="Net-(R34-Pad2)">
       <node ref="R34" pin="2"/>
@@ -3557,104 +3726,104 @@
     </net>
     <net code="102" name="Net-(D65-Pad4)">
       <node ref="R44" pin="1"/>
-      <node ref="D68" pin="4"/>
-      <node ref="D67" pin="4"/>
-      <node ref="D69" pin="4"/>
-      <node ref="D70" pin="4"/>
       <node ref="D71" pin="4"/>
-      <node ref="D72" pin="4"/>
+      <node ref="D68" pin="4"/>
+      <node ref="D70" pin="4"/>
+      <node ref="D69" pin="4"/>
+      <node ref="D67" pin="4"/>
       <node ref="D65" pin="4"/>
+      <node ref="D72" pin="4"/>
       <node ref="D66" pin="4"/>
     </net>
     <net code="103" name="Net-(D65-Pad2)">
-      <node ref="D66" pin="2"/>
-      <node ref="D65" pin="2"/>
       <node ref="R46" pin="1"/>
+      <node ref="D65" pin="2"/>
+      <node ref="D66" pin="2"/>
       <node ref="D69" pin="2"/>
-      <node ref="D67" pin="2"/>
       <node ref="D68" pin="2"/>
-      <node ref="D70" pin="2"/>
       <node ref="D72" pin="2"/>
       <node ref="D71" pin="2"/>
+      <node ref="D70" pin="2"/>
+      <node ref="D67" pin="2"/>
     </net>
     <net code="104" name="Net-(D73-Pad4)">
-      <node ref="D79" pin="4"/>
-      <node ref="D80" pin="4"/>
-      <node ref="D77" pin="4"/>
-      <node ref="D78" pin="4"/>
-      <node ref="D76" pin="4"/>
+      <node ref="R47" pin="1"/>
       <node ref="D75" pin="4"/>
       <node ref="D73" pin="4"/>
-      <node ref="R47" pin="1"/>
       <node ref="D74" pin="4"/>
+      <node ref="D76" pin="4"/>
+      <node ref="D77" pin="4"/>
+      <node ref="D78" pin="4"/>
+      <node ref="D79" pin="4"/>
+      <node ref="D80" pin="4"/>
     </net>
     <net code="105" name="Net-(D73-Pad2)">
-      <node ref="D73" pin="2"/>
-      <node ref="D77" pin="2"/>
-      <node ref="D75" pin="2"/>
       <node ref="D78" pin="2"/>
+      <node ref="D73" pin="2"/>
       <node ref="D74" pin="2"/>
-      <node ref="D80" pin="2"/>
-      <node ref="D79" pin="2"/>
-      <node ref="R49" pin="1"/>
       <node ref="D76" pin="2"/>
+      <node ref="D75" pin="2"/>
+      <node ref="D77" pin="2"/>
+      <node ref="D79" pin="2"/>
+      <node ref="D80" pin="2"/>
+      <node ref="R49" pin="1"/>
     </net>
     <net code="106" name="Net-(D1-Pad4)">
-      <node ref="D8" pin="4"/>
-      <node ref="D1" pin="4"/>
-      <node ref="D6" pin="4"/>
-      <node ref="D7" pin="4"/>
       <node ref="D4" pin="4"/>
-      <node ref="D5" pin="4"/>
-      <node ref="D2" pin="4"/>
       <node ref="D3" pin="4"/>
+      <node ref="D1" pin="4"/>
       <node ref="R20" pin="1"/>
+      <node ref="D7" pin="4"/>
+      <node ref="D2" pin="4"/>
+      <node ref="D6" pin="4"/>
+      <node ref="D5" pin="4"/>
+      <node ref="D8" pin="4"/>
     </net>
     <net code="107" name="Net-(D1-Pad2)">
-      <node ref="R22" pin="1"/>
-      <node ref="D6" pin="2"/>
-      <node ref="D4" pin="2"/>
-      <node ref="D8" pin="2"/>
+      <node ref="D1" pin="2"/>
       <node ref="D3" pin="2"/>
       <node ref="D2" pin="2"/>
+      <node ref="R22" pin="1"/>
+      <node ref="D8" pin="2"/>
       <node ref="D7" pin="2"/>
-      <node ref="D1" pin="2"/>
+      <node ref="D6" pin="2"/>
+      <node ref="D4" pin="2"/>
       <node ref="D5" pin="2"/>
     </net>
     <net code="108" name="Net-(D10-Pad1)">
-      <node ref="D42" pin="1"/>
-      <node ref="D50" pin="1"/>
-      <node ref="D10" pin="1"/>
       <node ref="D2" pin="1"/>
-      <node ref="D34" pin="1"/>
+      <node ref="Q6" pin="2"/>
       <node ref="D18" pin="1"/>
       <node ref="D74" pin="1"/>
       <node ref="D58" pin="1"/>
-      <node ref="D66" pin="1"/>
-      <node ref="Q6" pin="2"/>
+      <node ref="D50" pin="1"/>
+      <node ref="D34" pin="1"/>
+      <node ref="D42" pin="1"/>
       <node ref="D26" pin="1"/>
+      <node ref="D10" pin="1"/>
+      <node ref="D66" pin="1"/>
     </net>
     <net code="109" name="Net-(D10-Pad4)">
-      <node ref="D11" pin="4"/>
-      <node ref="D10" pin="4"/>
-      <node ref="D13" pin="4"/>
-      <node ref="D9" pin="4"/>
-      <node ref="D15" pin="4"/>
-      <node ref="D12" pin="4"/>
       <node ref="D16" pin="4"/>
-      <node ref="D14" pin="4"/>
+      <node ref="D13" pin="4"/>
       <node ref="R23" pin="1"/>
+      <node ref="D11" pin="4"/>
+      <node ref="D14" pin="4"/>
+      <node ref="D15" pin="4"/>
+      <node ref="D10" pin="4"/>
+      <node ref="D9" pin="4"/>
+      <node ref="D12" pin="4"/>
     </net>
     <net code="110" name="Net-(D10-Pad3)">
-      <node ref="D11" pin="3"/>
       <node ref="D9" pin="3"/>
-      <node ref="D13" pin="3"/>
-      <node ref="D14" pin="3"/>
-      <node ref="R24" pin="1"/>
-      <node ref="D15" pin="3"/>
       <node ref="D16" pin="3"/>
-      <node ref="D12" pin="3"/>
+      <node ref="D15" pin="3"/>
+      <node ref="D14" pin="3"/>
+      <node ref="D13" pin="3"/>
+      <node ref="D11" pin="3"/>
       <node ref="D10" pin="3"/>
+      <node ref="R24" pin="1"/>
+      <node ref="D12" pin="3"/>
     </net>
     <net code="111" name="Net-(R46-Pad2)">
       <node ref="R46" pin="2"/>
@@ -3685,12 +3854,12 @@
       <node ref="U9" pin="15"/>
     </net>
     <net code="118" name="Net-(R50-Pad1)">
-      <node ref="U9" pin="6"/>
       <node ref="R50" pin="1"/>
+      <node ref="U9" pin="6"/>
     </net>
     <net code="119" name="Net-(R51-Pad1)">
-      <node ref="U9" pin="7"/>
       <node ref="R51" pin="1"/>
+      <node ref="U9" pin="7"/>
     </net>
     <net code="120" name="Net-(R37-Pad2)">
       <node ref="U8" pin="1"/>
@@ -3705,243 +3874,243 @@
       <node ref="U8" pin="3"/>
     </net>
     <net code="123" name="Net-(R40-Pad2)">
-      <node ref="R40" pin="2"/>
       <node ref="U8" pin="4"/>
+      <node ref="R40" pin="2"/>
     </net>
     <net code="124" name="Net-(R41-Pad2)">
-      <node ref="U8" pin="5"/>
       <node ref="R41" pin="2"/>
+      <node ref="U8" pin="5"/>
     </net>
     <net code="125" name="Net-(R42-Pad2)">
-      <node ref="U8" pin="6"/>
       <node ref="R42" pin="2"/>
+      <node ref="U8" pin="6"/>
     </net>
     <net code="126" name="Net-(R43-Pad2)">
-      <node ref="R43" pin="2"/>
       <node ref="U8" pin="7"/>
+      <node ref="R43" pin="2"/>
     </net>
     <net code="127" name="Net-(U9-Pad9)">
       <node ref="U9" pin="9"/>
     </net>
     <net code="128" name="Net-(D41-Pad3)">
       <node ref="R36" pin="1"/>
-      <node ref="D45" pin="3"/>
-      <node ref="D41" pin="3"/>
-      <node ref="D48" pin="3"/>
+      <node ref="D44" pin="3"/>
       <node ref="D43" pin="3"/>
       <node ref="D42" pin="3"/>
+      <node ref="D48" pin="3"/>
+      <node ref="D41" pin="3"/>
       <node ref="D47" pin="3"/>
+      <node ref="D45" pin="3"/>
       <node ref="D46" pin="3"/>
-      <node ref="D44" pin="3"/>
     </net>
     <net code="129" name="Net-(D11-Pad1)">
-      <node ref="D11" pin="1"/>
-      <node ref="D19" pin="1"/>
-      <node ref="Q7" pin="2"/>
-      <node ref="D27" pin="1"/>
-      <node ref="D51" pin="1"/>
-      <node ref="D43" pin="1"/>
-      <node ref="D35" pin="1"/>
-      <node ref="D3" pin="1"/>
-      <node ref="D75" pin="1"/>
       <node ref="D59" pin="1"/>
       <node ref="D67" pin="1"/>
+      <node ref="D35" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D19" pin="1"/>
+      <node ref="Q7" pin="2"/>
+      <node ref="D43" pin="1"/>
+      <node ref="D75" pin="1"/>
+      <node ref="D27" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D51" pin="1"/>
     </net>
     <net code="130" name="Net-(D33-Pad3)">
       <node ref="D39" pin="3"/>
-      <node ref="D36" pin="3"/>
       <node ref="D38" pin="3"/>
+      <node ref="D40" pin="3"/>
+      <node ref="D35" pin="3"/>
+      <node ref="D36" pin="3"/>
+      <node ref="D37" pin="3"/>
       <node ref="D33" pin="3"/>
       <node ref="D34" pin="3"/>
-      <node ref="D35" pin="3"/>
-      <node ref="D40" pin="3"/>
-      <node ref="D37" pin="3"/>
       <node ref="R33" pin="1"/>
     </net>
     <net code="131" name="Net-(D33-Pad4)">
+      <node ref="D37" pin="4"/>
+      <node ref="D38" pin="4"/>
+      <node ref="D35" pin="4"/>
+      <node ref="D34" pin="4"/>
       <node ref="D33" pin="4"/>
+      <node ref="D40" pin="4"/>
       <node ref="D36" pin="4"/>
       <node ref="R32" pin="1"/>
       <node ref="D39" pin="4"/>
-      <node ref="D40" pin="4"/>
-      <node ref="D38" pin="4"/>
-      <node ref="D37" pin="4"/>
-      <node ref="D35" pin="4"/>
-      <node ref="D34" pin="4"/>
     </net>
     <net code="132" name="Net-(D25-Pad2)">
       <node ref="R31" pin="1"/>
-      <node ref="D30" pin="2"/>
-      <node ref="D25" pin="2"/>
-      <node ref="D29" pin="2"/>
       <node ref="D26" pin="2"/>
-      <node ref="D27" pin="2"/>
       <node ref="D32" pin="2"/>
-      <node ref="D28" pin="2"/>
       <node ref="D31" pin="2"/>
+      <node ref="D30" pin="2"/>
+      <node ref="D29" pin="2"/>
+      <node ref="D28" pin="2"/>
+      <node ref="D27" pin="2"/>
+      <node ref="D25" pin="2"/>
     </net>
     <net code="133" name="Net-(D25-Pad3)">
-      <node ref="D29" pin="3"/>
-      <node ref="D25" pin="3"/>
-      <node ref="D26" pin="3"/>
-      <node ref="D27" pin="3"/>
       <node ref="D31" pin="3"/>
-      <node ref="D28" pin="3"/>
-      <node ref="R30" pin="1"/>
       <node ref="D30" pin="3"/>
+      <node ref="D26" pin="3"/>
+      <node ref="D29" pin="3"/>
+      <node ref="D27" pin="3"/>
+      <node ref="D28" pin="3"/>
+      <node ref="D25" pin="3"/>
+      <node ref="R30" pin="1"/>
       <node ref="D32" pin="3"/>
     </net>
     <net code="134" name="Net-(D25-Pad4)">
-      <node ref="D28" pin="4"/>
-      <node ref="R29" pin="1"/>
-      <node ref="D32" pin="4"/>
-      <node ref="D31" pin="4"/>
-      <node ref="D30" pin="4"/>
-      <node ref="D27" pin="4"/>
       <node ref="D25" pin="4"/>
+      <node ref="R29" pin="1"/>
       <node ref="D26" pin="4"/>
+      <node ref="D28" pin="4"/>
+      <node ref="D27" pin="4"/>
       <node ref="D29" pin="4"/>
+      <node ref="D32" pin="4"/>
+      <node ref="D30" pin="4"/>
+      <node ref="D31" pin="4"/>
     </net>
     <net code="135" name="Net-(D41-Pad2)">
-      <node ref="R37" pin="1"/>
-      <node ref="D44" pin="2"/>
-      <node ref="D41" pin="2"/>
       <node ref="D42" pin="2"/>
+      <node ref="D41" pin="2"/>
       <node ref="D43" pin="2"/>
       <node ref="D45" pin="2"/>
-      <node ref="D46" pin="2"/>
-      <node ref="D47" pin="2"/>
+      <node ref="R37" pin="1"/>
+      <node ref="D44" pin="2"/>
       <node ref="D48" pin="2"/>
+      <node ref="D47" pin="2"/>
+      <node ref="D46" pin="2"/>
     </net>
     <net code="136" name="Net-(D41-Pad4)">
-      <node ref="D41" pin="4"/>
       <node ref="D44" pin="4"/>
       <node ref="R35" pin="1"/>
       <node ref="D42" pin="4"/>
-      <node ref="D43" pin="4"/>
+      <node ref="D41" pin="4"/>
       <node ref="D46" pin="4"/>
       <node ref="D47" pin="4"/>
       <node ref="D48" pin="4"/>
       <node ref="D45" pin="4"/>
+      <node ref="D43" pin="4"/>
     </net>
     <net code="137" name="Net-(D10-Pad2)">
+      <node ref="D9" pin="2"/>
       <node ref="R25" pin="1"/>
       <node ref="D10" pin="2"/>
       <node ref="D11" pin="2"/>
       <node ref="D13" pin="2"/>
-      <node ref="D12" pin="2"/>
       <node ref="D14" pin="2"/>
-      <node ref="D16" pin="2"/>
       <node ref="D15" pin="2"/>
-      <node ref="D9" pin="2"/>
+      <node ref="D16" pin="2"/>
+      <node ref="D12" pin="2"/>
     </net>
     <net code="138" name="Net-(D1-Pad3)">
-      <node ref="R21" pin="1"/>
-      <node ref="D6" pin="3"/>
-      <node ref="D2" pin="3"/>
-      <node ref="D5" pin="3"/>
-      <node ref="D3" pin="3"/>
-      <node ref="D1" pin="3"/>
-      <node ref="D8" pin="3"/>
-      <node ref="D7" pin="3"/>
       <node ref="D4" pin="3"/>
+      <node ref="D8" pin="3"/>
+      <node ref="D1" pin="3"/>
+      <node ref="D2" pin="3"/>
+      <node ref="D3" pin="3"/>
+      <node ref="D5" pin="3"/>
+      <node ref="D6" pin="3"/>
+      <node ref="D7" pin="3"/>
+      <node ref="R21" pin="1"/>
     </net>
     <net code="139" name="Net-(D1-Pad1)">
-      <node ref="D57" pin="1"/>
-      <node ref="D33" pin="1"/>
       <node ref="D49" pin="1"/>
       <node ref="D25" pin="1"/>
+      <node ref="D57" pin="1"/>
+      <node ref="D33" pin="1"/>
       <node ref="D17" pin="1"/>
-      <node ref="D41" pin="1"/>
-      <node ref="D65" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="D9" pin="1"/>
       <node ref="D73" pin="1"/>
       <node ref="Q5" pin="2"/>
+      <node ref="D9" pin="1"/>
+      <node ref="D65" pin="1"/>
+      <node ref="D41" pin="1"/>
+      <node ref="D1" pin="1"/>
     </net>
     <net code="140" name="Net-(D17-Pad2)">
-      <node ref="D24" pin="2"/>
-      <node ref="D23" pin="2"/>
-      <node ref="D20" pin="2"/>
       <node ref="R28" pin="1"/>
-      <node ref="D21" pin="2"/>
       <node ref="D18" pin="2"/>
-      <node ref="D17" pin="2"/>
-      <node ref="D22" pin="2"/>
       <node ref="D19" pin="2"/>
+      <node ref="D24" pin="2"/>
+      <node ref="D20" pin="2"/>
+      <node ref="D17" pin="2"/>
+      <node ref="D23" pin="2"/>
+      <node ref="D22" pin="2"/>
+      <node ref="D21" pin="2"/>
     </net>
     <net code="141" name="Net-(D17-Pad3)">
-      <node ref="D17" pin="3"/>
+      <node ref="D22" pin="3"/>
+      <node ref="D24" pin="3"/>
+      <node ref="D23" pin="3"/>
       <node ref="D19" pin="3"/>
       <node ref="D18" pin="3"/>
-      <node ref="R27" pin="1"/>
-      <node ref="D21" pin="3"/>
-      <node ref="D22" pin="3"/>
-      <node ref="D23" pin="3"/>
-      <node ref="D24" pin="3"/>
       <node ref="D20" pin="3"/>
+      <node ref="D21" pin="3"/>
+      <node ref="R27" pin="1"/>
+      <node ref="D17" pin="3"/>
     </net>
     <net code="142" name="Net-(D17-Pad4)">
-      <node ref="D23" pin="4"/>
-      <node ref="D20" pin="4"/>
       <node ref="R26" pin="1"/>
+      <node ref="D19" pin="4"/>
+      <node ref="D23" pin="4"/>
+      <node ref="D22" pin="4"/>
+      <node ref="D21" pin="4"/>
+      <node ref="D20" pin="4"/>
+      <node ref="D24" pin="4"/>
       <node ref="D17" pin="4"/>
       <node ref="D18" pin="4"/>
-      <node ref="D19" pin="4"/>
-      <node ref="D21" pin="4"/>
-      <node ref="D22" pin="4"/>
-      <node ref="D24" pin="4"/>
     </net>
     <net code="143" name="Net-(D14-Pad1)">
-      <node ref="D70" pin="1"/>
-      <node ref="D22" pin="1"/>
-      <node ref="Q10" pin="2"/>
       <node ref="D38" pin="1"/>
       <node ref="D78" pin="1"/>
-      <node ref="D30" pin="1"/>
       <node ref="D46" pin="1"/>
-      <node ref="D54" pin="1"/>
-      <node ref="D62" pin="1"/>
+      <node ref="D30" pin="1"/>
+      <node ref="Q10" pin="2"/>
+      <node ref="D22" pin="1"/>
+      <node ref="D70" pin="1"/>
       <node ref="D6" pin="1"/>
+      <node ref="D54" pin="1"/>
       <node ref="D14" pin="1"/>
+      <node ref="D62" pin="1"/>
     </net>
     <net code="144" name="Net-(D16-Pad1)">
-      <node ref="D48" pin="1"/>
-      <node ref="D56" pin="1"/>
-      <node ref="D40" pin="1"/>
       <node ref="D80" pin="1"/>
-      <node ref="D8" pin="1"/>
-      <node ref="D72" pin="1"/>
       <node ref="D32" pin="1"/>
       <node ref="Q4" pin="2"/>
-      <node ref="D24" pin="1"/>
-      <node ref="D64" pin="1"/>
+      <node ref="D40" pin="1"/>
       <node ref="D16" pin="1"/>
+      <node ref="D56" pin="1"/>
+      <node ref="D48" pin="1"/>
+      <node ref="D24" pin="1"/>
+      <node ref="D72" pin="1"/>
+      <node ref="D64" pin="1"/>
+      <node ref="D8" pin="1"/>
     </net>
     <net code="145" name="Net-(D15-Pad1)">
-      <node ref="Q3" pin="2"/>
-      <node ref="D39" pin="1"/>
+      <node ref="D23" pin="1"/>
       <node ref="D31" pin="1"/>
-      <node ref="D47" pin="1"/>
-      <node ref="D79" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="D71" pin="1"/>
+      <node ref="D63" pin="1"/>
       <node ref="D7" pin="1"/>
       <node ref="D15" pin="1"/>
-      <node ref="D23" pin="1"/>
-      <node ref="D71" pin="1"/>
+      <node ref="D79" pin="1"/>
+      <node ref="D39" pin="1"/>
+      <node ref="D47" pin="1"/>
       <node ref="D55" pin="1"/>
-      <node ref="D63" pin="1"/>
     </net>
     <net code="146" name="Net-(D13-Pad1)">
       <node ref="D29" pin="1"/>
       <node ref="D69" pin="1"/>
-      <node ref="D77" pin="1"/>
+      <node ref="D53" pin="1"/>
       <node ref="D5" pin="1"/>
       <node ref="D13" pin="1"/>
       <node ref="D61" pin="1"/>
-      <node ref="D53" pin="1"/>
       <node ref="D45" pin="1"/>
-      <node ref="D37" pin="1"/>
+      <node ref="D77" pin="1"/>
       <node ref="Q9" pin="2"/>
+      <node ref="D37" pin="1"/>
       <node ref="D21" pin="1"/>
     </net>
   </nets>
