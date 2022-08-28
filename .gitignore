@@ -1,5 +1,8 @@
 # Files and folders to ignore
+.vs/
 Hardware/Datasheets
 Hardware/Parts-selection
 *.log
 *.raw
+Software/Supporting-docs
+hardware/USB-C-DB/outputs/

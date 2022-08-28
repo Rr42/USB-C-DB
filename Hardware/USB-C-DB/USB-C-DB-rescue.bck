@@ -34,6 +34,11 @@ D MOSFET /K27/TR/7"/HF/3K/SOT-363/MOS/SOT/NFET-035TS/NF035T-QI17/PJ///
 F https://www.mouser.in/datasheet/2/1057/2N7002KDW-1869725.pdf
 $ENDCMP
 #
+$CMP 3352T-1-105LF
+D Trimmer Resistors - Through Hole
+F https://www.bourns.com/docs/Product-Datasheets/3352.pdf
+$ENDCMP
+#
 $CMP 74AHC595
 D 8-bit serial in/out Shift Register 3-State Outputs
 K AHCMOS SR 3State
@@ -279,6 +284,12 @@ K RF Radio ESP Espressif
 F https://www.espressif.com/sites/default/files/documentation/0c-esp-wroom-02_datasheet_en.pdf
 $ENDCMP
 #
+$CMP FT231XS
+D Full Speed USB to Full Handshake UART, SSOP-20
+K FTDI USB UART interface converter
+F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf
+$ENDCMP
+#
 $CMP FT260S-U
 D FTDI - FT260S-U - INTERFACE BRIDGE, USB TO I2C/UART, TSSOP
 F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT260.pdf
@@ -379,9 +390,9 @@ F http://www.diodes.com/assets/Datasheets/VN10LF.pdf
 $ENDCMP
 #
 $CMP XP262N7002TR-G
-D 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23
+D MOSFET General-purpose N-channel MOSFET , 60V / 0.3A / SOT-23
 K N-Channel MOSFET
-F https://www.onsemi.com/pub/Collateral/BSS138-D.PDF
+F https://www.mouser.in/datasheet/2/760/TOSL_S_A0008257237_1-2575093.pdf
 $ENDCMP
 #
 $CMP ZVN3306F
