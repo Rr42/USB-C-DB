@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7350 7515 0    59   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 10570 7635 0    59   ~ 0
-v2.0.0
+v0.7.0
 Text Notes 8105 7635 0    50   ~ 0
 28-08-2022
 Text Notes 7290 7235 0    50   ~ 0
@@ -2897,6 +2897,10 @@ Wire Wire Line
 	4050 3750 4350 3750
 Wire Wire Line
 	4350 3650 4050 3650
+Text Label 4050 3650 0    50   ~ 0
+USBC_N
+Text Label 4050 3750 0    50   ~ 0
+USBC_P
 Wire Bus Line
 	7000 1100 7000 1700
 Wire Bus Line
@@ -2905,8 +2909,4 @@ Wire Bus Line
 	5950 1100 5950 1700
 Wire Bus Line
 	9400 4900 9400 5450
-Text Label 4050 3650 0    50   ~ 0
-USBC_N
-Text Label 4050 3750 0    50   ~ 0
-USBC_P
 $EndSCHEMATC

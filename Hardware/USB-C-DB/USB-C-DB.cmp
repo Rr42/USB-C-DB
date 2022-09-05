@@ -1,4 +1,292 @@
-Cmp-Mod V01 Created by PcbNew   date = 05/01/22 13:23:17
+Cmp-Mod V01 Created by PcbNew   date = 09/05/22 18:39:09
+
+BeginCmp
+TimeStamp = 6236041A
+Path = 
+Reference = G1;
+ValeurCmp = LOGO;
+IdModule  = USB-C-DB:oshw-spfb-big;
+EndCmp
+
+BeginCmp
+TimeStamp = 630C9F24
+Path = /6319AB25
+Reference = U3;
+ValeurCmp = FT231XS;
+IdModule  = Package_SO:SSOP-20_3.9x8.7mm_P0.635mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 630C36E8
+Path = /63564B8A
+Reference = R5;
+ValeurCmp = 309;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 630C3697
+Path = /6344B94E
+Reference = R2;
+ValeurCmp = 309;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 630C3686
+Path = /6344B956
+Reference = R1;
+ValeurCmp = 309;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 630CA03B
+Path = /63564B93
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
+EndCmp
+
+BeginCmp
+TimeStamp = 630D4406
+Path = /6344B976
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
+EndCmp
+
+BeginCmp
+TimeStamp = 630C2D0C
+Path = /6344B96E
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
+EndCmp
+
+BeginCmp
+TimeStamp = 630C2B76
+Path = /632662D8
+Reference = C5;
+ValeurCmp = 0.1u;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 62355748
+Path = /61C3BE2E
+Reference = C2;
+ValeurCmp = 47p;
+IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 623776FA
+Path = /61B0EECD/66DDE8A1
+Reference = C21;
+ValeurCmp = 0.1u;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 623AC14C
+Path = /61B0EECD/66EA4E7C
+Reference = C22;
+ValeurCmp = 1u;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 626E4E1B
+Path = /61B0EECD/66EA4E83
+Reference = C23;
+ValeurCmp = 0.1u;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6239F0F4
+Path = /61B0EECD/621B0CEE
+Reference = C26;
+ValeurCmp = 47p;
+IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 623A10A3
+Path = /61B0EECD/6219F63C
+Reference = D86;
+ValeurCmp = 1N4148W;
+IdModule  = Diode_SMD:D_SOD-123;
+EndCmp
+
+BeginCmp
+TimeStamp = 6239EFA0
+Path = /61B0EECD/62151722
+Reference = D87;
+ValeurCmp = 1N4148W;
+IdModule  = Diode_SMD:D_SOD-123;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230DF98
+Path = /6208C723
+Reference = R7;
+ValeurCmp = 4.7k;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 62353398
+Path = /624D727F
+Reference = R6;
+ValeurCmp = 1;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 62346C1F
+Path = /621665F6
+Reference = U2;
+ValeurCmp = NUF2221W1T2G;
+IdModule  = Mouser-imports:SOT65P210X110-6N;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230C185
+Path = /61BF8A51
+Reference = U1;
+ValeurCmp = LD1117S33TR_SOT223;
+IdModule  = Package_TO_SOT_SMD:SOT-223-3_TabPin2;
+EndCmp
+
+BeginCmp
+TimeStamp = 6239F094
+Path = /61B0EECD/621B06C1
+Reference = C27;
+ValeurCmp = 47p;
+IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6239BA46
+Path = /61B0EECD/62172D9B
+Reference = C29;
+ValeurCmp = 0.1u;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230D533
+Path = /61B0EECD/621AA069
+Reference = C28;
+ValeurCmp = 47p;
+IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230C0BD
+Path = /61B0EECD/74E27D8A
+Reference = R43;
+ValeurCmp = 309;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230C08D
+Path = /61B0EECD/714727F6
+Reference = R40;
+ValeurCmp = 583;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230C309
+Path = /61B0EECD/714727E8
+Reference = R41;
+ValeurCmp = 583;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230C0ED
+Path = /61B0EECD/62183B08
+Reference = R46;
+ValeurCmp = 10k;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230C2A9
+Path = /61B0EECD/621C34E0
+Reference = R45;
+ValeurCmp = 10k;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6236D491
+Path = /61B0EECD/74E2E1E7
+Reference = R44;
+ValeurCmp = 309;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230C480
+Path = /61B0EECD/714727EF
+Reference = R42;
+ValeurCmp = 309;
+IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 6234B69A
+Path = /6349FC1D
+Reference = J13;
+ValeurCmp = IBUS_S-;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230CAB9
+Path = /62BFBA8F
+Reference = J11;
+ValeurCmp = UART_RTSN;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230CA26
+Path = /61B0EECD/6278D3BD
+Reference = J16;
+ValeurCmp = PWM_BC;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 6230BD78
+Path = /62BF0D1E
+Reference = J3;
+ValeurCmp = VBUS;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 6234B685
+Path = /6349FC23
+Reference = J12;
+ValeurCmp = IBUS_S+;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 630D29B2
+Path = /634DB25C
+Reference = J14;
+ValeurCmp = RESETN;
+IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
+EndCmp
 
 BeginCmp
 TimeStamp = 626F84CE
@@ -9,17 +297,9 @@ IdModule  = SnapEDA-imports:GCT_USB4105-GF-A;
 EndCmp
 
 BeginCmp
-TimeStamp = 626E4E1B
-Path = /61B0EECD/66EA4E83
-Reference = C26;
-ValeurCmp = 0.1u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 62334D3C
 Path = /61B0EECD/628D47BB
-Reference = D48;
+Reference = D51;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -27,7 +307,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233584F
 Path = /61B0EECD/628D4791
-Reference = D42;
+Reference = D45;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -35,7 +315,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233545F
 Path = /61B0EECD/6289CE1E
-Reference = D33;
+Reference = D36;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -43,7 +323,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335228
 Path = /61B0EECD/6285FCF2
-Reference = D20;
+Reference = D23;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -51,7 +331,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335753
 Path = /61B0EECD/6285FD0E
-Reference = D24;
+Reference = D27;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -59,7 +339,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623350AE
 Path = /61B0EECD/6289CE2C
-Reference = D35;
+Reference = D38;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -67,7 +347,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233590C
 Path = /61B0EECD/6285FCEB
-Reference = D19;
+Reference = D22;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -75,7 +355,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6238447F
 Path = /61B0EECD/6223C9C3
-Reference = D14;
+Reference = D17;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -83,7 +363,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62380192
 Path = /61B0EECD/62875A76
-Reference = D25;
+Reference = D28;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -91,7 +371,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62385649
 Path = /61B0EECD/6289CE4F
-Reference = D40;
+Reference = D43;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -99,7 +379,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233512C
 Path = /61B0EECD/628D47A6
-Reference = D45;
+Reference = D48;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -107,7 +387,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623801D1
 Path = /61B0EECD/6289CE41
-Reference = D38;
+Reference = D41;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -115,7 +395,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623357D1
 Path = /61B0EECD/6289CE3A
-Reference = D37;
+Reference = D40;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -123,7 +403,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623351AA
 Path = /61B0EECD/62875A84
-Reference = D27;
+Reference = D30;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -131,7 +411,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623355D9
 Path = /61B0EECD/6289CE25
-Reference = D34;
+Reference = D37;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -139,7 +419,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335657
 Path = /61B0EECD/62875A92
-Reference = D29;
+Reference = D32;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -147,7 +427,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233559A
 Path = /61B0EECD/628D47AD
-Reference = D46;
+Reference = D49;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -155,7 +435,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335792
 Path = /61B0EECD/62875A8B
-Reference = D28;
+Reference = D31;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -163,7 +443,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623352A6
 Path = /61B0EECD/628D4798
-Reference = D43;
+Reference = D46;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -171,7 +451,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233555B
 Path = /61B0EECD/62875A7D
-Reference = D26;
+Reference = D29;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -179,7 +459,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623356D5
 Path = /61B0EECD/6289CE33
-Reference = D36;
+Reference = D39;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -187,7 +467,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623353E1
 Path = /61B0EECD/628D478A
-Reference = D41;
+Reference = D44;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -195,7 +475,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335714
 Path = /61B0EECD/6285FD00
-Reference = D22;
+Reference = D25;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -203,7 +483,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623351E9
 Path = /61B0EECD/6285FCF9
-Reference = D21;
+Reference = D24;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -211,7 +491,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335696
 Path = /61B0EECD/6285FCE4
-Reference = D18;
+Reference = D21;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -219,7 +499,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6238429C
 Path = /61B0EECD/6285FCDD
-Reference = D17;
+Reference = D20;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -227,7 +507,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62384440
 Path = /61B0EECD/6223C9CA
-Reference = D15;
+Reference = D18;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -235,7 +515,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233588E
 Path = /61B0EECD/628D479F
-Reference = D44;
+Reference = D47;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -243,7 +523,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233594B
 Path = /61B0EECD/62875AA7
-Reference = D32;
+Reference = D35;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -251,7 +531,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623350ED
 Path = /61B0EECD/6289CE48
-Reference = D39;
+Reference = D42;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -259,7 +539,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233516B
 Path = /61B0EECD/628D47B4
-Reference = D47;
+Reference = D50;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -267,7 +547,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335420
 Path = /61B0EECD/62875AA0
-Reference = D31;
+Reference = D34;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -275,7 +555,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623358CD
 Path = /61B0EECD/62875A99
-Reference = D30;
+Reference = D33;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -283,7 +563,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233551C
 Path = /61B0EECD/6285FD07
-Reference = D23;
+Reference = D26;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -291,7 +571,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62384401
 Path = /61B0EECD/6223C9BC
-Reference = D13;
+Reference = D16;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -299,7 +579,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623843C2
 Path = /61B0EECD/6223C9B5
-Reference = D12;
+Reference = D15;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -307,7 +587,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334F73
 Path = /61B0EECD/6295D19A
-Reference = D60;
+Reference = D63;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -315,7 +595,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62380096
 Path = /61B0EECD/6290FAE2
-Reference = D56;
+Reference = D59;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -323,7 +603,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334FF1
 Path = /61B0EECD/6290FADB
-Reference = D55;
+Reference = D58;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -331,7 +611,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334DF9
 Path = /61B0EECD/6295D18C
-Reference = D58;
+Reference = D61;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -339,7 +619,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62380114
 Path = /61B0EECD/6295D193
-Reference = D59;
+Reference = D62;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -347,7 +627,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335030
 Path = /61B0EECD/6295D1A8
-Reference = D62;
+Reference = D65;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -355,7 +635,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334E77
 Path = /61B0EECD/629C1E2C
-Reference = D65;
+Reference = D68;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -363,7 +643,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62380153
 Path = /61B0EECD/6290FAB8
-Reference = D50;
+Reference = D53;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -371,7 +651,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334F34
 Path = /61B0EECD/6290FACD
-Reference = D53;
+Reference = D56;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -379,7 +659,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334D7B
 Path = /61B0EECD/6290FAB1
-Reference = D49;
+Reference = D52;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -387,7 +667,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334EF5
 Path = /61B0EECD/6290FAD4
-Reference = D54;
+Reference = D57;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -395,7 +675,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334C7F
 Path = /61B0EECD/6290FAC6
-Reference = D52;
+Reference = D55;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -403,7 +683,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623159F9
 Path = /61B0EECD/629C1E33
-Reference = D66;
+Reference = D69;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -411,7 +691,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334E38
 Path = /61B0EECD/6295D1A1
-Reference = D61;
+Reference = D64;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -419,7 +699,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334C40
 Path = /61B0EECD/6295D1B6
-Reference = D64;
+Reference = D67;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -427,7 +707,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623800D5
 Path = /61B0EECD/6295D1AF
-Reference = D63;
+Reference = D66;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -435,7 +715,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334FB2
 Path = /61B0EECD/6295D185
-Reference = D57;
+Reference = D60;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -443,7 +723,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62334DBA
 Path = /61B0EECD/6290FABF
-Reference = D51;
+Reference = D54;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -454,14 +734,6 @@ Path = /61B0EECD/6545BFFF
 Reference = U9;
 ValeurCmp = 74HC595;
 IdModule  = Package_SO:TSSOP-16_4.4x5mm_P0.65mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CA7A
-Path = /61327E10
-Reference = J4;
-ValeurCmp = BatTP+;
-IdModule  = TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm;
 EndCmp
 
 BeginCmp
@@ -481,105 +753,41 @@ IdModule  = Mouser-imports:3352T1103LF;
 EndCmp
 
 BeginCmp
-TimeStamp = 62353398
-Path = /624D727F
-Reference = R7;
-ValeurCmp = 1;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CA8F
-Path = /613284CF
-Reference = J6;
-ValeurCmp = BatTP-;
-IdModule  = TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm;
-EndCmp
-
-BeginCmp
 TimeStamp = 6230BD63
 Path = /62281EA4
-Reference = J7;
+Reference = J2;
 ValeurCmp = P3V3;
 IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 6230C9FC
-Path = /620C88AD
-Reference = J3;
-ValeurCmp = EFPROG_NEG;
-IdModule  = TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 623652CC
-Path = /62129999
-Reference = R9;
-ValeurCmp = 11;
-IdModule  = Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6236041A
-Path = 
-Reference = G1;
-ValeurCmp = LOGO;
-IdModule  = USB-C-DB:oshw-spfb;
-EndCmp
-
-BeginCmp
 TimeStamp = 6234C4C5
 Path = /62333FBA
-Reference = C4;
+Reference = C1;
 ValeurCmp = 10u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
 
 BeginCmp
-TimeStamp = 623A1B3E
-Path = /620C741C
-Reference = J2;
-ValeurCmp = EFPROG_POS;
-IdModule  = TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm;
-EndCmp
-
-BeginCmp
 TimeStamp = 6230DA7C
 Path = /61B0EECD/68DA1768
-Reference = C18;
+Reference = C15;
 ValeurCmp = 0.1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6239F094
-Path = /61B0EECD/621B06C1
-Reference = C30;
-ValeurCmp = 47p;
-IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
 EndCmp
 
 BeginCmp
 TimeStamp = 6230CAD7
 Path = /61C6A831
-Reference = C6;
+Reference = C7;
 ValeurCmp = 0.1u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 623AC14C
-Path = /61B0EECD/66EA4E7C
-Reference = C25;
-ValeurCmp = 1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
 
 BeginCmp
 TimeStamp = 6230D97D
 Path = /61DA1517
-Reference = C13;
+Reference = C10;
 ValeurCmp = 10u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -587,7 +795,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623A6125
 Path = /61B0EECD/62183045
-Reference = C19;
+Reference = C16;
 ValeurCmp = 1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -595,7 +803,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62397BDB
 Path = /61CD2237
-Reference = C11;
+Reference = C8;
 ValeurCmp = 0.1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -603,23 +811,15 @@ EndCmp
 BeginCmp
 TimeStamp = 6234C5E7
 Path = /61DA0D94
-Reference = C12;
+Reference = C9;
 ValeurCmp = 10u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230D91D
-Path = /61CD1D36
-Reference = C10;
-ValeurCmp = 4.7u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
 
 BeginCmp
 TimeStamp = 62335C00
 Path = /61B0EECD/621D436C
-Reference = D8;
+Reference = D11;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -627,23 +827,15 @@ EndCmp
 BeginCmp
 TimeStamp = 623844FD
 Path = /61B0EECD/6223C9AE
-Reference = D11;
+Reference = D14;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
 
 BeginCmp
-TimeStamp = 6239F0F4
-Path = /61B0EECD/621B0CEE
-Reference = C29;
-ValeurCmp = 47p;
-IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 623845E5
 Path = /61B0EECD/6223C9A0
-Reference = D9;
+Reference = D12;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -651,7 +843,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335A08
 Path = /61B0EECD/621BDBBD
-Reference = D2;
+Reference = D5;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -659,23 +851,15 @@ EndCmp
 BeginCmp
 TimeStamp = 6239F064
 Path = /61B0EECD/621B1117
-Reference = C28;
+Reference = C25;
 ValeurCmp = 47p;
 IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
 EndCmp
 
 BeginCmp
-TimeStamp = 623776FA
-Path = /61B0EECD/66DDE8A1
-Reference = C24;
-ValeurCmp = 0.1u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 6237772A
 Path = /61B0EECD/66DDE89A
-Reference = C23;
+Reference = C20;
 ValeurCmp = 1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -683,7 +867,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623AADD7
 Path = /61B0EECD/66D1A328
-Reference = C22;
+Reference = C19;
 ValeurCmp = 0.1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -691,7 +875,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623A6155
 Path = /61B0EECD/621829E5
-Reference = C20;
+Reference = C17;
 ValeurCmp = 0.1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -699,7 +883,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230D593
 Path = /61B0EECD/68DA1761
-Reference = C17;
+Reference = C14;
 ValeurCmp = 1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -707,7 +891,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335B43
 Path = /61B0EECD/621C1E98
-Reference = D4;
+Reference = D7;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -715,31 +899,15 @@ EndCmp
 BeginCmp
 TimeStamp = 6234C648
 Path = /61BFE100
-Reference = C8;
+Reference = C4;
 ValeurCmp = 10u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
 
 BeginCmp
-TimeStamp = 6239BA46
-Path = /61B0EECD/62172D9B
-Reference = C32;
-ValeurCmp = 0.1u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230D533
-Path = /61B0EECD/621AA069
-Reference = C31;
-ValeurCmp = 47p;
-IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 6238453C
 Path = /61B0EECD/6223C9A7
-Reference = D10;
+Reference = D13;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -747,23 +915,15 @@ EndCmp
 BeginCmp
 TimeStamp = 6239F0C4
 Path = /61B0EECD/621B1558
-Reference = C27;
+Reference = C24;
 ValeurCmp = 47p;
 IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
 EndCmp
 
 BeginCmp
-TimeStamp = 6230D8ED
-Path = /61CCA240
-Reference = C9;
-ValeurCmp = 0.1u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 6230D503
 Path = /61E301FC
-Reference = C15;
+Reference = C12;
 ValeurCmp = 0.1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -771,7 +931,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623AADA7
 Path = /61B0EECD/66D1A321
-Reference = C21;
+Reference = C18;
 ValeurCmp = 1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -779,7 +939,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335A47
 Path = /61B0EECD/621C0B95
-Reference = D3;
+Reference = D6;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -787,7 +947,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335B82
 Path = /61B0EECD/621C2FEF
-Reference = D5;
+Reference = D8;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -795,7 +955,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230D9AD
 Path = /61DF8707
-Reference = C14;
+Reference = C11;
 ValeurCmp = 0.1u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -803,7 +963,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6233598A
 Path = /61B0EECD/621D3803
-Reference = D7;
+Reference = D10;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -811,15 +971,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62350053
 Path = /61DA17B4
-Reference = C16;
-ValeurCmp = 4.7u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CBF7
-Path = /61CCA003
-Reference = C7;
+Reference = C13;
 ValeurCmp = 4.7u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -827,31 +979,15 @@ EndCmp
 BeginCmp
 TimeStamp = 62335A86
 Path = /61B0EECD/621CBB90
-Reference = D6;
+Reference = D9;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
 
 BeginCmp
-TimeStamp = 62355748
-Path = /61C3BE2E
-Reference = C1;
-ValeurCmp = 47p;
-IdModule  = Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 6230CB07
 Path = /61C432D7
-Reference = C5;
-ValeurCmp = 4.7u;
-IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CB37
-Path = /6208CFDA
-Reference = C2;
+Reference = C6;
 ValeurCmp = 4.7u;
 IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder;
 EndCmp
@@ -867,7 +1003,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EBBF
 Path = /61B0EECD/70CAEFD1
-Reference = R31;
+Reference = R24;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -875,7 +1011,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230C4B0
 Path = /61B0EECD/711DC1FB
-Reference = R43;
+Reference = R36;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -883,7 +1019,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230C450
 Path = /61B0EECD/711DC1F4
-Reference = R42;
+Reference = R35;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -891,7 +1027,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EA0F
 Path = /61B0EECD/71090D71
-Reference = R39;
+Reference = R32;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -899,7 +1035,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230E8EF
 Path = /61B0EECD/70DFA50F
-Reference = R33;
+Reference = R26;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -907,7 +1043,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230C4E0
 Path = /61B0EECD/71327577
-Reference = R44;
+Reference = R37;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -915,7 +1051,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EBEF
 Path = /61B0EECD/70DFA51D
-Reference = R32;
+Reference = R25;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -923,7 +1059,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EB8F
 Path = /61B0EECD/70CAEFCA
-Reference = R30;
+Reference = R23;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -931,7 +1067,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230C2D9
 Path = /61B0EECD/71327570
-Reference = R46;
+Reference = R39;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -939,7 +1075,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623501FE
 Path = /61B0EECD/70CAEFD8
-Reference = R29;
+Reference = R22;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -947,7 +1083,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230C1EF
 Path = /61B0EECD/711DC202
-Reference = R41;
+Reference = R34;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -955,7 +1091,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230E9AF
 Path = /61B0EECD/71090D7F
-Reference = R38;
+Reference = R31;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -963,7 +1099,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230E8BF
 Path = /61B0EECD/70F45B18
-Reference = R36;
+Reference = R29;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -971,7 +1107,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230E91F
 Path = /61B0EECD/70DFA516
-Reference = R34;
+Reference = R27;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -979,7 +1115,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230C05D
 Path = /61B0EECD/71327569
-Reference = R45;
+Reference = R38;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -987,7 +1123,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623506D1
 Path = /61B0EECD/70F45B26
-Reference = R35;
+Reference = R28;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -995,7 +1131,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230E9DF
 Path = /61B0EECD/71090D78
-Reference = R40;
+Reference = R33;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1003,39 +1139,15 @@ EndCmp
 BeginCmp
 TimeStamp = 6230E94F
 Path = /61B0EECD/70F45B1F
-Reference = R37;
+Reference = R30;
 ValeurCmp = 309;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6235A83C
-Path = /61C1DD7F
-Reference = R13;
-ValeurCmp = 5.1k;
-IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6236E606
-Path = /61CA6BB4
-Reference = R12;
-ValeurCmp = 10k;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230DDB8
-Path = /61CA564F
-Reference = R11;
-ValeurCmp = 10k;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
 
 BeginCmp
 TimeStamp = 6230DF68
 Path = /61B0EECD/6236FE6A
-Reference = R21;
+Reference = R14;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1043,7 +1155,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EA3F
 Path = /61B0EECD/70A18812
-Reference = R23;
+Reference = R16;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1051,7 +1163,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6239C065
 Path = /61B0EECD/70A15C63
-Reference = R20;
+Reference = R13;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1059,7 +1171,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230DEA8
 Path = /61E30203
-Reference = R19;
+Reference = R12;
 ValeurCmp = 10k;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1067,7 +1179,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230DD28
 Path = /61DF870E
-Reference = R18;
+Reference = R11;
 ValeurCmp = 10k;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1075,7 +1187,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230DF38
 Path = /61DE862E
-Reference = R15;
+Reference = R8;
 ValeurCmp = 10k;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1083,7 +1195,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EAFF
 Path = /61B0EECD/70A1880B
-Reference = R25;
+Reference = R18;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1091,7 +1203,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230E97F
 Path = /61B0EECD/70B63C5C
-Reference = R28;
+Reference = R21;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1099,7 +1211,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EB2F
 Path = /61B0EECD/70B63C63
-Reference = R26;
+Reference = R19;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1107,7 +1219,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6234F188
 Path = /61B0EECD/62275C20
-Reference = R22;
+Reference = R15;
 ValeurCmp = 309;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1115,7 +1227,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62353983
 Path = /61DD18A0
-Reference = R17;
+Reference = R10;
 ValeurCmp = 10k;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1123,7 +1235,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230DCC8
 Path = /61DD1185
-Reference = R16;
+Reference = R9;
 ValeurCmp = 10k;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1131,7 +1243,7 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EB5F
 Path = /61B0EECD/70B63C55
-Reference = R27;
+Reference = R20;
 ValeurCmp = 583;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
@@ -1139,41 +1251,17 @@ EndCmp
 BeginCmp
 TimeStamp = 6230EA9F
 Path = /61B0EECD/70A18804
-Reference = R24;
+Reference = R17;
 ValeurCmp = 583;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 62397684
-Path = /62310C8D
-Reference = R14;
-ValeurCmp = 10k;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
 
 BeginCmp
 TimeStamp = 623844BE
 Path = /61B0EECD/6223C9D1
-Reference = D16;
+Reference = D19;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230C0BD
-Path = /61B0EECD/74E27D8A
-Reference = R50;
-ValeurCmp = 309;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 62346C1F
-Path = /621665F6
-Reference = U1;
-ValeurCmp = NUF2221W1T2G;
-IdModule  = Mouser-imports:SOT65P210X110-6N;
 EndCmp
 
 BeginCmp
@@ -1182,30 +1270,6 @@ Path = /61B0EECD/623E89B4
 Reference = U10;
 ValeurCmp = NA555D;
 IdModule  = Package_SO:SOIC-8_3.9x4.9mm_P1.27mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 623A1F66
-Path = /62150EA6
-Reference = U3;
-ValeurCmp = FT260S-U;
-IdModule  = Mouser-imports:SOP65P640X120-28N;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230C08D
-Path = /61B0EECD/714727F6
-Reference = R47;
-ValeurCmp = 583;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230C309
-Path = /61B0EECD/714727E8
-Reference = R48;
-ValeurCmp = 583;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
 EndCmp
 
 BeginCmp
@@ -1233,22 +1297,6 @@ IdModule  = RF_Module:ESP-WROOM-02;
 EndCmp
 
 BeginCmp
-TimeStamp = 6230C185
-Path = /61BF8A51
-Reference = U2;
-ValeurCmp = LD1117S33TR_SOT223;
-IdModule  = Package_TO_SOT_SMD:SOT-223-3_TabPin2;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230C0ED
-Path = /61B0EECD/62183B08
-Reference = R53;
-ValeurCmp = 10k;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 623A7311
 Path = /61B0EECD/6914C28D
 Reference = U5;
@@ -1265,57 +1313,17 @@ IdModule  = Package_SO:TSSOP-16_4.4x5mm_P0.65mm;
 EndCmp
 
 BeginCmp
-TimeStamp = 6230C2A9
-Path = /61B0EECD/621C34E0
-Reference = R52;
-ValeurCmp = 10k;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 62335BC1
 Path = /61B0EECD/61B13687
-Reference = D1;
+Reference = D4;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
 
 BeginCmp
-TimeStamp = 6236D491
-Path = /61B0EECD/74E2E1E7
-Reference = R51;
-ValeurCmp = 309;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230C480
-Path = /61B0EECD/714727EF
-Reference = R49;
-ValeurCmp = 309;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6234B69A
-Path = /6349FC1D
-Reference = J20;
-ValeurCmp = IBUS_S-;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CAB9
-Path = /62BFBA8F
-Reference = J17;
-ValeurCmp = UART_RTSN;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
 TimeStamp = 6230BD8D
 Path = /62BFBA89
-Reference = J9;
+Reference = J4;
 ValeurCmp = FT_VCCIO;
 IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
 EndCmp
@@ -1323,31 +1331,15 @@ EndCmp
 BeginCmp
 TimeStamp = 6230BDA2
 Path = /62BCE578
-Reference = J11;
+Reference = J6;
 ValeurCmp = MCU_RST;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CA26
-Path = /61B0EECD/6278D3BD
-Reference = J24;
-ValeurCmp = PWM_BC;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CA50
-Path = /61B0EECD/62672B80
-Reference = J25;
-ValeurCmp = GND;
 IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
 EndCmp
 
 BeginCmp
 TimeStamp = 623DA873
 Path = /62BEF224
-Reference = J12;
+Reference = J7;
 ValeurCmp = MCU_EN;
 IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
 EndCmp
@@ -1355,87 +1347,23 @@ EndCmp
 BeginCmp
 TimeStamp = 623CEE93
 Path = /634439C4
-Reference = J10;
+Reference = J5;
 ValeurCmp = GND;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230BD78
-Path = /62BF0D1E
-Reference = J8;
-ValeurCmp = VBUS;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230BDB7
-Path = /62BFBA95
-Reference = J13;
-ValeurCmp = MCU_TOUT;
 IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
 EndCmp
 
 BeginCmp
 TimeStamp = 6230C03F
 Path = /62BF0D2A
-Reference = J16;
+Reference = J10;
 ValeurCmp = UART_DTRN;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230BFC7
-Path = /62BF0D24
-Reference = J15;
-ValeurCmp = EFUSE_PRG;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230C9BD
-Path = /634439D2
-Reference = J18;
-ValeurCmp = NOT_SUSP;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6234B685
-Path = /6349FC23
-Reference = J19;
-ValeurCmp = IBUS_S+;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230C9E7
-Path = /634DB25C
-Reference = J21;
-ValeurCmp = RESETN;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CA65
-Path = /634DB5EF
-Reference = J22;
-ValeurCmp = DEBUGGER;
-IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230CA11
-Path = /61B0EECD/62AF774C
-Reference = J23;
-ValeurCmp = +5V;
 IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
 EndCmp
 
 BeginCmp
 TimeStamp = 6230BE92
 Path = /634439CA
-Reference = J14;
+Reference = J9;
 ValeurCmp = MCU_IO0;
 IdModule  = TestPoint:TestPoint_Pad_D1.0mm;
 EndCmp
@@ -1457,35 +1385,11 @@ IdModule  = Package_TO_SOT_SMD:SOT-23;
 EndCmp
 
 BeginCmp
-TimeStamp = 6230E5FB
-Path = /620C610A
-Reference = R2;
-ValeurCmp = 10k;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230DC68
-Path = /62334833
-Reference = R6;
-ValeurCmp = 10k;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
 TimeStamp = 6230E758
 Path = /61B0EECD/62669361
 Reference = Q5;
 ValeurCmp = XP262N7002TR-G;
 IdModule  = Package_TO_SOT_SMD:SOT-23;
-EndCmp
-
-BeginCmp
-TimeStamp = 6230DF98
-Path = /6208C723
-Reference = R5;
-ValeurCmp = 4.7k;
-IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;
 EndCmp
 
 BeginCmp
@@ -1502,22 +1406,6 @@ Path = /6285F074
 Reference = FB1;
 ValeurCmp = 3u;
 IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 623667A2
-Path = /6208B250
-Reference = R8;
-ValeurCmp = 10k;
-IdModule  = Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 6236D99A
-Path = /621A0F86
-Reference = R10;
-ValeurCmp = 11;
-IdModule  = Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder;
 EndCmp
 
 BeginCmp
@@ -1541,14 +1429,6 @@ TimeStamp = 6230E43F
 Path = /61B1FC85
 Reference = R4;
 ValeurCmp = 5.1k;
-IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 62352589
-Path = /620C6B5B
-Reference = R1;
-ValeurCmp = 13k;
 IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder;
 EndCmp
 
@@ -1587,7 +1467,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62352B32
 Path = /61B0EECD/62A33143
-Reference = D77;
+Reference = D80;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1595,7 +1475,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62352AB4
 Path = /61B0EECD/62A3313C
-Reference = D76;
+Reference = D79;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1603,7 +1483,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335E37
 Path = /61B0EECD/629C1E5D
-Reference = D72;
+Reference = D75;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1611,7 +1491,7 @@ EndCmp
 BeginCmp
 TimeStamp = 623F45EB
 Path = /61B0EECD/62A3312E
-Reference = D74;
+Reference = D77;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1619,7 +1499,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62315C30
 Path = /61B0EECD/629C1E56
-Reference = D71;
+Reference = D74;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1627,7 +1507,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335DB9
 Path = /61B0EECD/629C1E4F
-Reference = D70;
+Reference = D73;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1635,7 +1515,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62352B71
 Path = /61B0EECD/62A33151
-Reference = D79;
+Reference = D82;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1643,7 +1523,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62352A75
 Path = /61B0EECD/62A33135
-Reference = D75;
+Reference = D78;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1651,7 +1531,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62352BEF
 Path = /61B0EECD/62A33127
-Reference = D73;
+Reference = D76;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1659,7 +1539,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335CBD
 Path = /61B0EECD/629C1E48
-Reference = D69;
+Reference = D72;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1667,7 +1547,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335C7E
 Path = /61B0EECD/629C1E41
-Reference = D68;
+Reference = D71;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1675,7 +1555,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62335C3F
 Path = /61B0EECD/629C1E3A
-Reference = D67;
+Reference = D70;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1683,31 +1563,15 @@ EndCmp
 BeginCmp
 TimeStamp = 62315A38
 Path = /61B0EECD/74F7CED4
-Reference = D81;
+Reference = D84;
 ValeurCmp = LED;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
 
 BeginCmp
-TimeStamp = 623A10A3
-Path = /61B0EECD/6219F63C
-Reference = D83;
-ValeurCmp = 1N4148W;
-IdModule  = Diode_SMD:D_SOD-123;
-EndCmp
-
-BeginCmp
-TimeStamp = 6239EFA0
-Path = /61B0EECD/62151722
-Reference = D84;
-ValeurCmp = 1N4148W;
-IdModule  = Diode_SMD:D_SOD-123;
-EndCmp
-
-BeginCmp
 TimeStamp = 623159BA
 Path = /61B0EECD/61B1368E
-Reference = D82;
+Reference = D85;
 ValeurCmp = LED;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1715,7 +1579,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62352BB0
 Path = /61B0EECD/62A33158
-Reference = D80;
+Reference = D83;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
@@ -1723,7 +1587,7 @@ EndCmp
 BeginCmp
 TimeStamp = 62352AF3
 Path = /61B0EECD/62A3314A
-Reference = D78;
+Reference = D81;
 ValeurCmp = LED_ARGB;
 IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp

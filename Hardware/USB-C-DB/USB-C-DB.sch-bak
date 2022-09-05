@@ -373,58 +373,52 @@ Wire Wire Line
 $Comp
 L USB-C-DB-rescue:NUF2221W1T2G U2
 U 1 1 621665F6
-P 3800 3650
-F 0 "U2" H 3600 3400 50  0000 C CNN
-F 1 "NUF2221W1T2G" H 3800 3900 50  0000 C CNN
-F 2 "Mouser-imports:SOT65P210X110-6N" H 4850 3750 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NUF2221W1T2-D.PDF" H 4850 3650 50  0001 L CNN
-F 4 "USB Upstream Terminator with ESD Protection" H 4850 3550 50  0001 L CNN "Description"
-F 5 "1.1" H 4850 3450 50  0001 L CNN "Height"
-F 6 "863-NUF2221W1T2G" H 4850 3350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NUF2221W1T2G/?qs=ZXBb0xZ9WeBhigCT%252BMBgKA%3D%3D" H 4850 3250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 4850 3150 50  0001 L CNN "Manufacturer_Name"
-F 9 "NUF2221W1T2G" H 4850 3050 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "NUF2221W1T2G" H 3800 3650 50  0001 C CNN "MPN"
-F 11 "NUF2221W1T2G" H 3800 3650 50  0001 C CNN "MPN prod"
-	1    3800 3650
+P 3600 3650
+F 0 "U2" H 3400 3400 50  0000 C CNN
+F 1 "NUF2221W1T2G" H 3600 3900 50  0000 C CNN
+F 2 "Mouser-imports:SOT65P210X110-6N" H 4650 3750 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NUF2221W1T2-D.PDF" H 4650 3650 50  0001 L CNN
+F 4 "USB Upstream Terminator with ESD Protection" H 4650 3550 50  0001 L CNN "Description"
+F 5 "1.1" H 4650 3450 50  0001 L CNN "Height"
+F 6 "863-NUF2221W1T2G" H 4650 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NUF2221W1T2G/?qs=ZXBb0xZ9WeBhigCT%252BMBgKA%3D%3D" H 4650 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 4650 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "NUF2221W1T2G" H 4650 3050 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "NUF2221W1T2G" H 3600 3650 50  0001 C CNN "MPN"
+F 11 "NUF2221W1T2G" H 3600 3650 50  0001 C CNN "MPN prod"
+	1    3600 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 2350 3650
-Connection ~ 2700 3550
-Wire Wire Line
-	4250 3650 4350 3650
-Wire Wire Line
-	4350 3750 4250 3750
 $Comp
 L power:GND #PWR011
 U 1 1 621E9CAA
-P 3300 3850
-F 0 "#PWR011" H 3300 3600 50  0001 C CNN
-F 1 "GND" H 3300 3700 50  0000 C CNN
-F 2 "" H 3300 3850 50  0001 C CNN
-F 3 "" H 3300 3850 50  0001 C CNN
-	1    3300 3850
+P 3100 3850
+F 0 "#PWR011" H 3100 3600 50  0001 C CNN
+F 1 "GND" H 3100 3700 50  0000 C CNN
+F 2 "" H 3100 3850 50  0001 C CNN
+F 3 "" H 3100 3850 50  0001 C CNN
+	1    3100 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 3850 3300 3800
+	3100 3850 3100 3800
 Wire Wire Line
-	3300 3800 3350 3800
+	3100 3800 3150 3800
 $Comp
 L power:VBUS #PWR013
 U 1 1 621F1E3A
-P 4300 3450
-F 0 "#PWR013" H 4300 3300 50  0001 C CNN
-F 1 "VBUS" H 4300 3600 50  0000 C CNN
-F 2 "" H 4300 3450 50  0001 C CNN
-F 3 "" H 4300 3450 50  0001 C CNN
-	1    4300 3450
+P 4100 3450
+F 0 "#PWR013" H 4100 3300 50  0001 C CNN
+F 1 "VBUS" H 4100 3600 50  0000 C CNN
+F 2 "" H 4100 3450 50  0001 C CNN
+F 3 "" H 4100 3450 50  0001 C CNN
+	1    4100 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 3450 4300 3500
+	4100 3450 4100 3500
 Wire Wire Line
-	4300 3500 4250 3500
+	4100 3500 4050 3500
 Wire Notes Line
 	6450 7500 600  7500
 Text Notes 650  2250 0    50   ~ 0
@@ -2601,10 +2595,6 @@ F 7 "Manufacturer Recommendations" H 950 4450 50  0001 L BNN "STANDARD"
 	1    950  4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 3650 3350 3650
-Wire Wire Line
-	2700 3550 3350 3550
 Text Notes 5150 3400 0    50   ~ 0
 Negotiate up current but stick to 5V bus
 NoConn ~ 4350 4000
@@ -2897,6 +2887,20 @@ Wire Notes Line
 Wire Notes Line
 	7600 3700 7600 2350
 NoConn ~ 5750 4600
+Wire Wire Line
+	2700 3550 3150 3550
+Connection ~ 2700 3550
+Wire Wire Line
+	3150 3650 2350 3650
+Connection ~ 2350 3650
+Wire Wire Line
+	4050 3750 4350 3750
+Wire Wire Line
+	4350 3650 4050 3650
+Text Label 4050 3650 0    50   ~ 0
+USBC_N
+Text Label 4050 3750 0    50   ~ 0
+USBC_P
 Wire Bus Line
 	7000 1100 7000 1700
 Wire Bus Line
