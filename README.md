@@ -7,6 +7,8 @@ The goal of this demo board is to test and evaluate:
 * (TENTATIVE) Implementation of an onboard battery to power the board when disconnected from power
 * (TENTATIVE) Onboard battery charging capability using USB-C
 
+![Assembled demo](./Hardware/USB-C-DB/real1-v0p7.jpg)
+
 ## Design overview
 ### Main page
 ![Main schematic](./Hardware/USB-C-DB/USB-C-DB.svg)

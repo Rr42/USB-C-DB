@@ -313,6 +313,12 @@ K N-Channel HEXFET MOSFET
 F https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee
 $ENDCMP
 #
+$CMP LED
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
 $CMP LM555xM
 D Timer, 555 compatible, SOIC-8
 K single timer 555

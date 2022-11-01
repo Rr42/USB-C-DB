@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7350 7515 0    59   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 10570 7635 0    59   ~ 0
-v2.0.0
+v0.7.1
 Text Notes 8105 7635 0    50   ~ 0
 28-08-2022
 Text Notes 7290 7235 0    50   ~ 0
@@ -152,7 +152,7 @@ Wire Wire Line
 	2300 3550 2300 3500
 Wire Wire Line
 	1800 3500 2300 3500
-Text Notes 3050 3250 0    50   ~ 0
+Text Notes 3100 3350 0    50   ~ 0
 Series resistor and clamp diodes\n for ESD protection
 $Comp
 L Device:C C2
@@ -2901,6 +2901,21 @@ Text Label 4050 3650 0    50   ~ 0
 USBC_N
 Text Label 4050 3750 0    50   ~ 0
 USBC_P
+NoConn ~ 3600 3650
+Text Notes 3050 3200 0    50   ~ 0
+!!!!!!!!REMOVE THIS FOR FT231!!!!!!!!
+Wire Notes Line
+	3050 3100 3050 4050
+Wire Notes Line
+	3050 4050 4250 4050
+Wire Notes Line
+	4250 4050 4250 3300
+Wire Notes Line
+	4250 3300 4400 3300
+Wire Notes Line
+	4400 3300 4400 3100
+Wire Notes Line
+	4400 3100 3050 3100
 Wire Bus Line
 	7000 1100 7000 1700
 Wire Bus Line

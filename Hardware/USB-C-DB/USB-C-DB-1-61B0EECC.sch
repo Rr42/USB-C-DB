@@ -16,9 +16,9 @@ $EndDescr
 Text Notes 12200 10900 0    50   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 12950 11050 0    50   ~ 0
-11-03-2022
+01-11-2022
 Text Notes 15450 11050 0    50   ~ 0
-v0.5
+v0.5.1
 Wire Wire Line
 	10750 2650 10750 2900
 Wire Wire Line
@@ -98,7 +98,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 2500 10300 2600
 $Comp
-L Device:LED D?
+L USB-C-DB-rescue:LED D?
 U 1 1 74F7CED4
 P 10750 3400
 AR Path="/74F7CED4" Ref="D?"  Part="1" 
@@ -3987,7 +3987,7 @@ Wire Wire Line
 Text Notes 11850 10050 0    50   ~ 0
 Mini display board for testing and evaluating a USB Type-C interface for Micro-controllers.
 $Comp
-L Device:LED D?
+L USB-C-DB-rescue:LED D?
 U 1 1 61B1368E
 P 11050 3400
 AR Path="/61B1368E" Ref="D?"  Part="1" 
