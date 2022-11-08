@@ -1,15 +1,15 @@
 /******************************************************************
-* File name: RGB8x11_example2.cpp
-* Version: v1.0
+* File name: RGB8x10_example2.cpp
+* Version: v1.0.2
 * DEV: GitHub@Rr42
 * Description:
-*  Example program for the 8x11 RGB LED display that turns
+*  Example program for the 8x10 RGB LED display that turns
 *   on all LEDs with solid colors.
 *   SEIZURE WARNING!
 ******************************************************************/
 
 /* Includes */
-#include <RGB8x11_display_lib.hpp>
+#include <USBC_DB_lib.hpp>
 
 /* Display brightness (0 to 1) */
 /* For the RGB display the set brightness refers to the
@@ -20,35 +20,28 @@
 #define FRAME_RATE 75
 
 /* Create Display driver object */
-RGBDisplay my_display(
-    13, // RESET IO13
-    12, // EOUT (Use a PWM compatable pin for brightness control) IO12
-    16, // DCLK IO16
-     5, // VSYNC IO5
-    14, // HSYNC IO14
-     4  // DATA IO4
-);
+RGBDisplay my_display;
 
 /* On frame */
-const uint16_t on[LINE_COUNT] = { 0b11111111111,
-                                  0b11111111111,
-                                  0b11111111111,
-                                  0b11111111111,
-                                  0b11111111111,
-                                  0b11111111111,
-                                  0b11111111111,
-                                  0b11111111111};
+const uint16_t on[LINE_COUNT] = { 0b1111111111,
+                                  0b1111111111,
+                                  0b1111111111,
+                                  0b1111111111,
+                                  0b1111111111,
+                                  0b1111111111,
+                                  0b1111111111,
+                                  0b1111111111};
 
 /* Off frame */
-uint16_t off[LINE_COUNT] = { 0b00000000000,  // 0
-                             0b00000000000,  // 1
-                             0b00000000000,  // 2
-                             0b00000000000,  // 3
-                             0b00000000000,  // 4
-                             0b00000000000,  // 5
-                             0b00000000000,  // 6
-                             0b00000000000}; // 7
-//                                0123456789X
+uint16_t off[LINE_COUNT] = { 0b0000000000,  // 0
+                             0b0000000000,  // 1
+                             0b0000000000,  // 2
+                             0b0000000000,  // 3
+                             0b0000000000,  // 4
+                             0b0000000000,  // 5
+                             0b0000000000,  // 6
+                             0b0000000000}; // 7
+//                             0123456789
 
 /* Color ID */
 uint8_t color_id = 0;

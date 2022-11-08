@@ -1,16 +1,16 @@
 /******************************************************************
-* File name: RGB8x11_example1.cpp
-* Version: v1.0
+* File name: RGB8x10_example1.cpp
+* Version: v1.0.2
 * DEV: GitHub@Rr42
 * Description:
-*  Example program for the 8x11 RGB LED display to
+*  Example program for the 8x10 RGB LED display to
 *   adjust brightness. The end result can be jarring as
 *   the PWM frequency is not high enough to mask the switching.
 *   SEIZURE WARNING!
 ******************************************************************/
 
 /* Includes */
-#include <RGB8x11_display_lib.hpp>
+#include <USBC_DB_lib.hpp>
 
 /* Alternative display method */
 #define ALTERNATIVE_DISPLAY
@@ -39,24 +39,17 @@ const uint8_t display_data_1[LINE_COUNT][LINE_LENGTH] = {
 //                                               0  1  2  3  4  5  6  7  8  9
 
 /* Test frame 2 as a bit array */
-const uint16_t display_data_2[LINE_COUNT] = { 0b10101010101,  // 0
-                                              0b10101010101,  // 1
-                                              0b01010101010,  // 2
-                                              0b10101010101,  // 3
-                                              0b10101010101,  // 4
-                                              0b01010101010,  // 5
-                                              0b10101010101,  // 6
-                                              0b10101010101}; // 7
-
+const uint16_t display_data_2[LINE_COUNT] = { 0b1010101010,  // 0
+                                              0b1010101010,  // 1
+                                              0b0101010101,  // 2
+                                              0b1010101010,  // 3
+                                              0b1010101010,  // 4
+                                              0b0101010101,  // 5
+                                              0b1010101010,  // 6
+                                              0b1010101010}; // 7
+//                                              0123456789
 /* Create Display driver object */
-RGBDisplay my_display(
-    13, // RESET IO13
-    12, // EOUT (Use a PWM compatable pin for brightness control) IO12
-    16, // DCLK IO16
-     5, // VSYNC IO5
-    14, // HSYNC IO14
-     4  // DATA IO4
-);
+RGBDisplay my_display;
 
 /* Duration of time the frame is shown on display */
 #define DISPLAY_TIME 1

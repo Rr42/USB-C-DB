@@ -1,9 +1,9 @@
 /******************************************************************
 * File name: bouncy.cpp
-* Version: v1.0
+* Version: v1.0.1
 * DEV: GitHub@Rr42
 * Description:
-*  Program for the 8x11 RGB LED display that shows
+*  Program for the 8x10 RGB LED display that shows
 *   an animated ball bouncing around in a white box.
 *   SEIZURE WARNING!
 ******************************************************************/
@@ -20,14 +20,7 @@
 #define FRAME_RATE 75
 
 /* Create Display driver object */
-RGBDisplay my_display(
-    13, // RESET IO13
-    12, // EOUT (Use a PWM compatable pin for brightness control) IO12
-    16, // DCLK IO16
-     5, // VSYNC IO5
-    14, // HSYNC IO14
-     4  // DATA IO4
-);
+RGBDisplay my_display;
 
 /* Frames for playing bouncy */
 /* Starting frame with borders in white */

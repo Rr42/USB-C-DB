@@ -1,6 +1,6 @@
 /******************************************************************
 * File name: bouncy.hpp
-* Version: v1.0
+* Version: v1.0.1
 * DEV: GitHub@Rr42
 * Description:
 *  Bouncy program header.
@@ -8,7 +8,7 @@
 #pragma once
 
 /* Includes */
-#include <RGB8x11_display_lib.hpp>
+#include <USBC_DB_lib.hpp>
 
 /* Display brightness (0 to 1) */
 /* For the RGB display the set brightness refers to the
@@ -51,5 +51,5 @@ void init_bouncy(void);
 
 /* Core functions */
 void setup(void);
-void loop1(void);
+void loop(void);
 int main(void);

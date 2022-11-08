@@ -1,12 +1,12 @@
 /******************************************************************
-* File name: RGB8x11_display_lib.cpp
-* Version: v1.0
+* File name: RGB8x10_display_lib.cpp
+* Version: v1.2
 * DEV: GitHub@Rr42
 * Description:
-*  Display library implementation for the 8x11 RGB LED display.
+*  Display library implementation for the 8x10 RGB LED display.
 ******************************************************************/
 
-#include "RGB8x11_display_lib.hpp"
+#include "USBC_DB_lib.hpp"
 
 /* Next scan line data */
 #define LAST_LINE LINE_COUNT
@@ -27,6 +27,19 @@
     }
 
 /* Constructor to set default values when object is created */
+RGBDisplay::RGBDisplay() : RESET(DEFAULT_RESET_PIN), EOUT(DEFAULT_EOUT_PIN),
+                           DCLK(DEFAULT_DCLK_PIN), VSYNC(DEFAULT_VSYNC_PIN),
+                           HSYNC(DEFAULT_HSYNC_PIN), DATA(DEFAULT_DATA_PIN) {
+    /* Set 100% brightness by default */
+    this->brightness = 0;
+    /* Set starting line number */
+    this->next_line = FIRST_LINE;
+    /* Set default refresh rate */
+    this->setRefreshRate(DEFAULT_REFRESH_RATE);
+}
+
+/* Constructor to set default values when object is created
+* Overload to allow reassignment of pins */
 RGBDisplay::RGBDisplay(uint8_t RESET, uint8_t EOUT, uint8_t DCLK, uint8_t VSYNC, uint8_t HSYNC, uint8_t DATA) : RESET(RESET), EOUT(EOUT), DCLK(DCLK), VSYNC(VSYNC), HSYNC(HSYNC), DATA(DATA) {
     /* Set 100% brightness by default */
     this->brightness = 0;
@@ -39,7 +52,7 @@ RGBDisplay::RGBDisplay(uint8_t RESET, uint8_t EOUT, uint8_t DCLK, uint8_t VSYNC,
 RGBDisplay::~RGBDisplay() {
 }
 
-/* Function to initialise display with default values */
+/* Method to initialise display with default values */
 void RGBDisplay::initialise() {
     /* Set output mode for all connector pins */
     pinMode(this->RESET, OUTPUT);
@@ -62,7 +75,7 @@ void RGBDisplay::initialise() {
     this->displayReset();
 }
 
-/* Function to initialise display with user defined brightness and refresh rate */
+/* Method to initialise display with user defined brightness and refresh rate */
 void RGBDisplay::initialise(float brightness, float refresh_rate) {
         /* Set output mode for all connector pins */
     pinMode(this->RESET, OUTPUT);
@@ -90,13 +103,13 @@ void RGBDisplay::initialise(float brightness, float refresh_rate) {
     this->displayReset();
 }
 
-/* Function to set display brightness (Requires EOUT pin to be PWM compatable) */
+/* Method to set display brightness (Requires EOUT pin to be PWM compatable) */
 void RGBDisplay::setBrightness(float brightness) {
     // if (digitalPinToTimer(this->EOUT) != NOT_ON_TIMER)
     this->brightness = 255*(1-brightness);
 }
 
-/* Function to set targeted refresh rate (may not always archive the set refresh rate) */
+/* Method to set targeted refresh rate (may not always archive the set refresh rate) */
 void RGBDisplay::setRefreshRate(float refresh_rate) {
     this->refresh_rate = refresh_rate;
     if (this->refresh_rate > 625)
@@ -109,22 +122,23 @@ void RGBDisplay::setRefreshRate(float refresh_rate) {
         this->line_time_delay = (((1.0/this->refresh_rate)/8.0)-PARASITIC_LINE_TIME*1E-6)*1E+6;
 }
 
+/* Method to return the set line delay time */
 uint16_t RGBDisplay::getLineDelay() {
     return this->line_time_delay;
 }
 
-/* Function to show a frame for a given period of time in seconds */
+/* Method to show a frame for a given period of time in seconds */
 void RGBDisplay::showFrame(const uint8_t frame[COLOR_COUNT][LINE_COUNT][LINE_LENGTH], float time) {
     /* Calculate number of frames to be displayed to match time interval */
     uint16_t switch_count_max = time/(1.0/this->refresh_rate);
-    /* Initialise frame switching function */
+    /* Initialise frame switching */
     uint16_t switch_count = 0;
     /* Display frame till specified time runs out by counting frames */
     while (++switch_count < switch_count_max) {
         /* Loop through each line in frame */
         for (uint8_t i=0; i<LINE_COUNT; ++i) {
             /* Send ith line to display */
-            this->sendLine(frame[BLUE][i], frame[RED][i], frame[GREEN][i]);
+            this->sendLine(frame[RED][i], frame[GREEN][i], frame[BLUE][i]);
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
@@ -133,19 +147,19 @@ void RGBDisplay::showFrame(const uint8_t frame[COLOR_COUNT][LINE_COUNT][LINE_LEN
     }
 }
 
-/* Function to show a frame for a given period of time in seconds
+/* Method to show a frame for a given period of time in seconds
 * Overloaded form to take separate RGB frames */
-void RGBDisplay::showFrame(const uint8_t bframe[LINE_COUNT][LINE_LENGTH], const uint8_t rframe[LINE_COUNT][LINE_LENGTH], const uint8_t gframe[LINE_COUNT][LINE_LENGTH], float time) {
+void RGBDisplay::showFrame(const uint8_t rframe[LINE_COUNT][LINE_LENGTH], const uint8_t gframe[LINE_COUNT][LINE_LENGTH], const uint8_t bframe[LINE_COUNT][LINE_LENGTH], float time) {
     /* Calculate number of frames to be displayed to match time interval */
     uint16_t switch_count_max = time/(1.0/this->refresh_rate);
-    /* Initialise frame switching function */
+    /* Initialise frame switching */
     uint16_t switch_count = 0;
     /* Display frame till specified time runs out by counting frames */
     while (++switch_count < switch_count_max) {
         /* Loop through each line in frame */
         for (uint8_t i=0; i<LINE_COUNT; ++i) {
             /* Send ith line to display */
-            this->sendLine(bframe[i], rframe[i], gframe[i]);
+            this->sendLine(rframe[i], gframe[i], bframe[i]);
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
@@ -154,12 +168,12 @@ void RGBDisplay::showFrame(const uint8_t bframe[LINE_COUNT][LINE_LENGTH], const 
     }
 }
 
-/* Function to show a frame for a given period of time in seconds
+/* Method to show a frame for a given period of time in seconds
 * Overloaded form to use white as default color */
 void RGBDisplay::showFrame(const uint8_t frame[LINE_COUNT][LINE_LENGTH], float time) {
     /* Calculate number of frames to be displayed to match time interval */
     uint16_t switch_count_max = time/(1.0/this->refresh_rate);
-    /* Initialise frame switching function */
+    /* Initialise frame switching */
     uint16_t switch_count = 0;
     /* Display frame till specified time runs out by counting frames */
     while (++switch_count < switch_count_max) {
@@ -175,19 +189,19 @@ void RGBDisplay::showFrame(const uint8_t frame[LINE_COUNT][LINE_LENGTH], float t
     }
 }
 
-/* Function to show a frame for a given period of time in seconds.
+/* Method to show a frame for a given period of time in seconds.
 * Overloaded form to accept bit arrays */
 void RGBDisplay::showFrame(const uint16_t frame[COLOR_COUNT][LINE_COUNT], float time) {
     /* Calculate number of frames to be displayed to match time interval */
     uint16_t switch_count_max = time/(1.0/this->refresh_rate);
-    /* Initialise frame switching function */
+    /* Initialise frame switching */
     uint16_t switch_count = 0;
     /* Display frame till specified time runs out by counting frames */
     while (++switch_count < switch_count_max) {
         /* Loop through each line in frame */
         for (uint8_t i=0; i<LINE_COUNT; ++i) {
             /* Send ith line to display */
-            this->sendLine(frame[BLUE][i], frame[RED][i], frame[GREEN][i]);
+            this->sendLine(frame[RED][i], frame[GREEN][i], frame[BLUE][i]);
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
@@ -196,19 +210,19 @@ void RGBDisplay::showFrame(const uint16_t frame[COLOR_COUNT][LINE_COUNT], float 
     }
 }
 
-/* Function to show a frame for a given period of time in seconds.
+/* Method to show a frame for a given period of time in seconds.
 * Overloaded form to accept bit arrays (separate RGB frames) */
-void RGBDisplay::showFrame(const uint16_t bframe[LINE_COUNT], const uint16_t rframe[LINE_COUNT], const uint16_t gframe[LINE_COUNT], float time) {
+void RGBDisplay::showFrame(const uint16_t rframe[LINE_COUNT], const uint16_t gframe[LINE_COUNT], const uint16_t bframe[LINE_COUNT], float time) {
     /* Calculate number of frames to be displayed to match time interval */
     uint16_t switch_count_max = time/(1.0/this->refresh_rate);
-    /* Initialise frame switching function */
+    /* Initialise frame switching */
     uint16_t switch_count = 0;
     /* Display frame till specified time runs out by counting frames */
     while (++switch_count < switch_count_max) {
         /* Loop through each line in frame */
         for (uint8_t i=0; i<LINE_COUNT; ++i) {
             /* Send ith line to display */
-            this->sendLine(bframe[i], rframe[i], gframe[i]);
+            this->sendLine(rframe[i], gframe[i], bframe[i]);
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
@@ -217,12 +231,12 @@ void RGBDisplay::showFrame(const uint16_t bframe[LINE_COUNT], const uint16_t rfr
     }
 }
 
-/* Function to show a frame for a given period of time in seconds.
+/* Method to show a frame for a given period of time in seconds.
 * Overloaded form to accept bit arrays and use white as default color */
 void RGBDisplay::showFrame(const uint16_t frame[LINE_COUNT], float time) {
     /* Calculate number of frames to be displayed to match time interval */
     uint16_t switch_count_max = time/(1.0/this->refresh_rate);
-    /* Initialise frame switching function */
+    /* Initialise frame switching */
     uint16_t switch_count = 0;
     /* Display frame till specified time runs out by counting frames */
     while (++switch_count < switch_count_max) {
@@ -238,8 +252,8 @@ void RGBDisplay::showFrame(const uint16_t frame[LINE_COUNT], float time) {
     }
 }
 
-/* Function to send line data to display */
-void RGBDisplay::sendLine(const uint8_t bline[LINE_LENGTH], const uint8_t rline[LINE_LENGTH], const uint8_t gline[LINE_LENGTH]) {
+/* Method to send line data to display */
+void RGBDisplay::sendLine(const uint8_t rline[LINE_LENGTH], const uint8_t gline[LINE_LENGTH], const uint8_t bline[LINE_LENGTH]) {
     /* Prep for sending line data to display */
     digitalWrite(this->HSYNC, LOW);
     digitalWrite(this->VSYNC, LOW);
@@ -247,20 +261,20 @@ void RGBDisplay::sendLine(const uint8_t bline[LINE_LENGTH], const uint8_t rline[
 
     /* Send data to display back to front to match orientation */
     for (int i=LINE_LENGTH-1; i>=0; --i) {
-        // Send the blue value
-        digitalWrite(this->DATA, !bline[i]);
-        SETUP_DELAY();
-        digitalWrite(this->DCLK, HIGH);
-        SETUP_DELAY();
-        digitalWrite(this->DCLK, LOW);
-        // Send the green value
+        // Send the red value
         digitalWrite(this->DATA, !rline[i]);
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
         SETUP_DELAY();
         digitalWrite(this->DCLK, LOW);
-        // Send the red value
+        // Send the green value
         digitalWrite(this->DATA, !gline[i]);
+        SETUP_DELAY();
+        digitalWrite(this->DCLK, HIGH);
+        SETUP_DELAY();
+        digitalWrite(this->DCLK, LOW);
+        // Send the blue value
+        digitalWrite(this->DATA, !bline[i]);
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
         SETUP_DELAY();
@@ -270,7 +284,7 @@ void RGBDisplay::sendLine(const uint8_t bline[LINE_LENGTH], const uint8_t rline[
     digitalWrite(this->DATA, LOW);
 }
 
-/* Function to send line data to display
+/* Method to send line data to display
 * Overloaded form to use white as default color */
 void RGBDisplay::sendLine(const uint8_t line[LINE_LENGTH]) {
     /* Prep for sending line data to display */
@@ -280,7 +294,7 @@ void RGBDisplay::sendLine(const uint8_t line[LINE_LENGTH]) {
 
     /* Send data to display back to front to match orientation */
     for (int i=LINE_LENGTH-1; i>=0; --i) {
-        // Send the blue value
+        // Send the red value
         digitalWrite(this->DATA, !line[i]);
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
@@ -292,7 +306,7 @@ void RGBDisplay::sendLine(const uint8_t line[LINE_LENGTH]) {
         digitalWrite(this->DCLK, HIGH);
         SETUP_DELAY();
         digitalWrite(this->DCLK, LOW);
-        // Send the red value
+        // Send the blue value
         digitalWrite(this->DATA, !line[i]);
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
@@ -303,9 +317,9 @@ void RGBDisplay::sendLine(const uint8_t line[LINE_LENGTH]) {
     digitalWrite(this->DATA, LOW);
 }
 
-/* Function to send line data to display.
+/* Method to send line data to display.
 * Overloaded form to accept bit arrays */
-void RGBDisplay::sendLine(const uint16_t bline, const uint16_t rline, const uint16_t gline) {
+void RGBDisplay::sendLine(const uint16_t rline, const uint16_t gline, const uint16_t bline) {
     /* Prep for sending line data to display */
 
     digitalWrite(this->HSYNC, LOW);
@@ -314,20 +328,20 @@ void RGBDisplay::sendLine(const uint16_t bline, const uint16_t rline, const uint
 
     /* Send data to display back to front to match orientation */
     for (uint16_t i=0x1; i<=1<<(LINE_LENGTH-1); i<<=1) {
-        // Send the blue value
-        digitalWrite(this->DATA, !(bline&i));
-        SETUP_DELAY();
-        digitalWrite(this->DCLK, HIGH);
-        SETUP_DELAY();
-        digitalWrite(this->DCLK, LOW);
-        // Send the green value
+        // Send the red value
         digitalWrite(this->DATA, !(rline&i));
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
         SETUP_DELAY();
         digitalWrite(this->DCLK, LOW);
-        // Send the red value
+        // Send the green value
         digitalWrite(this->DATA, !(gline&i));
+        SETUP_DELAY();
+        digitalWrite(this->DCLK, HIGH);
+        SETUP_DELAY();
+        digitalWrite(this->DCLK, LOW);
+        // Send the blue value
+        digitalWrite(this->DATA, !(bline&i));
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
         SETUP_DELAY();
@@ -337,7 +351,7 @@ void RGBDisplay::sendLine(const uint16_t bline, const uint16_t rline, const uint
     digitalWrite(this->DATA, LOW);
 }
 
-/* Function to send line data to display.
+/* Method to send line data to display.
 * Overloaded form to accept bit arrays and use white as default color */
 void RGBDisplay::sendLine(const uint16_t line) {
     /* Prep for sending line data to display */
@@ -348,7 +362,7 @@ void RGBDisplay::sendLine(const uint16_t line) {
 
     /* Send data to display back to front to match orientation */
     for (uint16_t i=0x1; i<=1<<(LINE_LENGTH-1); i<<=1) {
-        // Send the blue value
+        // Send the red value
         digitalWrite(this->DATA, !(line&i));
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
@@ -360,7 +374,7 @@ void RGBDisplay::sendLine(const uint16_t line) {
         digitalWrite(this->DCLK, HIGH);
         SETUP_DELAY();
         digitalWrite(this->DCLK, LOW);
-        // Send the red value
+        // Send the blue value
         digitalWrite(this->DATA, !(line&i));
         SETUP_DELAY();
         digitalWrite(this->DCLK, HIGH);
@@ -371,7 +385,7 @@ void RGBDisplay::sendLine(const uint16_t line) {
     digitalWrite(this->DATA, LOW);
 }
 
-/* Function to select next line (loop if end) */
+/* Method to select next line (loop if end) */
 void RGBDisplay::nextLine() {
     /* Select next scan line */
     switch (this->next_line)
@@ -392,7 +406,7 @@ void RGBDisplay::nextLine() {
         this->next_line = FIRST_LINE;
 }
 
-/* Function to reset all display LEDs */
+/* Method to reset all display LEDs */
 void RGBDisplay::displayReset() {
     /* Disable line output */
     digitalWrite(this->EOUT, HIGH);
@@ -411,7 +425,7 @@ void RGBDisplay::displayReset() {
     analogWrite(this->EOUT, this->brightness);
 }
 
-/* Function to update display to show latest data */
+/* Method to update display to show latest data */
 void RGBDisplay::displayRefresh() {
     /* Disable line output */
     digitalWrite(this->EOUT, HIGH);
