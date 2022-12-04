@@ -7,5 +7,8 @@ Hardware/Parts-selection/
 Hardware/USB-C-DB/outputs/
 # Software directories to be ignored
 Software/test-firmware/
+# Mechanical directories to be ignored
+Mechanical/test/
+Mechanical/*/output/
 # Other directories to be ignored
 .vs/
