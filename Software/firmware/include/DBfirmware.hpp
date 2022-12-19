@@ -9,9 +9,11 @@
 #pragma once
 
 /* Includes */
-#include <USBC_DB_lib.hpp>
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
+
+#include "USBC_DB_lib.hpp"
+#include "bouncy_lib.hpp"
 
 /* Display brightness (0 to 1) */
 /* For the RGB display the set brightness refers to the
