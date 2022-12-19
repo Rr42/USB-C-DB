@@ -1,6 +1,6 @@
 /******************************************************************
 * File name: RGB8x10_display_lib.cpp
-* Version: v1.2
+* Version: v1.2.1
 * DEV: GitHub@Rr42
 * Description:
 *  Display library implementation for the 8x10 RGB LED display.
@@ -12,8 +12,10 @@
 #define LAST_LINE LINE_COUNT
 #define FIRST_LINE 1
 
-/* Macro for setup delay */
-#define SETUP_DELAY() {delayMicroseconds(1);}
+/* Macro for setup delay 
+* REF: https://github.com/esp8266/Arduino/issues/2240
+*/
+#define SETUP_DELAY() {optimistic_yield(5);}
 
 /* Macro to send line select data to display */
 #define SEND_H(dat) { \
@@ -142,7 +144,7 @@ void RGBDisplay::showFrame(const uint8_t frame[COLOR_COUNT][LINE_COUNT][LINE_LEN
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
-            delayMicroseconds(this->line_time_delay);
+            optimistic_yield(this->line_time_delay);
         }
     }
 }
@@ -163,7 +165,7 @@ void RGBDisplay::showFrame(const uint8_t rframe[LINE_COUNT][LINE_LENGTH], const 
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
-            delayMicroseconds(this->line_time_delay);
+            optimistic_yield(this->line_time_delay);
         }
     }
 }
@@ -184,7 +186,7 @@ void RGBDisplay::showFrame(const uint8_t frame[LINE_COUNT][LINE_LENGTH], float t
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
-            delayMicroseconds(this->line_time_delay);
+            optimistic_yield(this->line_time_delay);
         }
     }
 }
@@ -205,7 +207,7 @@ void RGBDisplay::showFrame(const uint16_t frame[COLOR_COUNT][LINE_COUNT], float 
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
-            delayMicroseconds(this->line_time_delay);
+            optimistic_yield(this->line_time_delay);
         }
     }
 }
@@ -226,7 +228,7 @@ void RGBDisplay::showFrame(const uint16_t rframe[LINE_COUNT], const uint16_t gfr
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
-            delayMicroseconds(this->line_time_delay);
+            optimistic_yield(this->line_time_delay);
         }
     }
 }
@@ -247,7 +249,7 @@ void RGBDisplay::showFrame(const uint16_t frame[LINE_COUNT], float time) {
             /* Show line */
             this->displayRefresh();
             /* Wait to match refresh rate */
-            delayMicroseconds(this->line_time_delay);
+            optimistic_yield(this->line_time_delay);
         }
     }
 }
