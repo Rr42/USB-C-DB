@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>LED Control</title>
+<style>
+html {
+    font-family: Helvetica;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+}
+body {
+    margin-top: 50px;
+}
+h1 {
+    color: #444444;
+    margin: 50px auto 30px;
+}
+h3 {
+    color: #444444;
+    margin-bottom: 50px;
+}
+p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.button {
+    display: block;
+    width: 80px;
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px auto 35px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button.disabled {
+    pointer-events: none;
+}
+.button-single {
+    display: block;
+    width: 250px;
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px auto 35px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button-on {
+    background-color: #1abc9c;
+}
+.button-on:active {
+    background-color: #16a085;
+}
+.button-off {
+    background-color: #34495e;
+}
+.button-off:active {
+    background-color: #2c3e50;
+}
+.button-disabled {
+    background-color: #aaaaff;
+    pointer-events: none;
+}
+.dropdown {
+    display:table-cell;
+    width: 60px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px 7px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto auto auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<h1>USB-C DB Control Center</h1>
+<h3>Using ESP8266's Access Point (AP) Mode</h3>
+<a class="button-single button-off" href="#/play_boot">Play boot animation</a>
+
+<p>Display mode</p>
+<table align="center">
+    <tr>
+      <th><a href="#/mode1" class="button button-disabled">1</a></th>
+      <th><a href="#/mode2" class="button button-on">2</a></th>
+      <th><a href="#/mode2" class="button button-off">3</a></th>
+    </tr>
+    <tr>
+        <th><a href="#/mode1" class="button button-off">4</a></th>
+        <th><a href="#/mode2" class="button button-off">5</a></th>
+        <th><a href="#/mode2" class="button button-off">6</a></th>
+    </tr>
+    <tr>
+        <th><a href="#/mode1" class="button button-off">7</a></th>
+        <th><a href="#/mode2" class="button button-off">8</a></th>
+        <th><a href="#/mode2" class="button button-off">9</a></th>
+    </tr>
+</table>
+
+<p>Custom mode</p>
+<table align="center" id="table-custom">
+</table>
+
+</body>
+<script>
+    function change_color(id,color,text) {
+        id.style.backgroundColor=color;
+    }
+    
+    var LED_number = 1;
+    var custom_table = "";
+    var color_map = [
+        { chash: "#000000", ctext: "white" },
+        { chash: "#0000FF", ctext: "white" },
+        { chash: "#00FF00", ctext: "black" },
+        { chash: "#00FFFF", ctext: "black" },
+        { chash: "#FF0000", ctext: "white" },
+        { chash: "#FF00FF", ctext: "black" },
+        { chash: "#FFFF00", ctext: "black" },
+        { chash: "#FFFFFF", ctext: "black" },
+    ];
+    /* Generate the custom table */
+    for (var i = 0; i < 10; i++) {
+        custom_table += "<tr>";
+        for (var j = 0; j < 8; j++) {
+            var LED_name = LED_number.toString();
+            if (LED_number < 10) {
+                LED_name = "0" + LED_name;
+            };
+            custom_table += "<th>";
+            custom_table += "<select onchange=\"change_color(this,value,"+LED_name+")\" class=\"dropdown\">";
+            /* Fill in the options of the dropdown */
+            color_map.forEach(function (color_item) {
+                custom_table += "<option style=\"background-color:"+color_item["chash"]+";color:"+color_item["ctext"]+"\" value=\""+color_item["chash"]+"\">"+LED_name+"</option>";
+            });
+            custom_table += "</select>";
+            custom_table += "</th>";
+            /* Increment the LED index */
+            LED_number += 1
+        };
+        custom_table += "</tr>";
+    };
+    document.getElementById("table-custom").innerHTML = custom_table;
+
+    
+</script>
+</html>

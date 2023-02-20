@@ -1,6 +1,6 @@
 /******************************************************************
 * File name: bouncy.cpp
-* Version: v1.0
+* Version: v2.0
 * DEV: GitHub@Rr42
 * Description:
 *  Firmware for the USB-C-DB board (8x10 RGB LED display).
@@ -27,6 +27,12 @@
 * Use electron?
 */
 
+/* Dynamic Network connection
+* If the WiFi ssid is not present, go into AP mode and host the WiFi network.
+* However, if the network already exists (could be hosted by a PC or another USB-C DB board)
+*  then go into Client mode and connect to it rather than hosting a new network.
+*/
+
 /* WiFi SSID & Password */
 inline const char* ssid = WiFi_AP_SSID;
 inline const char* password = WiFi_AP_PSWD;
@@ -43,7 +49,7 @@ RGBDisplay my_display;
 ESP8266WebServer server(WEB_PORT);
 
 /* Global variables */
-enum DISPLAY_MODES : uint8_t {MODE_OFF, MODE_STANDBY, MODE_PLAY_BOOT, MODE1, MODE2, MODE3, MODE4, MODE5, MODE6, MODE7, MODE8, MODE9};
+enum DISPLAY_MODES : uint8_t {MODE_OFF, MODE_STANDBY, MODE_PLAY_BOOT, MODE1, MODE2, MODE3, MODE4, MODE5, MODE6, MODE7, MODE8, MODE9, CUSTOM_SELECTION};
 uint8_t display_mode = MODE_STANDBY;
 
 /* Display frames */
@@ -66,6 +72,33 @@ const uint16_t OFF[LINE_COUNT] = { 0b0000000000,  // 0
                              0b0000000000,  // 6
                              0b0000000000}; // 7
 //                             0123456789
+/* Custom frame */
+uint16_t custom_buffer[COLOR_COUNT][LINE_COUNT] = {
+                                            { 0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000,  // BLUE
+                                              0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000},
+                                            { 0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000,  // RED
+                                              0b0000000000,
+                                              0b0000000000,
+                                              0b0000000000},
+                                            { 0b0000000000,   // 0
+                                              0b0000000000,   // 1
+                                              0b0000000000,   // 2
+                                              0b0000000000,   // 3
+                                              0b0000000000,   // 4 GREEN
+                                              0b0000000000,   // 5
+                                              0b0000000000,   // 6
+                                              0b0000000000}}; // 7
+//                                              0123456789
 
 /* Boot animation */
 const uint16_t BOOT_ANIMATION[][LINE_COUNT] = {
@@ -238,7 +271,7 @@ void SendHTML_nostore(uint8_t mode) {
     server.sendContent(".dropdown {\n");
     server.sendContent("    display:table-cell;\n");
     server.sendContent("    width: 60px;\n");
-    server.sendContent("    background-color: #ff0000;\n");
+    server.sendContent("    background-color: #000000;\n");
     server.sendContent("    border: none;\n");
     server.sendContent("    color: white;\n");
     server.sendContent("    padding: 10px 7px;\n");
@@ -257,137 +290,177 @@ void SendHTML_nostore(uint8_t mode) {
 
     /* Boot animation button */
     if (mode == MODE_PLAY_BOOT)
+        /* Set boot button to ON state if in boot mode */
         server.sendContent("<a class=\"button-single button-on\" href=\"/play_boot\">Play boot animation</a>\n");
-    else
+    else if (mode != CUSTOM_SELECTION)
+        /* Set boot button to OFF state if not in boot mode or custom selection mode */
         server.sendContent("<a class=\"button-single button-off\" href=\"/play_boot\">Play boot animation</a>\n");
+    else
+        /* Change button to allow user to go back to the main page when in custom mode */
+        server.sendContent("<a class=\"button-single button-off\" href=\"/\">Home</a>\n");
 
     /* Array of display mode selectors */
-    server.sendContent("<p>Display mode</p>\n");
-    server.sendContent("<table align=\"center\">\n");
-    server.sendContent("    <tr>\n");
-    if (mode == MODE_OFF) {
-        server.sendContent("      <th><a href=\"/mode1\" class=\"button button-disabled\">1</a></th>\n");
-        server.sendContent("      <th><a href=\"/mode2\" class=\"button button-disabled\">2</a></th>\n");
-        server.sendContent("      <th><a href=\"/mode3\" class=\"button button-disabled\">3</a></th>\n");
-    } else {
-        /* Mode 1 */
-        if (mode == MODE1)
-            server.sendContent("      <th><a href=\"/mode1\" class=\"button button-on\">1</a></th>\n");
-        else
-            server.sendContent("      <th><a href=\"/mode1\" class=\"button button-off\">1</a></th>\n");
-        /* Mode 2 */
-        if (mode == MODE2)
-            server.sendContent("      <th><a href=\"/mode2\" class=\"button button-on\">2</a></th>\n");
-        else
-            server.sendContent("      <th><a href=\"/mode2\" class=\"button button-off\">2</a></th>\n");
-        /* Mode 3 */
-        if (mode == MODE3)
-            server.sendContent("      <th><a href=\"/mode3\" class=\"button button-on\">3</a></th>\n");
-        else
-            server.sendContent("      <th><a href=\"/mode3\" class=\"button button-off\">3</a></th>\n");
-    }
-    server.sendContent("    </tr>\n");
-    server.sendContent("    <tr>\n");
-    if (mode == MODE_OFF) {
-        server.sendContent("      <th><a href=\"/mode4\" class=\"button button-disabled\">4</a></th>\n");
-        server.sendContent("      <th><a href=\"/mode5\" class=\"button button-disabled\">5</a></th>\n");
-        server.sendContent("      <th><a href=\"/mode6\" class=\"button button-disabled\">6</a></th>\n");
-    } else {
-        /* Mode 4 */
-        if (mode == MODE4)
-            server.sendContent("        <th><a href=\"/mode4\" class=\"button button-on\">4</a></th>\n");
-        else
-            server.sendContent("        <th><a href=\"/mode4\" class=\"button button-off\">4</a></th>\n");
-        /* Mode 5 */
-        if (mode == MODE5)
-            server.sendContent("        <th><a href=\"/mode5\" class=\"button button-on\">5</a></th>\n");
-        else
-            server.sendContent("        <th><a href=\"/mode5\" class=\"button button-off\">5</a></th>\n");
-        /* Mode 6 */
-        if (mode == MODE6)
-            server.sendContent("        <th><a href=\"/mode6\" class=\"button button-on\">6</a></th>\n");
-        else
-            server.sendContent("        <th><a href=\"/mode6\" class=\"button button-off\">6</a></th>\n");
-    }
-    server.sendContent("    </tr>\n");
-    server.sendContent("    <tr>\n");
-    if (mode == MODE_OFF) {
-        server.sendContent("      <th><a href=\"/mode7\" class=\"button button-disabled\">7</a></th>\n");
-        server.sendContent("      <th><a href=\"/mode8\" class=\"button button-disabled\">8</a></th>\n");
-        server.sendContent("      <th><a href=\"/mode9\" class=\"button button-disabled\">9</a></th>\n");
-    } else {
-        /* Mode 7 */
-        if (mode == MODE7)
-            server.sendContent("        <th><a href=\"/mode7\" class=\"button button-on\">7</a></th>\n");
-        else
-            server.sendContent("        <th><a href=\"/mode7\" class=\"button button-off\">7</a></th>\n");
-        /* Mode 8 */
-        if (mode == MODE8)
-            server.sendContent("        <th><a href=\"/mode8\" class=\"button button-on\">8</a></th>\n");
-        else
-            server.sendContent("        <th><a href=\"/mode8\" class=\"button button-off\">8</a></th>\n");
-        /* Mode 9 */
-        if (mode == MODE9)
-            server.sendContent("        <th><a href=\"/mode9\" class=\"button button-on\">9</a></th>\n");
-        else
-            server.sendContent("        <th><a href=\"/mode9\" class=\"button button-off\">9</a></th>\n");
-    }
-    server.sendContent("    </tr>\n");
-    server.sendContent("</table>\n");
+    if (mode != CUSTOM_SELECTION) {
+        server.sendContent("<p>Display mode</p>\n");
+        server.sendContent("<table align=\"center\">\n");
+        server.sendContent("    <tr>\n");
+        if (mode == MODE_OFF) {
+            server.sendContent("      <th><a href=\"/mode1\" class=\"button button-disabled\">1</a></th>\n");
+            server.sendContent("      <th><a href=\"/mode2\" class=\"button button-disabled\">2</a></th>\n");
+            server.sendContent("      <th><a href=\"/mode3\" class=\"button button-disabled\">3</a></th>\n");
+        } else {
+            /* Mode 1 */
+            if (mode == MODE1)
+                server.sendContent("      <th><a href=\"/mode1\" class=\"button button-on\">1</a></th>\n");
+            else
+                server.sendContent("      <th><a href=\"/mode1\" class=\"button button-off\">1</a></th>\n");
+            /* Mode 2 */
+            if (mode == MODE2)
+                server.sendContent("      <th><a href=\"/mode2\" class=\"button button-on\">2</a></th>\n");
+            else
+                server.sendContent("      <th><a href=\"/mode2\" class=\"button button-off\">2</a></th>\n");
+            /* Mode 3 */
+            if (mode == MODE3)
+                server.sendContent("      <th><a href=\"/mode3\" class=\"button button-on\">3</a></th>\n");
+            else
+                server.sendContent("      <th><a href=\"/mode3\" class=\"button button-off\">3</a></th>\n");
+        }
+        server.sendContent("    </tr>\n");
+        server.sendContent("    <tr>\n");
+        if (mode == MODE_OFF) {
+            server.sendContent("      <th><a href=\"/mode4\" class=\"button button-disabled\">4</a></th>\n");
+            server.sendContent("      <th><a href=\"/mode5\" class=\"button button-disabled\">5</a></th>\n");
+            server.sendContent("      <th><a href=\"/mode6\" class=\"button button-disabled\">6</a></th>\n");
+        } else {
+            /* Mode 4 */
+            if (mode == MODE4)
+                server.sendContent("        <th><a href=\"/mode4\" class=\"button button-on\">4</a></th>\n");
+            else
+                server.sendContent("        <th><a href=\"/mode4\" class=\"button button-off\">4</a></th>\n");
+            /* Mode 5 */
+            if (mode == MODE5)
+                server.sendContent("        <th><a href=\"/mode5\" class=\"button button-on\">5</a></th>\n");
+            else
+                server.sendContent("        <th><a href=\"/mode5\" class=\"button button-off\">5</a></th>\n");
+            /* Mode 6 */
+            if (mode == MODE6)
+                server.sendContent("        <th><a href=\"/mode6\" class=\"button button-on\">6</a></th>\n");
+            else
+                server.sendContent("        <th><a href=\"/mode6\" class=\"button button-off\">6</a></th>\n");
+        }
+        server.sendContent("    </tr>\n");
+        server.sendContent("    <tr>\n");
+        if (mode == MODE_OFF) {
+            server.sendContent("      <th><a href=\"/mode7\" class=\"button button-disabled\">7</a></th>\n");
+            server.sendContent("      <th><a href=\"/mode8\" class=\"button button-disabled\">8</a></th>\n");
+            server.sendContent("      <th><a href=\"/mode9\" class=\"button button-disabled\">9</a></th>\n");
+        } else {
+            /* Mode 7 */
+            if (mode == MODE7)
+                server.sendContent("        <th><a href=\"/mode7\" class=\"button button-on\">7</a></th>\n");
+            else
+                server.sendContent("        <th><a href=\"/mode7\" class=\"button button-off\">7</a></th>\n");
+            /* Mode 8 */
+            if (mode == MODE8)
+                server.sendContent("        <th><a href=\"/mode8\" class=\"button button-on\">8</a></th>\n");
+            else
+                server.sendContent("        <th><a href=\"/mode8\" class=\"button button-off\">8</a></th>\n");
+            /* Mode 9 */
+            if (mode == MODE9)
+                server.sendContent("        <th><a href=\"/mode9\" class=\"button button-on\">9</a></th>\n");
+            else
+                server.sendContent("        <th><a href=\"/mode9\" class=\"button button-off\">9</a></th>\n");
+        }
+        server.sendContent("    </tr>\n");
+        server.sendContent("</table>\n");
 
-    /* Custom color selection table
-    * Need to compress/offload work as generating table onboard takes too much RAM.
-    * Just about 49,536 bytes (51,584 if the above table is removed)
-    *  is available at this point after all other variables have been loaded.
-    * 
-    * Thanks to Github@nikramakrishnan for the help in sorting out the dynamic table creation!
-    */
-    server.sendContent("<p>Custom mode</p>\n");
-    server.sendContent("<table align=\"center\" id=\"table-custom\">\n");
-    server.sendContent("</table>\n");
+        /* Button top switch to custom mode */
+        server.sendContent("<p>Custom mode</p>\n");
+        if (mode == MODE_OFF)
+            server.sendContent("<a class=\"button-single button-disabled\" href=\"/custom_selection\">Custom mode</a>\n");
+        else
+            server.sendContent("<a class=\"button-single button-off\" href=\"/custom_selection\">Custom mode</a>\n");
 
-    server.sendContent("</body>\n");
+        server.sendContent("</body>\n");
+    } else {
+        /* Custom color selection table
+        * Need to compress/offload work as generating table onboard takes too much RAM.
+        * Just about 49,536 bytes (51,584 if the above table is removed)
+        *  is available at this point after all other variables have been loaded.
+        * 
+        * Thanks to Github@nikramakrishnan for the help in sorting out the dynamic table creation!
+        */
+        server.sendContent("<p>Custom mode</p>\n");
+        server.sendContent("<table align=\"center\" id=\"table-custom\">\n");
+        server.sendContent("</table>\n");
 
-    server.sendContent("<script>\n");
-    server.sendContent("    function change_color(id,color,text) {\n");
-    server.sendContent("        id.style.backgroundColor=color;\n");
-    server.sendContent("    }\n");
-    server.sendContent("    \n");
-    server.sendContent("    var LED_number = 1;\n");
-    server.sendContent("    var custom_table = '';\n");
-    server.sendContent("    var color_map = [\n");
-    server.sendContent("        { chash: '#000000', ctext: 'white' },\n");
-    server.sendContent("        { chash: '#0000FF', ctext: 'white' },\n");
-    server.sendContent("        { chash: '#00FF00', ctext: 'black' },\n");
-    server.sendContent("        { chash: '#00FFFF', ctext: 'black' },\n");
-    server.sendContent("        { chash: '#FF0000', ctext: 'white' },\n");
-    server.sendContent("        { chash: '#FF00FF', ctext: 'black' },\n");
-    server.sendContent("        { chash: '#FFFF00', ctext: 'black' },\n");
-    server.sendContent("        { chash: '#FFFFFF', ctext: 'black' },\n");
-    server.sendContent("    ];\n");
-    server.sendContent("    /* Generate the custom table */\n");
-    server.sendContent("    for (var i = 0; i < 10; i++) {\n");
-    server.sendContent("        custom_table += '<tr>';\n");
-    server.sendContent("        for (var j = 0; j < 8; j++) {\n");
-    server.sendContent("            var LED_name = LED_number.toString();\n");
-    server.sendContent("            if (LED_number < 10) {\n");
-    server.sendContent("                LED_name = '0' + LED_name;\n");
-    server.sendContent("            };\n");
-    server.sendContent("            custom_table += '<th>';\n");
-    server.sendContent("            custom_table += '<select onchange=\\'change_color(this,value,'+LED_name+')\\' class=\\'dropdown\\'>';\n");
-    server.sendContent("            /* Fill in the options of the dropdown */\n");
-    server.sendContent("            color_map.forEach(function (color_item) {\n");
-    server.sendContent("                custom_table += '<option style=\\'background-color:'+color_item['chash']+';color:'+color_item['ctext']+'\\' value=\\''+color_item['chash']+'\\'>'+LED_name+'</option>';\n");
-    server.sendContent("            });\n");
-    server.sendContent("            custom_table += '</select>';\n");
-    server.sendContent("            custom_table += '</th>';\n");
-    server.sendContent("            /* Increment the LED index */\n");
-    server.sendContent("            LED_number += 1\n");
-    server.sendContent("        };\n");
-    server.sendContent("        custom_table += '</tr>';\n");
-    server.sendContent("    };\n");
-    server.sendContent("    document.getElementById('table-custom').innerHTML = custom_table;\n");
-    server.sendContent("</script>");
+        server.sendContent("</body>\n");
+
+        server.sendContent("<script>\n");
+        server.sendContent("    var color_map = [\n");
+        server.sendContent("        { chash: '#000000', ctext: 'white' },\n");
+        server.sendContent("        { chash: '#0000FF', ctext: 'white' },\n");
+        server.sendContent("        { chash: '#00FF00', ctext: 'black' },\n");
+        server.sendContent("        { chash: '#00FFFF', ctext: 'black' },\n");
+        server.sendContent("        { chash: '#FF0000', ctext: 'white' },\n");
+        server.sendContent("        { chash: '#FF00FF', ctext: 'black' },\n");
+        server.sendContent("        { chash: '#FFFF00', ctext: 'black' },\n");
+        server.sendContent("        { chash: '#FFFFFF', ctext: 'black' },\n");
+        server.sendContent("    ];\n");
+        server.sendContent("    var bcolor_map = {\n");
+        server.sendContent("        '#000000': 'white',\n");
+        server.sendContent("        '#0000FF': 'white',\n");
+        server.sendContent("        '#00FF00': 'black',\n");
+        server.sendContent("        '#00FFFF': 'black',\n");
+        server.sendContent("        '#FF0000': 'white',\n");
+        server.sendContent("        '#FF00FF': 'black',\n");
+        server.sendContent("        '#FFFF00': 'black',\n");
+        server.sendContent("        '#FFFFFF': 'black',\n");
+        server.sendContent("    };\n");
+        server.sendContent("    function change_color(id,color,text) {\n");
+        server.sendContent("        id.style.backgroundColor=color;\n");
+        server.sendContent("        id.style.color=bcolor_map[color];\n");
+        server.sendContent("        /* Reformat the color string to make it easier to parse */\n");
+        server.sendContent("        var fcolor = color.toString()\n");
+        server.sendContent("        fcolor = fcolor.replace('#', '');\n");
+        server.sendContent("        fcolor = fcolor.replace(/00/g, '0');\n");
+        server.sendContent("        fcolor = fcolor.replace(/FF/g, '1');\n");
+        server.sendContent("        /* Reformat the text string to make it easier to parse */\n");
+        server.sendContent("        var LED_id = Number(text);\n");
+        server.sendContent("        var row = (LED_id-1)%8;\n");
+        server.sendContent("        var col = Math.ceil(LED_id/8)-1;\n");
+        server.sendContent("        /* Send an AJAX request with the latest display configuration */\n");
+        server.sendContent("        var xhttp = new XMLHttpRequest();\n");
+        server.sendContent("        xhttp.open('GET', 'custom_selection?id='+id.toString()+'&color='+parseInt(fcolor)+'&row='+row.toString()+'&col='+col.toString(), true);\n");
+        server.sendContent("        xhttp.send();\n");
+        server.sendContent("    }\n");
+        server.sendContent("    \n");
+        server.sendContent("    var LED_number = 1;\n");
+        server.sendContent("    var custom_table = '';\n");
+        server.sendContent("    /* Generate the custom table */\n");
+        server.sendContent("    for (var i = 0; i < 10; i++) {\n");
+        server.sendContent("        custom_table += '<tr>';\n");
+        server.sendContent("        for (var j = 0; j < 8; j++) {\n");
+        server.sendContent("            var LED_name = LED_number.toString();\n");
+        server.sendContent("            if (LED_number < 10) {\n");
+        server.sendContent("                LED_name = '0' + LED_name;\n");
+        server.sendContent("            };\n");
+        server.sendContent("            custom_table += '<th>';\n");
+        server.sendContent("            custom_table += '<select onchange=\\'change_color(this,value,'+LED_name+')\\' class=\\'dropdown\\'>';\n");
+        server.sendContent("            /* Fill in the options of the dropdown */\n");
+        server.sendContent("            color_map.forEach(function (color_item) {\n");
+        server.sendContent("                custom_table += '<option style=\\'background-color:'+color_item['chash']+';color:'+color_item['ctext']+'\\' value=\\''+color_item['chash']+'\\'>'+LED_name+'</option>';\n");
+        server.sendContent("            });\n");
+        server.sendContent("            custom_table += '</select>';\n");
+        server.sendContent("            custom_table += '</th>';\n");
+        server.sendContent("            /* Increment the LED index */\n");
+        server.sendContent("            LED_number += 1\n");
+        server.sendContent("        };\n");
+        server.sendContent("        custom_table += '</tr>';\n");
+        server.sendContent("    };\n");
+        server.sendContent("    document.getElementById('table-custom').innerHTML = custom_table;\n");
+        server.sendContent("</script>");
+    }
 
     server.sendContent("</html>\n");
     /* Tis tells web client that transfer is done */
@@ -396,247 +469,51 @@ void SendHTML_nostore(uint8_t mode) {
     server.client().stop();
 }
 
-String SendHTML(uint8_t mode) {
-    String ptr = "<!DOCTYPE html> <html>\n";
-    ptr += "<!DOCTYPE html>\n";
-    ptr += "<html>\n";
-    ptr += "<head>\n";
-    ptr += "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
-    ptr += "<title>LED Control</title>\n";
-    ptr += "<style>\n";
-    ptr += "html {\n";
-    ptr += "    font-family: Helvetica;\n";
-    ptr += "    display: inline-block;\n";
-    ptr += "    margin: 0px auto;\n";
-    ptr += "    text-align: center;\n";
-    ptr += "}\n";
-    ptr += "body {\n";
-    ptr += "    margin-top: 50px;\n";
-    ptr += "}\n";
-    ptr += "h1 {\n";
-    ptr += "    color: #444444;\n";
-    ptr += "    margin: 50px auto 30px;\n";
-    ptr += "}\n";
-    ptr += "h3 {\n";
-    ptr += "    color: #444444;\n";
-    ptr += "    margin-bottom: 50px;\n";
-    ptr += "}\n";
-    ptr += "p {\n";
-    ptr += "    font-size: 14px;\n";
-    ptr += "    color: #888;\n";
-    ptr += "    margin-bottom: 10px;\n";
-    ptr += "}\n";
-    ptr += ".button {\n";
-    ptr += "    display: block;\n";
-    ptr += "    width: 80px;\n";
-    ptr += "    background-color: #1abc9c;\n";
-    ptr += "    border: none;\n";
-    ptr += "    color: white;\n";
-    ptr += "    padding: 13px 30px;\n";
-    ptr += "    text-decoration: none;\n";
-    ptr += "    font-size: 25px;\n";
-    ptr += "    margin: 0px auto 35px;\n";
-    ptr += "    cursor: pointer;\n";
-    ptr += "    border-radius: 4px;\n";
-    ptr += "}\n";
-    ptr += ".button.disabled {\n";
-    ptr += "    pointer-events: none;\n";
-    ptr += "}\n";
-    ptr += ".button-single {\n";
-    ptr += "    display: block;\n";
-    ptr += "    width: 250px;\n";
-    ptr += "    background-color: #1abc9c;\n";
-    ptr += "    border: none;\n";
-    ptr += "    color: white;\n";
-    ptr += "    padding: 13px 30px;\n";
-    ptr += "    text-decoration: none;\n";
-    ptr += "    font-size: 25px;\n";
-    ptr += "    margin: 0px auto 35px;\n";
-    ptr += "    cursor: pointer;\n";
-    ptr += "    border-radius: 4px;\n";
-    ptr += "}\n";
-    ptr += ".button-on {\n";
-    ptr += "    background-color: #1abc9c;\n";
-    ptr += "}\n";
-    ptr += ".button-on:active {\n";
-    ptr += "    background-color: #16a085;\n";
-    ptr += "}\n";
-    ptr += ".button-off {\n";
-    ptr += "    background-color: #34495e;\n";
-    ptr += "}\n";
-    ptr += ".button-off:active {\n";
-    ptr += "    background-color: #2c3e50;\n";
-    ptr += "}\n";
-    ptr += ".button-disabled {\n";
-    ptr += "    background-color: #aaaaff;\n";
-    ptr += "    pointer-events: none;\n";
-    ptr += "}\n";
-    ptr += ".dropdown {\n";
-    ptr += "    display:table-cell;\n";
-    ptr += "    width: 60px;\n";
-    ptr += "    background-color: #ff0000;\n";
-    ptr += "    border: none;\n";
-    ptr += "    color: white;\n";
-    ptr += "    padding: 10px 7px;\n";
-    ptr += "    text-decoration: none;\n";
-    ptr += "    font-size: 20px;\n";
-    ptr += "    margin: auto auto auto;\n";
-    ptr += "    cursor: pointer;\n";
-    ptr += "    border-radius: 10px;\n";
-    ptr += "}\n";
-    ptr += "</style>\n";
-    ptr += "<script>\n";
-    ptr += "    function change_color(id,color) {\n";
-    ptr += "        id.style.backgroundColor=color;\n";
-    ptr += "    }\n";
-    ptr += "</script>\n";
-    ptr += "</head>\n";
-    ptr += "<body>\n";
-    ptr += "<h1>USB-C DB Control Center</h1>\n";
-    ptr += "<h3>Using ESP8266's Access Point (AP) Mode</h3>\n";
-
-    /* Boot animation button */
-    if (mode == MODE_PLAY_BOOT)
-        ptr += "<a class=\"button-single button-on\" href=\"/play_boot\">Play boot animation</a>\n";
-    else
-        ptr += "<a class=\"button-single button-off\" href=\"/play_boot\">Play boot animation</a>\n";
-
-    /* Array of display mode selectors */
-    ptr += "<p>Display mode</p>\n";
-    ptr += "<table align=\"center\">\n";
-    ptr += "    <tr>\n";
-    if (mode == MODE_OFF) {
-        ptr += "      <th><a href=\"/mode1\" class=\"button button-disabled\">1</a></th>\n";
-        ptr += "      <th><a href=\"/mode2\" class=\"button button-disabled\">2</a></th>\n";
-        ptr += "      <th><a href=\"/mode3\" class=\"button button-disabled\">3</a></th>\n";
-    } else {
-        /* Mode 1 */
-        if (mode == MODE1)
-            ptr += "      <th><a href=\"/mode1\" class=\"button button-on\">1</a></th>\n";
-        else
-            ptr += "      <th><a href=\"/mode1\" class=\"button button-off\">1</a></th>\n";
-        /* Mode 2 */
-        if (mode == MODE2)
-            ptr += "      <th><a href=\"/mode2\" class=\"button button-on\">2</a></th>\n";
-        else
-            ptr += "      <th><a href=\"/mode2\" class=\"button button-off\">2</a></th>\n";
-        /* Mode 3 */
-        if (mode == MODE3)
-            ptr += "      <th><a href=\"/mode3\" class=\"button button-on\">3</a></th>\n";
-        else
-            ptr += "      <th><a href=\"/mode3\" class=\"button button-off\">3</a></th>\n";
-    }
-    ptr += "    </tr>\n";
-    ptr += "    <tr>\n";
-    if (mode == MODE_OFF) {
-        ptr += "      <th><a href=\"/mode4\" class=\"button button-disabled\">4</a></th>\n";
-        ptr += "      <th><a href=\"/mode5\" class=\"button button-disabled\">5</a></th>\n";
-        ptr += "      <th><a href=\"/mode6\" class=\"button button-disabled\">6</a></th>\n";
-    } else {
-        /* Mode 4 */
-        if (mode == MODE4)
-            ptr += "        <th><a href=\"/mode4\" class=\"button button-on\">4</a></th>\n";
-        else
-            ptr += "        <th><a href=\"/mode4\" class=\"button button-off\">4</a></th>\n";
-        /* Mode 5 */
-        if (mode == MODE5)
-            ptr += "        <th><a href=\"/mode5\" class=\"button button-on\">5</a></th>\n";
-        else
-            ptr += "        <th><a href=\"/mode5\" class=\"button button-off\">5</a></th>\n";
-        /* Mode 6 */
-        if (mode == MODE6)
-            ptr += "        <th><a href=\"/mode6\" class=\"button button-on\">6</a></th>\n";
-        else
-            ptr += "        <th><a href=\"/mode6\" class=\"button button-off\">6</a></th>\n";
-    }
-    ptr += "    </tr>\n";
-    ptr += "    <tr>\n";
-    if (mode == MODE_OFF) {
-        ptr += "      <th><a href=\"/mode7\" class=\"button button-disabled\">7</a></th>\n";
-        ptr += "      <th><a href=\"/mode8\" class=\"button button-disabled\">8</a></th>\n";
-        ptr += "      <th><a href=\"/mode9\" class=\"button button-disabled\">9</a></th>\n";
-    } else {
-        /* Mode 7 */
-        if (mode == MODE7)
-            ptr += "        <th><a href=\"/mode7\" class=\"button button-on\">7</a></th>\n";
-        else
-            ptr += "        <th><a href=\"/mode7\" class=\"button button-off\">7</a></th>\n";
-        /* Mode 8 */
-        if (mode == MODE8)
-            ptr += "        <th><a href=\"/mode8\" class=\"button button-on\">8</a></th>\n";
-        else
-            ptr += "        <th><a href=\"/mode8\" class=\"button button-off\">8</a></th>\n";
-        /* Mode 9 */
-        if (mode == MODE9)
-            ptr += "        <th><a href=\"/mode9\" class=\"button button-on\">9</a></th>\n";
-        else
-            ptr += "        <th><a href=\"/mode9\" class=\"button button-off\">9</a></th>\n";
-    }
-    ptr += "    </tr>\n";
-    ptr += "</table>\n";
-
-    /* [TODO] Custom table goes here
-    * Need to compress/offload work as generating table onboard takes too much RAM.
-    * Just about 49,536 bytes (51,584 if the above table is removed)
-    *  is available at this point after all other variables have been loaded.
-    */
-
-    ptr +="</body>\n";
-    ptr +="</html>\n";
-    return ptr;
-}
-
 /* Web rout handles */
 void handle_OnConnect() {
-    // server.send(200, "text/html", SendHTML(display_mode));
+    /* Reset mode if site is coming back from the custom page */
+    if (display_mode == CUSTOM_SELECTION)
+        display_mode = MODE_STANDBY;
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode1() {
     display_mode = MODE1;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode2() {
     display_mode = MODE2;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode3() {
     display_mode = MODE3;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode4() {
     display_mode = MODE4;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode5() {
     display_mode = MODE5;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode6() {
     display_mode = MODE6;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode7() {
     display_mode = MODE7;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
 void handle_mode8() {
     display_mode = MODE8;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
 }
 
@@ -644,19 +521,49 @@ void handle_mode9() {
     display_mode = MODE9;
     /* Initialise/reset the bouncy module */
     init_bouncy();
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
-}
-
-void handle_NotFound() {
-    display_mode = MODE_STANDBY;
-    server.send(404, "text/plain", "Not found");
 }
 
 void handle_play_boot() {
     display_mode = MODE_PLAY_BOOT;
-    // server.send(200, "text/html", SendHTML(display_mode));
     SendHTML_nostore(display_mode);
+}
+
+void handle_custom_selection() {
+    display_mode = CUSTOM_SELECTION;
+    /* Process the LED color change if data is available */
+    if (server.arg("id") != "") {
+        /* Grab the color selection */
+        uint8_t color = atoi(server.arg("color").c_str());
+        /* Grab the line the LED is on */
+        uint8_t line = atoi(server.arg("col").c_str());
+        /* Grab the LED shift for the line */
+        uint8_t shift = atoi(server.arg("row").c_str());
+        /* Update the custom display buffer */
+        if (color != 0) {
+            for (uint8_t mask = 0b001, color_inx = COLOR_COUNT-1; mask <= 0b100; mask<<=1, color_inx--)
+                if (mask&color)
+                    custom_buffer[color_inx][shift] = (0b0000000001<<line)|custom_buffer[color_inx][shift];
+        }
+        else {
+            for (uint8_t color_inx = 0; color_inx < COLOR_COUNT; color_inx++)
+                custom_buffer[color_inx][shift] = (~(0b0000000001<<line))&custom_buffer[color_inx][shift];
+        }
+        /* No need to update the site as the color change on the site is handled by the client side JavaScript */
+        server.send(200, "text/html", "");
+    } else {
+        /* Reset custom display */
+        for (uint8_t line = 0; line < LINE_COUNT; line++)
+            for (uint8_t color = 0; color < COLOR_COUNT; color++)
+                custom_buffer[color][line] = 0b0000000000;
+        /* Update the site */
+        SendHTML_nostore(display_mode);
+    }
+}
+
+void handle_NotFound() {
+    display_mode = MODE_STANDBY;
+    server.send(404, "text/plain", "[ERROR-404] Page Not Found");
 }
 
 void setup() {
@@ -682,6 +589,7 @@ void setup() {
     server.on("/mode8", handle_mode8);
     server.on("/mode9", handle_mode9);
     server.on("/play_boot", handle_play_boot);
+    server.on("/custom_selection", handle_custom_selection);
     server.onNotFound(handle_NotFound);
 
     server.begin();
@@ -746,6 +654,9 @@ void loop() {
         case MODE9:
             my_display.showFrame(bouncy_buffer, 0.35);
             move_ball();
+            break;
+        case CUSTOM_SELECTION:
+            my_display.showFrame(custom_buffer, BUFFER_REFRESH_DELAY);
             break;
         default:
             // MODE_STANDBY, MODE_OFF

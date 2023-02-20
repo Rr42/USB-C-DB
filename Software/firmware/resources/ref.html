@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>LED Control</title>
+<style>
+html {
+    font-family: Helvetica;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+}
+body {
+    margin-top: 50px;
+}
+h1 {
+    color: #444444;
+    margin: 50px auto 30px;
+}
+h3 {
+    color: #444444;
+    margin-bottom: 50px;
+}
+p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.button {
+    display: block;
+    width: 80px;
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px auto 35px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button.disabled {
+    pointer-events: none;
+}
+.button-single {
+    display: block;
+    width: 250px;
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px auto 35px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button-on {
+    background-color: #1abc9c;
+}
+.button-on:active {
+    background-color: #16a085;
+}
+.button-off {
+    background-color: #34495e;
+}
+.button-off:active {
+    background-color: #2c3e50;
+}
+.button-disabled {
+    background-color: #aaaaff;
+    pointer-events: none;
+}
+.dropdown {
+    display:table-cell;
+    width: 60px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px 7px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto auto auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+</style>
+<script>
+	function change_color(id,color,text) {
+		id.style.backgroundColor=color;
+	}
+</script>
+</head>
+<body>
+<h1>USB-C DB Control Center</h1>
+<h3>Using ESP8266's Access Point (AP) Mode</h3>
+<a class="button-single button-off" href="#/play_boot">Play boot animation</a>
+
+<p>Display mode</p>
+<table align="center">
+    <tr>
+      <th><a href="#/mode1" class="button button-disabled">1</a></th>
+      <th><a href="#/mode2" class="button button-on">2</a></th>
+      <th><a href="#/mode2" class="button button-off">3</a></th>
+    </tr>
+    <tr>
+        <th><a href="#/mode1" class="button button-off">4</a></th>
+        <th><a href="#/mode2" class="button button-off">5</a></th>
+        <th><a href="#/mode2" class="button button-off">6</a></th>
+    </tr>
+    <tr>
+        <th><a href="#/mode1" class="button button-off">7</a></th>
+        <th><a href="#/mode2" class="button button-off">8</a></th>
+        <th><a href="#/mode2" class="button button-off">9</a></th>
+    </tr>
+</table>
+
+<p>Custom mode</p>
+<table align="center">
+    <tr>
+        <th>
+            <select onchange="cc(this,value,01)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">01</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">01</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">01</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">01</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">01</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">01</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">01</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">01</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,02)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">02</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">02</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">02</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">02</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">02</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">02</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">02</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">02</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,03)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">03</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">03</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">03</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">03</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">03</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">03</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">03</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">03</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,04)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">04</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">04</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">04</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">04</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">04</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">04</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">04</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">04</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,05)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">05</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">05</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">05</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">05</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">05</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">05</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">05</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">05</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,06)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">06</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">06</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">06</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">06</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">06</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">06</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">06</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">06</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,07)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">07</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">07</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">07</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">07</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">07</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">07</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">07</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">07</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,08)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">08</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">08</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">08</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">08</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">08</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">08</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">08</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">08</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,09)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">09</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">09</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">09</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">09</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">09</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">09</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">09</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">09</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,10)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">10</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">10</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">10</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">10</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">10</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">10</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">10</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">10</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,11)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">11</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">11</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">11</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">11</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">11</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">11</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">11</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">11</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,12)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">12</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">12</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">12</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">12</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">12</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">12</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">12</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">12</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,13)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">13</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">13</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">13</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">13</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">13</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">13</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">13</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">13</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,14)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">14</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">14</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">14</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">14</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">14</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">14</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">14</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">14</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,15)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">15</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">15</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">15</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">15</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">15</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">15</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">15</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">15</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,16)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">16</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">16</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">16</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">16</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">16</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">16</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">16</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">16</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,17)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">17</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">17</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">17</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">17</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">17</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">17</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">17</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">17</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,18)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">18</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">18</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">18</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">18</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">18</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">18</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">18</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">18</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,19)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">19</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">19</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">19</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">19</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">19</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">19</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">19</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">19</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,20)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">20</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">20</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">20</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">20</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">20</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">20</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">20</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">20</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,21)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">21</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">21</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">21</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">21</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">21</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">21</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">21</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">21</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,22)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">22</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">22</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">22</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">22</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">22</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">22</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">22</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">22</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,23)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">23</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">23</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">23</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">23</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">23</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">23</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">23</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">23</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,24)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">24</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">24</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">24</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">24</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">24</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">24</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">24</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">24</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,25)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">25</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">25</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">25</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">25</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">25</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">25</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">25</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">25</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,26)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">26</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">26</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">26</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">26</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">26</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">26</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">26</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">26</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,27)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">27</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">27</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">27</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">27</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">27</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">27</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">27</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">27</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,28)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">28</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">28</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">28</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">28</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">28</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">28</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">28</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">28</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,29)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">29</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">29</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">29</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">29</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">29</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">29</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">29</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">29</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,30)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">30</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">30</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">30</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">30</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">30</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">30</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">30</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">30</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,31)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">31</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">31</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">31</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">31</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">31</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">31</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">31</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">31</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,32)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">32</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">32</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">32</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">32</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">32</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">32</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">32</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">32</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,33)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">33</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">33</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">33</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">33</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">33</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">33</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">33</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">33</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,34)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">34</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">34</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">34</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">34</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">34</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">34</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">34</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">34</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,35)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">35</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">35</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">35</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">35</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">35</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">35</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">35</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">35</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,36)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">36</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">36</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">36</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">36</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">36</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">36</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">36</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">36</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,37)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">37</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">37</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">37</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">37</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">37</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">37</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">37</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">37</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,38)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">38</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">38</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">38</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">38</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">38</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">38</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">38</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">38</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,39)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">39</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">39</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">39</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">39</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">39</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">39</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">39</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">39</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,40)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">40</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">40</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">40</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">40</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">40</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">40</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">40</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">40</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,41)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">41</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">41</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">41</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">41</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">41</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">41</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">41</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">41</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,42)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">42</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">42</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">42</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">42</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">42</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">42</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">42</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">42</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,43)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">43</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">43</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">43</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">43</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">43</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">43</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">43</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">43</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,44)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">44</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">44</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">44</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">44</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">44</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">44</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">44</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">44</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,45)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">45</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">45</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">45</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">45</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">45</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">45</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">45</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">45</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,46)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">46</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">46</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">46</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">46</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">46</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">46</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">46</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">46</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,47)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">47</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">47</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">47</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">47</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">47</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">47</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">47</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">47</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,48)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">48</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">48</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">48</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">48</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">48</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">48</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">48</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">48</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,49)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">49</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">49</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">49</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">49</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">49</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">49</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">49</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">49</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,50)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">50</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">50</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">50</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">50</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">50</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">50</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">50</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">50</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,51)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">51</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">51</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">51</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">51</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">51</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">51</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">51</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">51</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,52)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">52</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">52</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">52</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">52</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">52</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">52</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">52</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">52</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,53)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">53</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">53</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">53</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">53</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">53</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">53</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">53</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">53</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,54)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">54</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">54</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">54</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">54</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">54</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">54</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">54</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">54</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,55)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">55</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">55</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">55</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">55</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">55</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">55</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">55</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">55</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,56)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">56</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">56</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">56</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">56</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">56</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">56</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">56</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">56</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,57)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">57</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">57</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">57</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">57</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">57</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">57</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">57</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">57</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,58)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">58</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">58</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">58</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">58</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">58</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">58</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">58</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">58</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,59)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">59</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">59</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">59</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">59</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">59</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">59</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">59</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">59</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,60)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">60</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">60</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">60</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">60</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">60</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">60</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">60</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">60</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,61)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">61</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">61</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">61</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">61</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">61</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">61</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">61</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">61</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,62)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">62</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">62</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">62</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">62</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">62</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">62</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">62</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">62</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,63)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">63</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">63</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">63</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">63</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">63</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">63</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">63</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">63</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,64)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">64</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">64</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">64</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">64</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">64</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">64</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">64</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">64</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,65)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">65</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">65</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">65</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">65</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">65</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">65</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">65</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">65</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,66)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">66</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">66</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">66</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">66</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">66</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">66</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">66</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">66</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,67)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">67</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">67</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">67</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">67</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">67</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">67</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">67</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">67</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,68)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">68</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">68</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">68</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">68</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">68</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">68</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">68</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">68</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,69)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">69</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">69</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">69</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">69</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">69</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">69</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">69</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">69</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,70)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">70</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">70</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">70</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">70</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">70</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">70</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">70</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">70</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,71)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">71</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">71</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">71</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">71</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">71</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">71</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">71</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">71</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,72)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">72</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">72</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">72</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">72</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">72</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">72</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">72</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">72</option>
+            </select>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <select onchange="cc(this,value,73)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">73</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">73</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">73</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">73</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">73</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">73</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">73</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">73</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,74)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">74</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">74</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">74</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">74</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">74</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">74</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">74</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">74</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,75)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">75</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">75</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">75</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">75</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">75</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">75</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">75</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">75</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,76)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">76</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">76</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">76</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">76</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">76</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">76</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">76</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">76</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,77)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">77</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">77</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">77</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">77</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">77</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">77</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">77</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">77</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,78)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">78</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">78</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">78</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">78</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">78</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">78</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">78</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">78</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,79)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">79</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">79</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">79</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">79</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">79</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">79</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">79</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">79</option>
+            </select>
+        </th>
+        <th>
+            <select onchange="cc(this,value,80)" class="dropdown">
+                <option style="background-color:#000000;color:white" value="#000000">80</option>
+                <option style="background-color:#0000FF;color:white" value="#0000FF">80</option>
+                <option style="background-color:#00FF00;color:black" value="#00FF00">80</option>
+                <option style="background-color:#00FFFF;color:black" value="#00FFFF">80</option>
+                <option style="background-color:#FF0000;color:white" value="#FF0000">80</option>
+                <option style="background-color:#FF00FF;color:black" value="#FF00FF">80</option>
+                <option style="background-color:#FFFF00;color:black" value="#FFFF00">80</option>
+                <option style="background-color:#FFFFFF;color:black" value="#FFFFFF">80</option>
+            </select>
+        </th>
+    </tr>
+</table>
+
+</body>
+</html>
