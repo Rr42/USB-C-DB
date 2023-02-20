@@ -8,6 +8,9 @@ The goal of this display board is to test and evaluate:
 * (TENTATIVE) Onboard battery charging capability using USB-C
 
 ## Firmware
+### Demo video
+[![Demo video for the USB-C DB firmware](https://img.youtube.com/vi/l0tGIR3diLk/0.jpg)](https://www.youtube.com/watch?v=l0tGIR3diLk)
+
 ### Prerequisites
 This firmware is built using [PlatformIO](https://platformio.org/) and uses the `ESP8266` and `Arduino` libraries.
 
