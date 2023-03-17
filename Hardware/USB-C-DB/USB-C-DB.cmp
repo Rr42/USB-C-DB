@@ -1,4 +1,28 @@
-Cmp-Mod V01 Created by PcbNew   date = 09/05/22 18:39:09
+Cmp-Mod V01 Created by PcbNew   date = 2023-03-17 22:50:14
+
+BeginCmp
+TimeStamp = 6361D0C8
+Path = 
+Reference = REF**;
+ValeurCmp = Name_pad_18x6mm;
+IdModule  = USB-C-DB:Name_pad_18x6mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 6361D462
+Path = 
+Reference = REF**;
+ValeurCmp = Name_pad_18x6mm;
+IdModule  = USB-C-DB:Name_pad_18x6mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 6361CD3C
+Path = 
+Reference = REF**;
+ValeurCmp = Name_pad_18x6mm;
+IdModule  = USB-C-DB:Name_pad_18x6mm;
+EndCmp
 
 BeginCmp
 TimeStamp = 6236041A
@@ -65,7 +89,7 @@ IdModule  = LED_SMD:LED_Cree-PLCC4_3.2x2.8mm_CCW;
 EndCmp
 
 BeginCmp
-TimeStamp = 630C2B76
+TimeStamp = 6361F91E
 Path = /632662D8
 Reference = C5;
 ValeurCmp = 0.1u;

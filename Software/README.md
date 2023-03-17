@@ -7,7 +7,7 @@ The goal of this display board is to test and evaluate:
 * (TENTATIVE) Implementation of an onboard battery to power the board when disconnected from power
 * (TENTATIVE) Onboard battery charging capability using USB-C
 
-## Firmware
+## ESP8266 Firmware
 ### Demo video
 [![Demo video for the USB-C DB firmware](https://img.youtube.com/vi/l0tGIR3diLk/0.jpg)](https://www.youtube.com/watch?v=l0tGIR3diLk)
 
@@ -22,13 +22,42 @@ To install and setup [PlatformIO](https://platformio.org/) please visit the [off
 * Run the the default build task or the build task for `esp_wroom_02`. The following image is for VSCode.
 ![Build task in VSCode](./firmware/resources/PlatformIO-Build-VSCode.png)
 > Note that the command palette can be opened by going to View>Command Palette...
-> ![Opening the command palette in VSCode](firmware/resources/VSCode-cmd-palette.png)
+> ![Opening the command palette in VSCode](./firmware/resources/VSCode-cmd-palette.png)
 
 * Once the build is done the `firmware.bin` and `firmware.elf` files will be available in the `Software\firmware\.pio\build\esp_wroom_02` directory.
 
 ### Debugging the firmware
 The stack dumps of the firmware can be parsed using the [EspStackTraceDecoder](https://github.com/littleyoda/EspStackTraceDecoder) tool by [littleyoda](https://github.com/littleyoda).
 > Note that you may need the `xtensa-lx106-elf-addr2line` binary to run the tool in Windows. This binary can be obtained from [willemwouters](https://github.com/willemwouters)'s [ESP8266](https://github.com/willemwouters/ESP8266) repository [here](https://github.com/willemwouters/ESP8266/tree/master/gcc/xtensa-lx106-elf_c%2B%2B)
+
+## FT231 Firmware
+### Prerequisites
+To modify the USB serial interface's firmware settings the FT_PROG utility from FTDI. This utility can be obtained from the [utilities page](https://ftdichip.com/utilities/) of FTDI's website.
+![FTDI utilities page](./FT231-firmware/resources/FTDI_util_site_marked.png)
+
+### Modifying the firmware
+1. Connect the display board directly to the system
+    > Note that using a dock, dongle or other USB-to-USB connector can cause problems for the FT_PROG utility preventing it from recognizing the board
+2. Open the FT_PROG utility and select `Scan and Parse` option from the `DEVICES` menu
+    ![Scan and Parse option in DEVICES menu](./FT231-firmware/resources/FT_prog_scan_mark.png)
+3. Right click on the listed device and select `Apply Template`, in the submenu select the `From File` option
+    ![Template selection](./FT231-firmware/resources/FT_prog_template_sel_mark.png)
+4. Navigate to the `Software/FT231-firmware` directory and select the template XML file and click on `OK` then in the `Operation Successful` window
+    ![Template XML file selection](./FT231-firmware/resources/FT_prog_template_file_sel_mark.png)
+    ![Operation Successful window](./FT231-firmware/resources/FT_prog_template_file_sel_ack.png)
+5. Expand the `FT EEPROM` section in the `Device Tree` if not already and select `USB String Descriptors`
+6. In the middle `Property` column locate the `Serial Number` property and modify its value based on your needs
+    ![Serial Number modification](./FT231-firmware/resources/FT_prog_update_serial_mark.png)
+    > Note that it is best to avoid any spaces and special characters in the serial number
+
+    > The format of serial number used by me for all my test boards uses this template `R<board_number>DB<version_number_without_dots>`
+7. Once all the required changes have been made click on the `Program` option under the `DEVICES` menu
+    ![Program option in the DEVICES menu](./FT231-firmware/resources/FT_prog_prog_mark.png)
+8. In the `Program Devices` window select the device to be programed from the `Device List` column and click on `Program`
+    ![Select device for programming and program](./FT231-firmware/resources/FT_prog_prog_confirm_mark.png)
+9. Once programmed the `Programming Successful` message will appear on the bottom left, after which the `Cycle Ports` button can be clicked to disconnect and reconnect the device without physically un-plugging and re-plugging
+    ![Success message and port cycling](./FT231-firmware/resources/FT_prog_cycle_port_mark.png)
+10. Click on `Close` to close the `Program Devices` window, the device can now be re-scanned to confirm the updated firmware
 
 ## Frame builder
 The USB-C DB frame builder allows exporting of custom frames and frame sequences in a serializable format.

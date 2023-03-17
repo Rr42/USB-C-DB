@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7350 7515 0    59   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 10570 7635 0    59   ~ 0
-v0.7.1
+v0.7.2
 Text Notes 8105 7635 0    50   ~ 0
 28-08-2022
 Text Notes 7290 7235 0    50   ~ 0
@@ -152,8 +152,8 @@ Wire Wire Line
 	2300 3550 2300 3500
 Wire Wire Line
 	1800 3500 2300 3500
-Text Notes 3100 3350 0    50   ~ 0
-Series resistor and clamp diodes\n for ESD protection
+Text Notes 3300 3300 0    50   ~ 0
+Series resistors
 $Comp
 L Device:C C2
 U 1 1 61C3BE2E
@@ -370,55 +370,6 @@ Wire Wire Line
 Connection ~ 3750 6800
 Wire Wire Line
 	3750 6800 3750 6850
-$Comp
-L USB-C-DB-rescue:NUF2221W1T2G U2
-U 1 1 621665F6
-P 3600 3650
-F 0 "U2" H 3400 3400 50  0000 C CNN
-F 1 "NUF2221W1T2G" H 3600 3900 50  0000 C CNN
-F 2 "Mouser-imports:SOT65P210X110-6N" H 4650 3750 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NUF2221W1T2-D.PDF" H 4650 3650 50  0001 L CNN
-F 4 "USB Upstream Terminator with ESD Protection" H 4650 3550 50  0001 L CNN "Description"
-F 5 "1.1" H 4650 3450 50  0001 L CNN "Height"
-F 6 "863-NUF2221W1T2G" H 4650 3350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NUF2221W1T2G/?qs=ZXBb0xZ9WeBhigCT%252BMBgKA%3D%3D" H 4650 3250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 4650 3150 50  0001 L CNN "Manufacturer_Name"
-F 9 "NUF2221W1T2G" H 4650 3050 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "NUF2221W1T2G" H 3600 3650 50  0001 C CNN "MPN"
-F 11 "NUF2221W1T2G" H 3600 3650 50  0001 C CNN "MPN prod"
-	1    3600 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 621E9CAA
-P 3100 3850
-F 0 "#PWR011" H 3100 3600 50  0001 C CNN
-F 1 "GND" H 3100 3700 50  0000 C CNN
-F 2 "" H 3100 3850 50  0001 C CNN
-F 3 "" H 3100 3850 50  0001 C CNN
-	1    3100 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3850 3100 3800
-Wire Wire Line
-	3100 3800 3150 3800
-$Comp
-L power:VBUS #PWR013
-U 1 1 621F1E3A
-P 4100 3450
-F 0 "#PWR013" H 4100 3300 50  0001 C CNN
-F 1 "VBUS" H 4100 3600 50  0000 C CNN
-F 2 "" H 4100 3450 50  0001 C CNN
-F 3 "" H 4100 3450 50  0001 C CNN
-	1    4100 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 3450 4100 3500
-Wire Wire Line
-	4100 3500 4050 3500
 Wire Notes Line
 	6450 7500 600  7500
 Text Notes 650  2250 0    50   ~ 0
@@ -2754,7 +2705,7 @@ Wire Wire Line
 Wire Wire Line
 	1050 6650 1050 6700
 $Comp
-L Device:LED D1
+L USB-C-DB-rescue:LED D1
 U 1 1 6344B96E
 P 1050 6850
 AR Path="/6344B96E" Ref="D1"  Part="1" 
@@ -2769,7 +2720,7 @@ F 5 "CLA1A-WKB-CWbYa153" H 1050 6850 50  0001 C CNN "MPN prod"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D2
+L USB-C-DB-rescue:LED D2
 U 1 1 6344B976
 P 1350 6850
 AR Path="/6344B976" Ref="D2"  Part="1" 
@@ -2845,7 +2796,7 @@ $EndComp
 Wire Wire Line
 	2500 6800 2500 6750
 $Comp
-L Device:LED D3
+L USB-C-DB-rescue:LED D3
 U 1 1 63564B93
 P 2500 6950
 AR Path="/63564B93" Ref="D3"  Part="1" 
@@ -2901,21 +2852,27 @@ Text Label 4050 3650 0    50   ~ 0
 USBC_N
 Text Label 4050 3750 0    50   ~ 0
 USBC_P
-NoConn ~ 3600 3650
-Text Notes 3050 3200 0    50   ~ 0
-!!!!!!!!REMOVE THIS FOR FT231!!!!!!!!
-Wire Notes Line
-	3050 3100 3050 4050
-Wire Notes Line
-	3050 4050 4250 4050
-Wire Notes Line
-	4250 4050 4250 3300
-Wire Notes Line
-	4250 3300 4400 3300
-Wire Notes Line
-	4400 3300 4400 3100
-Wire Notes Line
-	4400 3100 3050 3100
+NoConn ~ 4050 3500
+NoConn ~ 3150 3800
+$Comp
+L USB-C-DB-rescue:NUF2221W1T2G U2
+U 1 1 621665F6
+P 3600 3650
+F 0 "U2" H 3400 3400 50  0000 C CNN
+F 1 "NUF2221W1T2G" H 3600 3900 50  0000 C CNN
+F 2 "Mouser-imports:SOT65P210X110-6N" H 4650 3750 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NUF2221W1T2-D.PDF" H 4650 3650 50  0001 L CNN
+F 4 "USB Upstream Terminator with ESD Protection" H 4650 3550 50  0001 L CNN "Description"
+F 5 "1.1" H 4650 3450 50  0001 L CNN "Height"
+F 6 "863-NUF2221W1T2G" H 4650 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NUF2221W1T2G/?qs=ZXBb0xZ9WeBhigCT%252BMBgKA%3D%3D" H 4650 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 4650 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "NUF2221W1T2G" H 4650 3050 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "NUF2221W1T2G" H 3600 3650 50  0001 C CNN "MPN"
+F 11 "NUF2221W1T2G" H 3600 3650 50  0001 C CNN "MPN prod"
+	1    3600 3650
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	7000 1100 7000 1700
 Wire Bus Line
@@ -2924,4 +2881,6 @@ Wire Bus Line
 	5950 1100 5950 1700
 Wire Bus Line
 	9400 4900 9400 5450
+Text Notes 3100 4200 0    50   ~ 0
+(disconnected clamps,\nas they are not compatable\nwith FT231)
 $EndSCHEMATC
