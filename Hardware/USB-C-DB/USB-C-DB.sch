@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7350 7515 0    59   ~ 0
 USB-C demo board for Micro-controllers
 Text Notes 10570 7635 0    59   ~ 0
-v0.7.2
+v0.7.3
 Text Notes 8105 7635 0    50   ~ 0
 17-03-2023
 Text Notes 7290 7235 0    50   ~ 0
@@ -2873,6 +2873,8 @@ F 11 "NUF2221W1T2G" H 3600 3650 50  0001 C CNN "MPN prod"
 	1    3600 3650
 	1    0    0    -1  
 $EndComp
+Text Notes 3100 4200 0    50   ~ 0
+(disconnected clamps,\nas they are not compatable\nwith FT231)
 Wire Bus Line
 	7000 1100 7000 1700
 Wire Bus Line
@@ -2881,6 +2883,4 @@ Wire Bus Line
 	5950 1100 5950 1700
 Wire Bus Line
 	9400 4900 9400 5450
-Text Notes 3100 4200 0    50   ~ 0
-(disconnected clamps,\nas they are not compatable\nwith FT231)
 $EndSCHEMATC
