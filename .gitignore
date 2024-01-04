@@ -1,6 +1,8 @@
 # Files and folders to ignore
 *.log
 *.raw
+Software/frame-builder/UI/*.tcl#
+Software/frame-builder/*.spec
 # Hardware directories to be ignored
 Hardware/Datasheets/
 Hardware/Parts-selection/
@@ -8,6 +10,12 @@ Hardware/USB-C-DB/outputs/
 # Software directories to be ignored
 Software/test-firmware/
 Software/firmware/builds
+Software/frame-builder/__pycache__
+Software/frame-builder/build
+Software/frame-builder/dist
+Software/frame-builder/dist
+Software/frame-builder/UI/backups
+Software/frame-builder/UI/__pycache__
 # Mechanical directories to be ignored
 Mechanical/test/
 Mechanical/*/output/

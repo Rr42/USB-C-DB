@@ -15,11 +15,11 @@ The goal of this display board is to test and evaluate:
 This firmware is built using [PlatformIO](https://platformio.org/) and uses the `ESP8266` and `Arduino` libraries.
 
 To install and setup [PlatformIO](https://platformio.org/) please visit the [official site](https://platformio.org/install).
-> Note that [PlatformIO](https://platformio.org/) is also available for VSCode as an extension!Learn more from [here](https://platformio.org/install/ide?install=vscode).
+> Note that [PlatformIO](https://platformio.org/) is also available for VSCode as an extension! Learn more from [here](https://platformio.org/install/ide?install=vscode).
 
 ### Building the firmware
 * Open the working directory `Software\firmware` in VSCode or the PlatformIO IDE.
-* Run the the default build task or the build task for `esp_wroom_02`. The following image is for VSCode.
+* Run the default build task or the build task for `esp_wroom_02`. The following image is for VSCode.
 ![Build task in VSCode](./firmware/resources/PlatformIO-Build-VSCode.png)
 > Note that the command palette can be opened by going to View>Command Palette...
 > ![Opening the command palette in VSCode](./firmware/resources/VSCode-cmd-palette.png)
@@ -61,6 +61,28 @@ To modify the USB serial interface's firmware settings the FT_PROG utility from 
 
 ## Frame builder
 The USB-C DB frame builder allows exporting of custom frames and frame sequences in a serializable format.
+
+### Prerequisites
+This firmware is built using [Python](https://www.python.org), [PyInstaller](https://pyinstaller.org/en/stable/) and [Python Tkinter](https://docs.python.org/3/library/tkinter.html).
+
+The latest version of [Python](https://www.python.org) can be obtained from the [official site](https://www.python.org/downloads/) this version generally comes with [Python Tkinter](https://docs.python.org/3/library/tkinter.html) pre loaded.
+
+To install and setup [PyInstaller](https://pyinstaller.org/en/stable/) please visit the [PyPi.org site](https://pypi.org/project/pyinstaller/).
+
+### Building the frame builder tool
+The frame builder tool can be built using 
+* Open the working directory `Software\frame-builder` in Windows CMD.
+* Run the following command to build the Python code into a runnable executable.
+```CMD
+pyinstaller.exe frame_builder.py --noconsole
+```
+> Note that the command `pyinstaller.exe` and the python bin directory needs to be added to the Windows PATH for the command to work. If it is not added the full path of `pyinstaller.exe` will need to be substituted.
+* Once the build is done the `firmware.bin` and `firmware.elf` files will be available in the `Software\firmware\.pio\build\esp_wroom_02` directory.
+
+### Building the UI
+The framework for the the frame builder GUI is built using the [PAGE](https://page.sourceforge.net/) GUI builder tool for Python and Tkinter.
+
+The latest version of PAGE can be obtained from the [SourceForge site for PAGE](https://sourceforge.net/projects/page/).
 
 ## License
 The Software and firmware of this project is licensed under the the MIT license and the hardware is under the [Open Source Hardware](https://www.oshwa.org/definition/) license.

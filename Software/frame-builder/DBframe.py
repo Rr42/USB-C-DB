@@ -1,7 +1,7 @@
 ################################################################
 # DBframe.py
 # Dev: Rr42@GitHub
-# File version: v0.2
+# File version: v1.0
 # Python version: 3.8.10 (Linux)
 # Description:
 #   Custom classes to facilitate logic, pixel, and frame
@@ -255,6 +255,7 @@ class Frame:
     @property
     def frame(self) -> frame_t:
         return self._frame
+
     @frame.setter
     def frame(self, new_frame: frame_t) -> None:
         # Enforce datatype
@@ -278,6 +279,20 @@ class Frame:
         # Populate new frame
         new_frame.frame = list_frame
         return new_frame
+
+    # Methods for frame transformations
+    def transpose(self) -> Frame:
+        '''Implements the matrix transpose operation to the frame'''
+        # Create a temporary new frame of [self.Ncol, self.Nrow]
+        new_frame: Frame = Frame(self.Ncol, self.Nrow)
+        # Populate rows of the new frame with the column data and vice versa
+        for row_index in range(self.Ncol):
+            for col_index in range(self.Nrow):
+                #  Don't use the setter to let the assignment execute a little faster
+                new_frame._frame[row_index][col_index] = self[col_index][row_index]
+        # Replace the current frame with the newly created frame
+        self.frame = new_frame._frame
+        return self
 
     # Overloading unary operator(s)
     def __invert__(self) -> Frame:
@@ -397,4 +412,6 @@ if __name__ == "__main__":
     f1 = f3
     f1 |= f2
     print(f"f1={f1}", end="\n\n")
-    print(str(f2))
+    print(f"f2={str(f2)}", end="\n\n")
+    f1.transpose()
+    print(f"transpose(f1)={f1}")
